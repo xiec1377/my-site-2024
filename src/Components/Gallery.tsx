@@ -13,45 +13,71 @@ import {
   GridItem,
   Circle,
 } from "@chakra-ui/react";
+import Eye from "../Assets/eye.png";
+import Face from "../Assets/face.gif";
+import Drinking from "../Assets/drinking.png";
+import GirlFront from "../Assets/girlFront.png";
+import GirlSide from "../Assets/girlSide.png";
+import Knight from "../Assets/knight.png";
+import Man from "../Assets/man.png";
+import PurpleGirl from "../Assets/purpleGirl.png";
 
 const Gallery: React.FC<{}> = () => {
   return (
-    <Box height="100vh" p={20}>
+    <Box>
       <VStack>
         <Heading as="h2" size="2xl" color="rose.600">
           Gallery
         </Heading>
-        {/* <Text p={10}>PLACEHOLDER TEXT</Text> */}
-        <Grid
-          templateColumns="repeat(3, 1fr)"
-          templateRows="repeat(3, 1fr)"
-          gap={2}
-        >
-          <GridItem w="100%" h="10" bg="blue.500">
+
+        <HStack align="base">
+          <VStack>
             <Image
-              src="me.jpg"
-              boxSize="500px"
+              src={Man}
               fallbackSrc="https://via.placeholder.com/150"
-              alt="Me"
+              alt="man.png"
             />
-          </GridItem>
-          <GridItem w="100%" h="10" bg="blue.500">
             <Image
-              src="me.jpg"
-              boxSize="500px"
+              src={Eye}
               fallbackSrc="https://via.placeholder.com/150"
-              alt="Me"
+              alt="eye.png"
             />
-          </GridItem>
-          <GridItem w="100%" h="10" bg="blue.500">
             <Image
-              src="me.jpg"
-              boxSize="500px"
+              src={Drinking}
               fallbackSrc="https://via.placeholder.com/150"
-              alt="Me"
+              alt="drinking.png"
             />
-          </GridItem>
-        </Grid>
+          </VStack>
+          <VStack>
+            <Image
+              src={Face}
+              fallbackSrc="https://via.placeholder.com/150"
+              alt="face.gif"
+            />
+            <Image
+              src={GirlFront}
+              fallbackSrc="https://via.placeholder.com/150"
+              alt="girlFront.png"
+            />
+            <Image
+              src={PurpleGirl}
+              fallbackSrc="https://via.placeholder.com/150"
+              alt="purpleGirl.png"
+            />
+          </VStack>
+          <VStack>
+            <Image
+              src={GirlSide}
+              fallbackSrc="https://via.placeholder.com/150"
+              alt="girlSide.png"
+            />
+            <Image
+              src={Knight}
+              fallbackSrc="https://via.placeholder.com/150"
+              alt="knight.png"
+            />
+          </VStack>
+        </HStack>
       </VStack>
     </Box>
   );
