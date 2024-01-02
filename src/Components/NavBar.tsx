@@ -1,60 +1,126 @@
 import React, { useState } from "react";
-import { Box, Heading, Flex, VStack, Link, IconButton, Button, Center, Square, Circle, transition } from "@chakra-ui/react"
+import {
+  Box,
+  Heading,
+  Flex,
+  VStack,
+  Link,
+  IconButton,
+  Button,
+  Center,
+  Square,
+  Circle,
+  transition,
+} from "@chakra-ui/react";
 
-import { FaBriefcase, FaHome, FaLightbulb, FaUser } from 'react-icons/fa'
+import { FaBriefcase, FaHome, FaLightbulb, FaUser } from "react-icons/fa";
 
-import { Fade, ScaleFade, Slide, SlideFade, Collapse } from '@chakra-ui/react'
+import { Fade, ScaleFade, Slide, SlideFade, Collapse } from "@chakra-ui/react";
 
-
-import { useDisclosure } from '@chakra-ui/react'
+import { useDisclosure } from "@chakra-ui/react";
 const NavBar: React.FC<{}> = () => {
-    const { isOpen, onOpen, onClose, onToggle } = useDisclosure()
-    // const [isLabel, setIsLabel] = useState(false);
-    // console.log("label:", isLabel)
-    const handleActive = {
-
-    }
-    return (
-        <Flex position="fixed" height="100vh"alignItems="center" pl={2} style={{ zIndex: 10 }}>
-        <VStack alignItems="left" role="group"  width="50px" position="absolute">
-            <IconButton _hover={{
-                width: "219%",
-                bg:"rose.100",
-                _after: {
-                content: '"Home"',
-                pl: '10px'
-                },
-            }} as="a" href="#home" isRound={true} variant='solid' bg='rose.600' size="lg" aria-label='Home' icon={<FaHome size={30} style={{}}/>}/>
-            <IconButton _hover={{
-                width: "280%",
-                bg:"rose.100",
-                _after: {
-                content: '"About me"',
-                pl: '10px'
-                },
-            }} as="a" href="#about-me" isRound={true} variant='solid' bg='rose.600' size="lg" aria-label='About Me' icon={<FaUser size={30} />}/>
-            <IconButton _hover={{
-                width: "310%",
-                bg:"rose.100",
-                _after: {
-                content: '"Experiences"',
-                pl: '10px'
-                },
-            }} as="a" href="#experiences" isRound={true} variant='solid' bg='rose.600' size="lg" aria-label='Experiences' icon={<FaBriefcase size={30} />}/>
-            <IconButton _hover={{
-                width: "250%",
-                bg:"rose.100",
-                _after: {
-                content: '"Projects"',
-                pl: '10px'
-                },
-            }} as="a" href="#projects" isRound={true} variant='solid' bg='rose.600' size="lg" aria-label='Projects' icon={<FaLightbulb size={30} />}/>
-        </VStack>
-     </Flex>
-    );
-  };
-  export default NavBar;
-
+  const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
+  // const [isLabel, setIsLabel] = useState(false);
+  // console.log("label:", isLabel)
+  return (
+    <Flex
+      position="fixed"
+      height="100vh"
+      alignItems="center"
+      pl={5}
+      style={{ zIndex: 10 }}
+    >
+      <VStack
+        alignItems="left"
+        role="group"
+        width="50px"
+        position="absolute"
+        spacing={5}
+      >
+        <IconButton
+          _hover={{
+            width: "219%",
+            bg: "rose.100",
+            _after: {
+              content: '"Home"',
+              pl: "10px",
+            },
+          }}
+          as="a"
+          href="#home"
+          isRound={true}
+          variant="solid"
+          bg="rose.600"
+          size="lg"
+          aria-label="Home"
+          icon={<FaHome size={30} style={{}} />}
+        />
+        <IconButton
+          className="icon-button"
+          // _after={{
+          //     transform:"translateX(-100%)",
+          //     transition: "all 3s",
+          // }}
+          _hover={{
+            width: "283%",
+            bg: "rose.100",
+            transition: "all 1s",
+            _after: {
+              position: "relative",
+              content: '"About me"',
+              pl: "10px",
+            },
+          }}
+          as="a"
+          href="#about-me"
+          isRound={true}
+          variant="solid"
+          bg="rose.600"
+          size="lg"
+          aria-label="About Me"
+          icon={<FaUser size={30} />}
+        />
+        <IconButton
+          _hover={{
+            width: "313%",
+            bg: "rose.100",
+            _after: {
+              content: '"Experiences"',
+              pl: "10px",
+            },
+          }}
+          as="a"
+          href="#experiences"
+          isRound={true}
+          variant="solid"
+          bg="rose.600"
+          size="lg"
+          aria-label="Experiences"
+          icon={<FaBriefcase size={30} />}
+        />
+        <IconButton
+          _hover={{
+            width: "250%",
+            bg: "rose.100",
+            _after: {
+              content: '"Projects"',
+              pl: "10px",
+            },
+          }}
+          as="a"
+          href="#projects"
+          isRound={true}
+          variant="solid"
+          bg="rose.600"
+          size="lg"
+          aria-label="Projects"
+          icon={<FaLightbulb size={30} />}
+        />
+      </VStack>
+    </Flex>
+  );
+};
+export default NavBar;
 
 // import { ReactNode } from "react";
 // import {
@@ -183,10 +249,10 @@ const NavBar: React.FC<{}> = () => {
 //   );
 // }
 
-
-
-{/* <Link href="#about-me" className="nav-link scrollto" px={4}>
+{
+  /* <Link href="#about-me" className="nav-link scrollto" px={4}>
 <IconButton isRound={true} variant='solid' bg='rose.600' aria-label='Done' icon={<FaUser/>}>
     Experiences
 </IconButton>
-</Link> */}
+</Link> */
+}

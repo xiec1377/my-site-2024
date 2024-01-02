@@ -6,6 +6,13 @@ import type { StyleFunctionProps } from '@chakra-ui/styled-system'
 const overrides = extendTheme({
   colors: {
     gray: {
+      100: "#F5F5F5",
+      200: "#E5E5E5",
+      300: "#D4D4D4",
+      400: "#A3A3A3",
+      500: "#737373",
+      600: "#525252",
+      700: "#404040",
       800: "#262626",
     },
     rose: {
@@ -17,7 +24,8 @@ const overrides = extendTheme({
       500: "#F43F5E",
       600: "#E11D48",
       700: "#BE123C",
-    }
+    },
+    white: "#FAFAFA",
   },
   styles: {
     global: (props: StyleFunctionProps) => ({
@@ -30,9 +38,9 @@ const overrides = extendTheme({
       backgroundColor: {
         color: mode('gray.800', 'gray.800')(props),
       },
-      Button: {
-        bg: mode('blue', 'blue')(props),
-      }
+      // "icon-button": {
+      //   bg: mode("blue", "blue")(props),
+      // },
     }),
   },
 })

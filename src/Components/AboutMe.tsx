@@ -6,7 +6,7 @@ import { Box, Heading, Flex, Text, Image,
 
 const AboutMe: React.FC<{}> = () => {
     return (
-        <Box bg='gray.800' height="100vh" p={20} id="about-me">
+        <Box height="100vh" id="about-me">
         <VStack>
           <Heading as='h2' size='2xl' color='rose.600'>About me</Heading>
           <HStack>
