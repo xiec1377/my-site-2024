@@ -16,7 +16,7 @@ const Projects: React.FC<{}> = () => {
   return (
     <Box height="100vh" id="projects">
       <VStack>
-        <Heading as="h2" size="2xl" color="rose.600">
+        <Heading as="h1" fontSize="h1">
           Projects
         </Heading>
         <HStack></HStack>

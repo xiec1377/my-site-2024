@@ -30,12 +30,12 @@ const Experiences: React.FC<{}> = () => {
   return (
     <Box id="experiences">
         <VStack>
-          <Heading as="h2" size="2xl" color="rose.600">
+          <Heading as="h1" fontSize="h1">
             Experiences
           </Heading>
-          <Card bg="transparent" px={250} py={30}>
+          <Card bg="transparent" px="15%" py={30}>
             <CardBody>
-              <Stack divider={<StackDivider borderColor='gray.600' />} spacing="10">
+              <Stack divider={<StackDivider borderColor='gray.600'/>} spacing="10">
                 {data.map((experience) => (
                   <ExperienceCard key={experience.id} experience={experience} />
                 ))}

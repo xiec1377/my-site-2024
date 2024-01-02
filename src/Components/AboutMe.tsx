@@ -1,22 +1,77 @@
 import React from "react";
-import { Box, Heading, Flex, Text, Image,
-    VStack, HStack, Center, Square, Circle } from "@chakra-ui/react"
-
-
-
+import {
+  Box,
+  Heading,
+  Flex,
+  Text,
+  Image,
+  VStack,
+  Stack,
+  HStack,
+  Center,
+  Square,
+  Circle,
+  Spacer,
+  Grid,
+  Divider,
+} from "@chakra-ui/react";
+import Me from "../Assets/me.jpg";
+import { AspectRatio } from "@chakra-ui/react";
 const AboutMe: React.FC<{}> = () => {
-    return (
-        <Box height="100vh" id="about-me">
-        <VStack>
-          <Heading as='h2' size='2xl' color='rose.600'>About me</Heading>
-          <HStack>
-          <Image src='me.jpg' borderRadius='full' boxSize="500px" fallbackSrc='https://via.placeholder.com/150' alt='Me'/>
-            <Text p={10}>My name is Catherine and I’m a fourth-year Computer Science student at the University of Waterloo. I enjoy exploring different disciplines in order to become a more well-rounded individual. I specialize in full-stack and front-end development with additional experiences in product design and systems automation. I aspire to build beautiful applications with a meaningful purpose. 
-                On my days off, I’m an aspiring weightlifter, competing dancer and a handy artist. I also enjoy building web applications for social good.</Text>
-        </HStack>
+  return (
+    <Box height="100vh" id="about-me">
+      {/* <VStack> */}
+      <HStack px="15%">
+        <Image
+          src={Me}
+          minW={300}
+          maxW={800}
+          clipPath="circle(30%)"
+          // clipPath="rect(10%, 30%, 30%, 10%)"
+          fallbackSrc="https://via.placeholder.com/150"
+          alt="Me"
+        />
+        <VStack align="start">
+          <HStack width='100%' pb={5}>
+            <Heading className="h1" fontSize="h1" whiteSpace='nowrap'>
+              About me
+            </Heading>
+            <Heading className="h1" fontSize="h1" color="rose.700">
+              .
+            </Heading>
+            <Divider alignSelf='center' borderColor='gray.500' size="10"/>
+          </HStack>
+          <Text className="text">
+            My name is Catherine and I’m a fourth-year Computer Science student
+            at the{" "}
+            <Text as="b" color="rose.700">
+              University of Waterloo
+            </Text>
+            .
+          </Text>
+          <br />
+          <Text className="text">
+            I enjoy exploring different disciplines in order to become a more
+            well-rounded individual. I have expertise in full-stack and
+            front-end development, complemented by additional interests in
+            product management and user experience & design, all cultivated
+            through my experiences in the financial services and institutions
+            sector.
+          </Text>
+          <br />
+          <Text className="text">
+            My goal is to build beautiful applications that serve a meaningful
+            purpose.
+          </Text>
+          <br />
+          <Text className="text">
+            On my days off, I’m an aspiring weightlifter, competitive dancer and
+            a versatile artist.
+          </Text>
         </VStack>
+      </HStack>
+      {/* </VStack> */}
     </Box>
-    );
-  };
-  export default AboutMe;
-  
+  );
+};
+export default AboutMe;

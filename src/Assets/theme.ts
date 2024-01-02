@@ -1,4 +1,4 @@
-import { Button, extendTheme } from "@chakra-ui/react";
+import { Button, extendTheme, StackDivider } from "@chakra-ui/react";
 import { mode } from '@chakra-ui/theme-tools'
 import type { StyleFunctionProps } from '@chakra-ui/styled-system'
 
@@ -27,20 +27,48 @@ const overrides = extendTheme({
     },
     white: "#FAFAFA",
   },
+  fontSizes: {
+    body: '16px',
+    h3: '24px',
+    h2: '42px',
+    h1: '64px',
+    title: '110px',
+  },
   styles: {
     global: (props: StyleFunctionProps) => ({
+      // '.title': {
+      //   fontSize: 'title',
+      //   color: 'white',
+      //   _hover: {
+      //     color: 'rose.600'
+      //   }
+      // },
       body: {
         fontFamily: 'body',
-        color: mode('rose.100', 'rose.100')(props),
-        bg: mode('gray.800', 'gray.800')(props),
+        color: 'rose.100',
+        bg: 'gray.800',
         lineHeight: 'base',
       },
       backgroundColor: {
-        color: mode('gray.800', 'gray.800')(props),
+        color: 'gray.800',
       },
       // "icon-button": {
       //   bg: mode("blue", "blue")(props),
       // },
+      '.h1': {
+        color: 'white',
+      },
+      // h1: {
+      //   size: mode('extra', 'extra')(props),
+      //   color: mode('red', 'red')(props),
+      // }
+      '.text': {
+        color: 'gray.400',
+        fontSize: 'body'
+      },
+      // '.divider': {
+      //   borderColor:'gray.600'
+      // }
     }),
   },
 })

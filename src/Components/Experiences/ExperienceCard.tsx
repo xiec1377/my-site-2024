@@ -47,7 +47,7 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
         {experience.date}
       </Heading>
     </Flex>
-    <UnorderedList pl={6} fontSize="lg" color="gray.300">
+    <UnorderedList pl={6} className="text">
       {experience.points.map((point, index) => (
         <ListItem key={index}>{point}</ListItem>
       ))}

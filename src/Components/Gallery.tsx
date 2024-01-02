@@ -21,7 +21,7 @@ const Gallery: React.FC<{}> = () => {
         <Heading as="h2" size="2xl" color="rose.600">
           Gallery
         </Heading>
-        <Text p={10}>PLACEHOLDER TEXT</Text>
+        {/* <Text p={10}>PLACEHOLDER TEXT</Text> */}
         <Grid
           templateColumns="repeat(3, 1fr)"
           templateRows="repeat(3, 1fr)"

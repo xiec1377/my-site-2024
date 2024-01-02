@@ -26,6 +26,9 @@ export const App = () => (
       <Flex direction="column">
         <Home />
         <AboutMe />
+        <VStack py={100}>
+          <Text className='text'>Check out some of my passion projects </Text>
+        </VStack>
         <Gallery />
         <Experiences />
         <Projects />

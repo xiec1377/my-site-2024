@@ -41,6 +41,7 @@ const NavBar: React.FC<{}> = () => {
           _hover={{
             width: "219%",
             bg: "rose.100",
+            transition: "ease-in-out 0.5s",
             _after: {
               content: '"Home"',
               pl: "10px",
@@ -53,19 +54,26 @@ const NavBar: React.FC<{}> = () => {
           bg="rose.600"
           size="lg"
           aria-label="Home"
-          icon={<FaHome size={30} style={{}} />}
+          icon={<FaHome size={20} />}
         />
         <IconButton
           className="icon-button"
-          // _after={{
-          //     transform:"translateX(-100%)",
-          //     transition: "all 3s",
-          // }}
           _hover={{
             width: "283%",
-            bg: "rose.100",
-            transition: "all 1s",
+            bg: "rose.50",
+            transition: "ease-in-out 0.5s",
             _after: {
+              position: "relative",
+              content: '"About me"',
+              pl: "10px",
+            },
+          }}
+          _active={{
+            width: "283%",
+            bg: "rose.700",
+            transition: "ease-in-out 0.2s",
+            _after: {
+              // color: "white",
               position: "relative",
               content: '"About me"',
               pl: "10px",
@@ -78,12 +86,13 @@ const NavBar: React.FC<{}> = () => {
           bg="rose.600"
           size="lg"
           aria-label="About Me"
-          icon={<FaUser size={30} />}
+          icon={<FaUser size={20} />}
         />
         <IconButton
           _hover={{
             width: "313%",
             bg: "rose.100",
+            transition: "ease-in-out 0.5s",
             _after: {
               content: '"Experiences"',
               pl: "10px",
@@ -96,12 +105,13 @@ const NavBar: React.FC<{}> = () => {
           bg="rose.600"
           size="lg"
           aria-label="Experiences"
-          icon={<FaBriefcase size={30} />}
+          icon={<FaBriefcase size={20} />}
         />
         <IconButton
           _hover={{
             width: "250%",
             bg: "rose.100",
+            transition: "ease-in-out 0.5s",
             _after: {
               content: '"Projects"',
               pl: "10px",
@@ -114,7 +124,7 @@ const NavBar: React.FC<{}> = () => {
           bg="rose.600"
           size="lg"
           aria-label="Projects"
-          icon={<FaLightbulb size={30} />}
+          icon={<FaLightbulb size={20} />}
         />
       </VStack>
     </Flex>
