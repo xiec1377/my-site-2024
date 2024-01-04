@@ -32,11 +32,15 @@ const Gallery: React.FC<{}> = () => {
 
         <HStack align="base">
           <VStack>
-            <Image
-              src={Man}
-              fallbackSrc="https://via.placeholder.com/150"
-              alt="man.png"
-            />
+            <Box overflow="hidden">
+              <Image
+                src={Man}
+                fallbackSrc="https://via.placeholder.com/150"
+                alt="man.png"
+                transition='ease-in-out 0.5s'
+                _hover={{ transform: "scale(1.1)", filter: 'grayscale(1)'}}
+              />
+            </Box>
             <Image
               src={Eye}
               fallbackSrc="https://via.placeholder.com/150"
