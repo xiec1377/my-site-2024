@@ -6,9 +6,9 @@
         "date": "May 2023 - August 2023",
         "points": [
             "Individually implemented, and tested a PowerShell script, leveraging the WSUS API library, to optimize Windows OS updates efficiency by ∼15% and rolled it out to 5,000+ company machines",
-            "Proficiently deployed standardized configurations and software to 1,200+ company-owned machines allocated to employees and high-ranking executives",
+            "Proficiently <br/>deployed standardized configurations and software to 1,200+ company-owned machines allocated to employees and high-ranking executives",
             "Documented in-depth business requirements, functional specifications, and project-related documentation to user groups"
-          ]
+        ]
     },
     {
         "id": "2",
@@ -19,7 +19,7 @@
             "Individually implemented, and tested a PowerShell script, leveraging the WSUS API library, to optimize Windows OS updates efficiency by ∼15% and rolled it out to 5,000+ company machines",
             "Proficiently deployed standardized configurations and software to 1,200+ company-owned machines allocated to employees and high-ranking executives",
             "Documented in-depth business requirements, functional specifications, and project-related documentation to user groups"
-          ]
+        ]
     },
     {
         "id": "3",
@@ -29,7 +29,7 @@
         "points": [
             "Led a cross-functional team in the successful design, delivery and deployment of the Glossary feature, enhancing the learning experience for 1,500+ weekly users",
             "Updated and maintained company portal, servicing a weekly user base of 4,000+ individuals, utilizing React.js and Django"
-          ]
+        ]
     },
     {
         "id": "4",
@@ -40,6 +40,6 @@
             "Managed the continuous enhancement of the application product that displays clients’ financial data using Angular.js",
             "Integrated error messages and dialog boxes addressing console errors encountered when displaying data with the API",
             "Conducted automated unit testing using Jasmine.js and the Karma test runner, executing comprehensive test suites and specifications"
-          ]
+        ]
     }
 ]
