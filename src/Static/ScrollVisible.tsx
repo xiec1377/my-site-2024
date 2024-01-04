@@ -4,11 +4,11 @@ import { mode } from '@chakra-ui/theme-tools'
 import type { StyleFunctionProps } from '@chakra-ui/styled-system'
 import { motion, useScroll, useInView, useAnimation } from 'framer-motion'
 
-// interface Props {
-//   children: JSX.Element
-// }
+interface Props {
+  children: JSX.Element
+}
 
-export const ScrollVisible = (children : JSX.Element) => {
+export const ScrollVisible = ({children} : Props) => {
   const ref = useRef(null)
   const isInView = useInView(ref, { once: true })
   return (

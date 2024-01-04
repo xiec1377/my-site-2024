@@ -18,25 +18,26 @@ import {
 import Me from "../Assets/me.jpg";
 import { ScrollVisible } from "../Static/ScrollVisible";
 import { Header } from "./Header";
+import Gallery from "./Gallery";
 
 import { AspectRatio } from "@chakra-ui/react";
 const AboutMe: React.FC<{}> = () => {
   return (
-    <Box h="100vh" id="about-me">
-      <VStack>
+    <Box id="about-me">
+      <VStack h="100vh" align="top" px="15%">
         {/* <HStack px="15%"> */}
-        <HStack>
+        <HStack spacing="24px">
           <Image
             src={Me}
             minW={300}
-            maxW={800}
-            clipPath="circle(30%)"
+            maxW={500}
+            clipPath="circle(40%)"
             // clipPath="rect(10%, 30%, 30%, 10%)"
             fallbackSrc="https://via.placeholder.com/150"
             alt="Me"
           />
           <VStack align="start">
-            <Header title='About me' />
+            <Header title="About me" />
             <Text className="text">
               My name is Catherine and I’m a fourth-year Computer Science
               student at the
@@ -66,6 +67,9 @@ const AboutMe: React.FC<{}> = () => {
             </Text>
           </VStack>
         </HStack>
+        <Text className="text" textAlign="center">
+          Check out some of my passion projects{" "}
+        </Text>
       </VStack>
     </Box>
   );

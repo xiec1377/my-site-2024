@@ -27,6 +27,7 @@ import {
 import data from "./ExperiencesData.json";
 import ExperienceCard from "./ExperienceCard";
 import { Header } from "../Header";
+import { ScrollVisible } from "../../Static/ScrollVisible";
 
 const Experiences: React.FC<{}> = () => {
   return (
@@ -34,16 +35,18 @@ const Experiences: React.FC<{}> = () => {
       <VStack>
         <Card bg="transparent" px="15%" py={30}>
           <Header title="Experiences" />
-          <CardBody>
-            <Stack
-              divider={<StackDivider borderColor="gray.600" />}
-              spacing="10"
-            >
-              {data.map((experience) => (
-                <ExperienceCard key={experience.id} experience={experience} />
-              ))}
-            </Stack>
-          </CardBody>
+          <ScrollVisible>
+            <CardBody>
+              <Stack
+                divider={<StackDivider borderColor="gray.600" />}
+                spacing="10"
+              >
+                {data.map((experience) => (
+                  <ExperienceCard key={experience.id} experience={experience} />
+                ))}
+              </Stack>
+            </CardBody>
+          </ScrollVisible>
         </Card>
       </VStack>
     </Box>

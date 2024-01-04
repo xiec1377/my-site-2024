@@ -21,69 +21,32 @@ import GirlSide from "../Assets/girlSide.png";
 import Knight from "../Assets/knight.png";
 import Man from "../Assets/man.png";
 import PurpleGirl from "../Assets/purpleGirl.png";
+import { GalleryItem } from "./GalleryItem";
+import { ScrollVisible } from "../Static/ScrollVisible";
 
 const Gallery: React.FC<{}> = () => {
   return (
-    <Box>
-      <VStack>
-        <Heading as="h2" size="2xl" color="rose.600">
-          Gallery
-        </Heading>
-
-        <HStack align="base">
-          <VStack>
-            <Box overflow="hidden">
-              <Image
-                src={Man}
-                fallbackSrc="https://via.placeholder.com/150"
-                alt="man.png"
-                transition='ease-in-out 0.5s'
-                _hover={{ transform: "scale(1.1)", filter: 'grayscale(1)'}}
-              />
-            </Box>
-            <Image
-              src={Eye}
-              fallbackSrc="https://via.placeholder.com/150"
-              alt="eye.png"
-            />
-            <Image
-              src={Drinking}
-              fallbackSrc="https://via.placeholder.com/150"
-              alt="drinking.png"
-            />
-          </VStack>
-          <VStack>
-            <Image
-              src={Face}
-              fallbackSrc="https://via.placeholder.com/150"
-              alt="face.gif"
-            />
-            <Image
-              src={GirlFront}
-              fallbackSrc="https://via.placeholder.com/150"
-              alt="girlFront.png"
-            />
-            <Image
-              src={PurpleGirl}
-              fallbackSrc="https://via.placeholder.com/150"
-              alt="purpleGirl.png"
-            />
-          </VStack>
-          <VStack>
-            <Image
-              src={GirlSide}
-              fallbackSrc="https://via.placeholder.com/150"
-              alt="girlSide.png"
-            />
-            <Image
-              src={Knight}
-              fallbackSrc="https://via.placeholder.com/150"
-              alt="knight.png"
-            />
-          </VStack>
-        </HStack>
-      </VStack>
-    </Box>
+    <VStack>
+      <Heading as="h2" size="2xl" color="rose.600" pb={10}>
+        Gallery
+      </Heading>
+      <HStack align="base">
+        <VStack>
+          <GalleryItem src={Man} alt="man.png" />
+          <GalleryItem src={Eye} alt="eye.png" />
+          <GalleryItem src={Drinking} alt="drinking.png" />
+        </VStack>
+        <VStack>
+          <GalleryItem src={Face} alt="face.gif" />
+          <GalleryItem src={GirlFront} alt="girlFront.png" />
+          <GalleryItem src={PurpleGirl} alt="purpleGirl.png" />
+        </VStack>
+        <VStack>
+          <GalleryItem src={GirlSide} alt="girlSide.png" />
+          <GalleryItem src={Knight} alt="knight.png" />
+        </VStack>
+      </HStack>
+    </VStack>
   );
 };
 export default Gallery;

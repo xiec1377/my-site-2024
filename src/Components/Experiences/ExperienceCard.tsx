@@ -20,6 +20,7 @@ import {
   UnorderedList,
 } from "@chakra-ui/react";
 import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
+import { ScrollVisible } from "../../Static/ScrollVisible";
 
 interface Experience {
   id: string;
