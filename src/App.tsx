@@ -22,29 +22,29 @@ import { ScrollVisible } from "./Static/ScrollVisible";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box bg="gray.800" p={5}>
+    <Box bg="gray.800" p={5} w="100%">
       <NavBar />
       <Flex direction="column">
-        <ScrollVisible>
-          <Home />
-        </ScrollVisible>
-        <ScrollVisible>
-          <AboutMe />
-        </ScrollVisible>
-        <ScrollVisible>
-          <VStack py={100}>
+        {/* <ScrollVisible> */}
+        <Home />
+        {/* </ScrollVisible> */}
+        {/* <ScrollVisible> */}
+        <AboutMe />
+        {/* </ScrollVisible> */}
+        {/* <ScrollVisible> */}
+        <VStack py={100}>
             <Text className="text">Check out some of my passion projects </Text>
           </VStack>
-        </ScrollVisible>
-        <ScrollVisible>
-          <Gallery />
-        </ScrollVisible>
-        <ScrollVisible>
-          <Experiences />
-        </ScrollVisible>
-        <ScrollVisible>
-          <Projects />
-        </ScrollVisible>
+        {/* </ScrollVisible> */}
+        {/* <ScrollVisible> */}
+        <Gallery />
+        {/* </ScrollVisible> */}
+        {/* <ScrollVisible> */}
+        <Experiences />
+        {/* </ScrollVisible> */}
+        {/* <ScrollVisible> */}
+        <Projects />
+        {/* </ScrollVisible> */}
       </Flex>
     </Box>
   </ChakraProvider>

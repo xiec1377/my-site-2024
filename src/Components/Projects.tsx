@@ -11,15 +11,13 @@ import {
   Square,
   Circle,
 } from "@chakra-ui/react";
+import { Header } from "./Header";
 
 const Projects: React.FC<{}> = () => {
   return (
-    <Box height="100vh" id="projects">
+    <Box h="100vh" id="projects">
       <VStack>
-        <Heading as="h1" fontSize="h1">
-          Projects
-        </Heading>
-        <HStack></HStack>
+        <Header title="Projects"></Header>
       </VStack>
     </Box>
   );

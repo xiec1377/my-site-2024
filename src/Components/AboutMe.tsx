@@ -16,17 +16,16 @@ import {
   Divider,
 } from "@chakra-ui/react";
 import Me from "../Assets/me.jpg";
-
+import { ScrollVisible } from "../Static/ScrollVisible";
+import { Header } from "./Header";
 
 import { AspectRatio } from "@chakra-ui/react";
 const AboutMe: React.FC<{}> = () => {
   return (
-    <Box height="100vh" id="about-me">
+    <Box h="100vh" id="about-me">
       <VStack>
-        <Heading className="h1" fontSize="h1" whiteSpace="nowrap">
-          About me
-        </Heading>
-        <HStack px="15%">
+        {/* <HStack px="15%"> */}
+        <HStack>
           <Image
             src={Me}
             minW={300}
@@ -37,18 +36,10 @@ const AboutMe: React.FC<{}> = () => {
             alt="Me"
           />
           <VStack align="start">
-            <HStack width="100%" pb={5}>
-              <Heading className="h1" fontSize="h1" whiteSpace="nowrap">
-                About me
-              </Heading>
-              <Heading className="h1" fontSize="h1" color="rose.700">
-                .
-              </Heading>
-              <Divider alignSelf="center" borderColor="gray.500" size="10" />
-            </HStack>
+            <Header title='About me' />
             <Text className="text">
               My name is Catherine and I’m a fourth-year Computer Science
-              student at the{" "}
+              student at the
               <Text as="b" color="rose.700">
                 University of Waterloo
               </Text>

@@ -12,7 +12,7 @@ import {
 
 const Home: React.FC<{}> = () => {
   return (
-    <Box height="100vh" id="home">
+    <Box h="100vh" id="home">
       <Center position="relative" top="40vh">
         <VStack>
           <Heading color='white' fontSize='title'>
