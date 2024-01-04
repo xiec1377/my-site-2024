@@ -20,6 +20,7 @@ import Experiences from "./Components/Experiences/Experiences";
 import Projects from "./Components/Projects";
 import { ScrollVisible } from "./Static/ScrollVisible";
 import { BackgroundBlob } from "./Components/BackgroundBlob";
+import { Footer } from "./Components/Footer";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
@@ -47,6 +48,7 @@ export const App = () => (
         {/* <ScrollVisible> */}
         <Projects />
         {/* </ScrollVisible> */}
+        <Footer />
       </VStack>
     </Box>
   </ChakraProvider>
