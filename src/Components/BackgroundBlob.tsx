@@ -2,19 +2,19 @@ import { Box, Container, keyframes } from "@chakra-ui/react";
 import { motion } from "framer-motion";
 
 const animationKeyframes1 = keyframes`
-  0% { transform: translateY(0px) translateX(20px) rotate(0); }
-  50% { transform: translateY(-100px) translateX(-20px) rotate(10deg); }
-  100% { transform: translateY(0px) translateX(20px) rotate(0); }
+  0% { transform: translateY(-150px) translateX(-100px) rotate(0); }
+  50% { transform: translateY(-50px) translateX(-20px) rotate(10deg); }
+  100% { transform: translateY(-150px) translateX(-100px) rotate(0); }
 `;
 
 const animationKeyframes2 = keyframes`
-  0% { transform: translateY(50px) translateX(-100px) rotate(0); }
-  50% { transform: translateY(-100px) translateX(10px) rotate(10deg); }
-  100% { transform: translateY(50px) translateX(-100px) rotate(0); }
+  0% { transform: translateY(200px) translateX(-100px) rotate(0); }
+  50% { transform: translateY(-10px) translateX(10px) rotate(10deg); }
+  100% { transform: translateY(200px) translateX(-100px) rotate(0); }
 `;
 
 const animation1 = `${animationKeyframes1} 10s ease-in-out infinite`;
-const animation2 = `${animationKeyframes2} 10s ease-in-out infinite`;
+const animation2 = `${animationKeyframes2} 9s ease-in-out infinite`;
 
 export const BackgroundBlob = () => {
   return (
