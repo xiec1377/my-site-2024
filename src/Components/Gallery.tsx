@@ -21,6 +21,8 @@ import GirlSide from "../Assets/girlSide.png";
 import Knight from "../Assets/knight.png";
 import Man from "../Assets/man.png";
 import PurpleGirl from "../Assets/purpleGirl.png";
+import Gray from "../Assets/gray.png";
+import GrayGirl from "../Assets/bnwgirl.png";
 import { GalleryItem } from "./GalleryItem";
 import { ScrollVisible } from "../Static/ScrollVisible";
 
@@ -33,17 +35,19 @@ const Gallery: React.FC<{}> = () => {
       <HStack align="base">
         <VStack>
           <GalleryItem src={Man} alt="man.png" />
-          <GalleryItem src={Eye} alt="eye.png" />
+          <GalleryItem src={GrayGirl} alt="bnwgirl.png" />
           <GalleryItem src={Drinking} alt="drinking.png" />
         </VStack>
         <VStack>
           <GalleryItem src={Face} alt="face.gif" />
           <GalleryItem src={GirlFront} alt="girlFront.png" />
           <GalleryItem src={PurpleGirl} alt="purpleGirl.png" />
+          <GalleryItem src={Eye} alt="eye.png" />
         </VStack>
         <VStack>
           <GalleryItem src={GirlSide} alt="girlSide.png" />
           <GalleryItem src={Knight} alt="knight.png" />
+          <GalleryItem src={Gray} alt="gray.png" />
         </VStack>
       </HStack>
     </VStack>
