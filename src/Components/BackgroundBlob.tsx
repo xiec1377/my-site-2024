@@ -30,12 +30,13 @@ export const BackgroundBlob = () => {
           height: "500px",
           width: "500px",
           borderRadius: "40% 50% 30% 40%",
-          filter: "blur(50px)",
-        //   transform: "rotate(0)",
+          filter: "blur(100px)",
+          //   transform: "rotate(0)",
           //   boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
           position: "fixed",
           left: "-10%",
           top: "-20%",
+          opacity: '0.8'
         }}
       />
       <Box
@@ -49,12 +50,13 @@ export const BackgroundBlob = () => {
           height: "1000px",
           width: "800px",
           borderRadius: "40% 50% 30% 40%",
-          filter: "blur(50px)",
+          filter: "blur(80px)",
           transform: "rotate(100deg)",
           //   boxShadow: '0 0 10px rgba(0, 0, 0, 0.5)',
           position: "fixed",
           left: "60%",
           bottom: "-50%",
+          opacity: '0.7'
         }}
       />
     </>

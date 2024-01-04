@@ -41,7 +41,7 @@ export const Socials = () => {
         _hover={{
             color:"rose.700"
         }}
-        icon={<FaLinkedinIn size={20}/>}
+        icon={<FaLinkedinIn size={25}/>}
       />
       <IconButton
         as="a"
@@ -55,7 +55,7 @@ export const Socials = () => {
         _hover={{
             color:"rose.700"
         }}
-        icon={<FaGithub size={20}/>}
+        icon={<FaGithub size={25}/>}
       />
       <IconButton
         as="a"
@@ -69,7 +69,7 @@ export const Socials = () => {
         _hover={{
             color:"rose.700"
         }}
-        icon={<HiOutlineMail size={20}/>}
+        icon={<HiOutlineMail size={25}/>}
       />
     </HStack>
   );
