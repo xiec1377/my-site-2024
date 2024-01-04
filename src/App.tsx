@@ -11,27 +11,40 @@ import {
 } from "@chakra-ui/react";
 import { ColorModeSwitcher } from "./ColorModeSwitcher";
 import { Logo } from "./Logo";
-import theme from "./Assets/theme";
+import theme from "./Static/theme";
 import Home from "./Components/Home";
 import NavBar from "./Components/NavBar";
 import AboutMe from "./Components/AboutMe";
 import Gallery from "./Components/Gallery";
 import Experiences from "./Components/Experiences/Experiences";
 import Projects from "./Components/Projects";
+import { ScrollVisible } from "./Static/ScrollVisible";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
     <Box bg="gray.800" p={5}>
       <NavBar />
       <Flex direction="column">
-        <Home />
-        <AboutMe />
-        <VStack py={100}>
-          <Text className='text'>Check out some of my passion projects </Text>
-        </VStack>
-        <Gallery />
-        <Experiences />
-        <Projects />
+        <ScrollVisible>
+          <Home />
+        </ScrollVisible>
+        <ScrollVisible>
+          <AboutMe />
+        </ScrollVisible>
+        <ScrollVisible>
+          <VStack py={100}>
+            <Text className="text">Check out some of my passion projects </Text>
+          </VStack>
+        </ScrollVisible>
+        <ScrollVisible>
+          <Gallery />
+        </ScrollVisible>
+        <ScrollVisible>
+          <Experiences />
+        </ScrollVisible>
+        <ScrollVisible>
+          <Projects />
+        </ScrollVisible>
       </Flex>
     </Box>
   </ChakraProvider>
