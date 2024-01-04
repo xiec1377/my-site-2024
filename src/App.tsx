@@ -19,10 +19,12 @@ import Gallery from "./Components/Gallery";
 import Experiences from "./Components/Experiences/Experiences";
 import Projects from "./Components/Projects";
 import { ScrollVisible } from "./Static/ScrollVisible";
+import { BackgroundBlob } from "./Components/BackgroundBlob";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box bg="gray.800" w="100%">
+    <Box bg="gray.800" w="100%" overflow="hidden">
+      <BackgroundBlob></BackgroundBlob>
       <NavBar />
       <VStack>
         {/* <ScrollVisible> */}
@@ -33,8 +35,8 @@ export const App = () => (
         {/* </ScrollVisible> */}
         {/* <ScrollVisible> */}
         {/* <VStack py={100}> */}
-            {/* <Text className="text">Check out some of my passion projects </Text> */}
-          {/* </VStack> */}
+        {/* <Text className="text">Check out some of my passion projects </Text> */}
+        {/* </VStack> */}
         {/* </ScrollVisible> */}
         {/* <ScrollVisible> */}
         <Gallery />
