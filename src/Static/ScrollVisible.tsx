@@ -10,7 +10,7 @@ interface Props {
 
 export const ScrollVisible = ({children} : Props) => {
   const ref = useRef(null)
-  const isInView = useInView(ref) //, { once: true }
+  const isInView = useInView(ref, { once: true }) //, { once: true }
   return (
     <section ref={ref} style={{width: "100%"}}>
       <div

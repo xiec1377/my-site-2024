@@ -32,7 +32,7 @@ const overrides = extendTheme({
   },
   fontSizes: {
     body: '16px',
-    h3: '24px',
+    h3: '32px',
     h2: '42px',
     h1: '64px',
     title: '110px',
@@ -56,7 +56,7 @@ const overrides = extendTheme({
         fontSize: 'body',
       },
       strong: {
-        color: 'rose.700',
+        color: 'rose.600',
       },
       '.unorderedList': {
         paddingLeft: '6',

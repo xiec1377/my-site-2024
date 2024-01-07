@@ -23,10 +23,9 @@ import Gallery from "./Gallery";
 import { AspectRatio } from "@chakra-ui/react";
 const AboutMe: React.FC<{}> = () => {
   return (
-    <ScrollVisible>
-      <Box id="about-me">
-        <VStack h="100vh" align="top" px="15%">
-          {/* <HStack px="15%"> */}
+    <Box id="about-me" zIndex={100}>
+      <VStack  align="top" px="15%">
+
           <HStack spacing="24px">
             <Image
               src={Me}
@@ -54,9 +53,9 @@ const AboutMe: React.FC<{}> = () => {
                 services and institutions sector.
               </Text>
               <br />
-              <Text className="text">
-                My goal is to build beautiful applications that serve a
-                meaningful purpose.
+              <Text className="text" fontSize='2xl' as='i' color='rose.300'>
+                My goal is to build beautiful and accessible applications that serve a
+                meaningful purpose (or provides silly entertainment).
               </Text>
               <br />
               <Text className="text">
@@ -65,12 +64,15 @@ const AboutMe: React.FC<{}> = () => {
               </Text>
             </VStack>
           </HStack>
+      </VStack>
+      <ScrollVisible>
+        <VStack p={150}>
           <Text className="text" textAlign="center">
             Check out some of my passion projects{" "}
           </Text>
         </VStack>
-      </Box>
-    </ScrollVisible>
+      </ScrollVisible>
+    </Box>
   );
 };
 export default AboutMe;
