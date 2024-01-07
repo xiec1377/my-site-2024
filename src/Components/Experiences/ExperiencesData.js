@@ -112,8 +112,8 @@ export const ExperienceData = [
     id: '5',
     position:
       'Software Tester and Business Analyst                                                                                                 ',
-    company: 'Darwynn Ltd. ',
-    date: 'MAY 2021 - AUGUST 2021',
+    company: 'Darwynn Ltd.',
+    date: 'May 2021 - August 2021',
     points: (
       <UnorderedList className="unorderedList">
         <ListItem className="text point">

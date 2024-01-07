@@ -75,7 +75,8 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
                 key={index}
                 borderRadius="full"
                 variant="solid"
-                colorScheme="green"
+                // colorScheme="green"
+                bgColor="purple.500"
               >
                 <TagLabel>{language}</TagLabel>
               </Tag>

@@ -15,6 +15,9 @@ const overrides = extendTheme({
       700: '#404040',
       800: '#262626',
     },
+    purple: {
+      500: '#6343ED',
+    },
     rose: {
       50: '#FFF1F2',
       100: '#FFE4E6',
@@ -36,13 +39,6 @@ const overrides = extendTheme({
   },
   styles: {
     global: (props: StyleFunctionProps) => ({
-      // '.title': {
-      //   fontSize: 'title',
-      //   color: 'white',
-      //   _hover: {
-      //     color: 'rose.600'
-      //   }
-      // },
       body: {
         fontFamily: 'body',
         color: 'rose.100',
@@ -52,33 +48,23 @@ const overrides = extendTheme({
       backgroundColor: {
         color: 'gray.800',
       },
-      // "icon-button": {
-      //   bg: mode("blue", "blue")(props),
-      // },
       '.h1': {
         color: 'white',
       },
-      // h1: {
-      //   size: mode('extra', 'extra')(props),
-      //   color: mode('red', 'red')(props),
-      // }
       '.text': {
-        color: 'gray.400',
+        color: 'gray.300',
         fontSize: 'body',
       },
-      // '.divider': {
-      //   borderColor:'gray.600'
-      // }
       strong: {
-        color: 'rose.700'
+        color: 'rose.700',
       },
       '.unorderedList': {
         paddingLeft: '6',
         paddingBottom: '3',
       },
       '.point': {
-        paddingBottom: '3'
-      }
+        paddingBottom: '3',
+      },
     }),
   },
 })
