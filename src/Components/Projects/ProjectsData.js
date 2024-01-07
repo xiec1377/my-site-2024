@@ -24,8 +24,14 @@ export const ProjectsData = [
   {
     id: '1',
     name: 'Pitch Perfect',
-    desc:
-      "Entrepreneurs, small business owners, sales representatives and job-seekers spend lots of time writing pitches to clients. This tool utilizes Co:here's Natural Language Processing API to generate an email pitch.",
+    desc: (
+      <Text className="point text">
+        Entrepreneurs, small business owners, sales representatives and
+        job-seekers spend lots of time writing pitches to clients. This tool
+        utilizes Co:here's Natural Language Processing API to generate an email
+        pitch.
+      </Text>
+    ),
     languages: [
       'JavaScript',
       'ReactJS',
@@ -48,8 +54,12 @@ export const ProjectsData = [
   {
     id: '2',
     name: 'Search with Tech',
-    desc:
-      'Built to curate a list of open job positions for job-seekers from multiple job search engines using web scraping.',
+    desc: (
+      <Text className="point text">
+        Built to curate a list of open job positions for job-seekers from
+        multiple job search engines using web scraping.
+      </Text>
+    ),
     languages: ['Python', 'Flask', 'HTML/CSS', 'BeautifulSoup'],
     img: (
       <Image
@@ -66,7 +76,11 @@ export const ProjectsData = [
   {
     id: '3',
     name: 'Image Generator',
-    desc: "Just a simple image generator based on user's prompt using OpenAI.",
+    desc: (
+      <Text className="point text">
+        Just a simple image generator based on user's prompt using OpenAI.
+      </Text>
+    ),
     languages: ['JavaScript', 'ReactJS', 'NodeJS', 'Tailwind', 'OpenAI API'],
     img: (
       <Image
@@ -83,7 +97,12 @@ export const ProjectsData = [
   {
     id: '4',
     name: 'Chess',
-    desc: "Classic chess game that allows users to play human-vs-human or human-vs-computer with easy, medium and hard difficulties.",
+    desc: (
+      <Text className="point text">
+        Classic chess game that allows users to play human-vs-human or
+        human-vs-computer with easy, medium and hard difficulties.
+      </Text>
+    ),
     languages: ['C++'],
     img: (
       <Image
@@ -100,7 +119,7 @@ export const ProjectsData = [
   {
     id: '5',
     name: 'North Arcadia',
-    desc: "Just a simple image generator based on user's prompt using OpenAI.",
+    desc: <Text className="point text">Arcade of mini games.</Text>,
     languages: ['JavaScript', 'HTML/CSS', 'Bootstrap'],
     img: (
       <Image

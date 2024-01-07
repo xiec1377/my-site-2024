@@ -27,13 +27,23 @@ interface Experience {
   position: string;
   date: string;
   company: string;
-  points: string[];
+  points: JSX.Element;
 }
 
 const ExperienceCard: React.FC<{ experience: Experience }> = ({
   experience,
 }) => (
-  <Box>
+  <Box
+    boxShadow="lg"
+    h="100%"
+    p={10}
+    style={{
+      background: "rgba(102.80, 102.80, 102.80, 0.32)",
+      borderRadius: 20,
+      overflow: "hidden",
+      backdropFilter: "blur(27px)",
+    }}
+  >
     <Flex pb={3}>
       <Heading size="lg" color="rose.600">
         {experience.position}
@@ -48,11 +58,7 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
         {experience.date}
       </Heading>
     </Flex>
-    <UnorderedList pl={6} className="text">
-      {experience.points.map((point, index) => (
-        <ListItem key={index}>{point}</ListItem>
-      ))}
-    </UnorderedList>
+    {experience.points}
   </Box>
 );
 

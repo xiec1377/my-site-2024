@@ -19,7 +19,6 @@ import Me from "../Assets/me.jpg";
 import { ScrollVisible } from "../Static/ScrollVisible";
 import { Header } from "./Header";
 import Gallery from "./Gallery";
-import { Bold } from "./Bold";
 
 import { AspectRatio } from "@chakra-ui/react";
 const AboutMe: React.FC<{}> = () => {
@@ -41,17 +40,17 @@ const AboutMe: React.FC<{}> = () => {
             <Header title="About me" />
             <Text className="text">
               My name is Catherine and I’m a fourth-year Computer Science
-              student at the {" "}
-              <Bold text="University of Waterloo" />.
+              student at the <strong>University of Waterloo</strong>.
             </Text>
             <br />
             <Text className="text">
               I enjoy exploring different disciplines in order to become a more
-              well-rounded individual. I have expertise in <Bold text="full-stack and
-              front-end development" />, complemented by additional interests in {" "}
-              <Bold text="product management and user experience & design"/>, all cultivated
-              through my experiences in the financial services and institutions
-              sector.
+              well-rounded individual. I have expertise in{" "}
+              <strong>full-stack and front-end development</strong>,
+              complemented by additional interests in{" "}
+              <strong>product management and user experience & design</strong>,
+              all cultivated through my experiences in the financial services
+              and institutions sector.
             </Text>
             <br />
             <Text className="text">

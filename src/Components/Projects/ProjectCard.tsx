@@ -29,7 +29,7 @@ import SalesPitch from "../../Assets/sales_pitch_generator.jpg";
 interface Project {
   id: string;
   name: string;
-  desc: string;
+  desc: JSX.Element;
   languages: string[];
   img: JSX.Element;
 }
@@ -61,13 +61,13 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           transition="ease-in-out 0.5s"
           _hover={{ transform: "scale(1.2)", filter: "grayscale(1)" }}
         /> */}
-        <Flex direction="column" px={10} py={10}>
+        <Flex direction="column" p={10}>
           <Heading size="lg" color="rose.600" pb={3}>
             {project.name}
           </Heading>
-          <Text size="md" color="white" pb={3}>
+          {/* <Text size="md" color="gray.300" pb={3}> */}
             {project.desc}
-          </Text>
+          {/* </Text> */}
           <HStack spacing={4} wrap="wrap">
             {project.languages.map((language, index) => (
               <Tag
