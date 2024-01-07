@@ -37,6 +37,7 @@ export const BackgroundBlob = () => {
           left: "-10%",
           top: "-20%",
           opacity: '0.8'
+        
         }}
       />
       <Box
@@ -56,7 +57,7 @@ export const BackgroundBlob = () => {
           position: "fixed",
           left: "60%",
           bottom: "-50%",
-          opacity: '0.7'
+          opacity: '0.7',
         }}
       />
     </>

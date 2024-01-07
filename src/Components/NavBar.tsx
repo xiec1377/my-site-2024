@@ -28,7 +28,7 @@ const NavBar: React.FC<{}> = () => {
       height="100vh"
       alignItems="center"
       pl={5}
-      style={{ zIndex: 500 }}
+      style={{ zIndex: 100 }}
     >
       <VStack
         alignItems="left"

@@ -15,12 +15,12 @@ import { Socials } from "./Socials";
 
 const Home: React.FC<{}> = () => {
   return (
-    <Box w="100%" id="home" py='40vh'>
+    <Box w="100%" id="home" py="40vh">
       <VStack>
-        <Heading color="white" fontSize="title">
+        <Heading color="white" fontSize="title"  zIndex='100'>
           Catherine Xie
         </Heading>
-        <Heading as="h2" fontSize="h3" color="rose.600">
+        <Heading as="h2" fontSize="h3" color="rose.600" zIndex='100'>
           Developer in the daytime, designer at dusk
         </Heading>
         <Socials />

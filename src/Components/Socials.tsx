@@ -28,7 +28,7 @@ import { HiOutlineMail } from "react-icons/hi";
 
 export const Socials = () => {
   return (
-    <HStack spacing='10' pt={3}>
+    <HStack spacing="10" pt={3} zIndex="100">
       <a href="https://www.linkedin.com/in/catherine-xie-101377/">
         <FaLinkedinIn className="icon icon-color" aria-label="LinkedIn icon" />
       </a>
