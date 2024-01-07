@@ -1,3 +1,4 @@
+import React, { useState } from 'react'
 import {
   Box,
   Heading,
@@ -23,6 +24,27 @@ import { FaGithub } from 'react-icons/fa'
 // import { SiDevpost } from 'react-icons/si'
 import { Icon } from '@iconify/react'
 
+const HoverImage = ({ src1, src2, alt }) => {
+  const [isHovered, setIsHovered] = useState(false)
+  return (
+    <Box
+      position="relative"
+      w="50%"
+      h="auto"
+      transition="ease-in-out 0.5s"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      <Image
+        src={isHovered ? src2 : src1}
+        alt={alt}
+        fallbackSrc="https://via.placeholder.com/150"
+        objectFit="cover"
+        // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
+      />
+    </Box>
+  )
+}
 export const ProjectsData = [
   {
     id: '1',
@@ -43,14 +65,10 @@ export const ProjectsData = [
       'Cohere NLP API',
     ],
     img: (
-      <Image
-        src={require('../../Assets/sales_pitch_generator.jpg')}
+      <HoverImage
+        src1={require('../../Assets/sales_pitch_generator.jpg')}
+        src2={require('../../Assets/image-generator-demo.gif')}
         alt="Sales pitch generator"
-        fallbackSrc="https://via.placeholder.com/150"
-        transition="ease-in-out 0.5s"
-        w="50%"
-        h="auto"
-        // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
       />
     ),
     icon: (
@@ -75,14 +93,10 @@ export const ProjectsData = [
     ),
     languages: ['Python', 'Flask', 'HTML/CSS', 'BeautifulSoup'],
     img: (
-      <Image
-        src={require('../../Assets/search_with_tech.jpg')}
+      <HoverImage
+        src1={require('../../Assets/search_with_tech.jpg')}
+        src2={require('../../Assets/search-with-tech-demo.gif')}
         alt="Search with tech"
-        fallbackSrc="https://via.placeholder.com/150"
-        transition="ease-in-out 0.5s"
-        w="50%"
-        h="auto"
-        // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
       />
     ),
     icon: (
@@ -106,14 +120,10 @@ export const ProjectsData = [
     ),
     languages: ['JavaScript', 'ReactJS', 'NodeJS', 'Tailwind', 'OpenAI API'],
     img: (
-      <Image
-        src={require('../../Assets/image-generator-thumbnail.png')}
+      <HoverImage
+        src1={require('../../Assets/image-generator-thumbnail.png')}
+        src2={require('../../Assets/image-generator-demo.gif')}
         alt="Image generator"
-        fallbackSrc="https://via.placeholder.com/150"
-        transition="ease-in-out 0.5s"
-        w="50%"
-        h="auto"
-        // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
       />
     ),
     icon: (
@@ -133,14 +143,10 @@ export const ProjectsData = [
     ),
     languages: ['C++'],
     img: (
-      <Image
-        src={require('../../Assets/chess-thumbnail.png')}
+      <HoverImage
+        src1={require('../../Assets/chess-thumbnail.png')}
+        src2={require('../../Assets/chess-demo.gif')}
         alt="Chess"
-        fallbackSrc="https://via.placeholder.com/150"
-        transition="ease-in-out 0.5s"
-        w="50%"
-        h="auto"
-        // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
       />
     ),
     icon: (
@@ -158,16 +164,11 @@ export const ProjectsData = [
       </Text>
     ),
     languages: ['JavaScript', 'HTML/CSS', 'Bootstrap'],
-    img: (
-      <Image
-        src={require('../../Assets/north_arcadia.jpg')}
-        alt="Sales pitch generator"
-        fallbackSrc="https://via.placeholder.com/150"
-        transition="ease-in-out 0.5s"
-        w="50%"
-        h="auto"
-        // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
-      />
+    img: (<HoverImage
+      src1={require('../../Assets/north_arcadia.jpg')}
+      src2={require('../../Assets/north-arcadia-demo.gif')}
+      alt="North Arcadia"
+    />
     ),
     icon: (
       <HStack>
