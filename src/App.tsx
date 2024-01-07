@@ -29,11 +29,9 @@ export const App = () => (
       <NavBar />
       <VStack>
         <ScrollVisible>
-        <Home />
+          <Home />
         </ScrollVisible>
-        <ScrollVisible>
-          <AboutMe />
-        </ScrollVisible>
+        <AboutMe />
         {/* <ScrollVisible> */}
         {/* <VStack py={100}> */}
         {/* <Text className="text">Check out some of my passion projects </Text> */}

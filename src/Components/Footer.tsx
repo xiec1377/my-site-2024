@@ -23,10 +23,8 @@ import { ScrollVisible } from "../Static/ScrollVisible";
 
 export const Footer = () => {
   return (
-    <ScrollVisible>
-      <Center h={100}>
-        <Text>Catherine Xie copyright 2024</Text>
-      </Center>
-    </ScrollVisible>
+    <Center h={100}>
+      <Text>Catherine Xie copyright 2024</Text>
+    </Center>
   );
 };

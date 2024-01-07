@@ -33,33 +33,35 @@ interface Experience {
 const ExperienceCard: React.FC<{ experience: Experience }> = ({
   experience,
 }) => (
-  <Box
-    boxShadow="lg"
-    h="100%"
-    p={10}
-    style={{
-      background: "rgba(102.80, 102.80, 102.80, 0.32)",
-      borderRadius: 20,
-      overflow: "hidden",
-      backdropFilter: "blur(27px)",
-    }}
-  >
-    <Flex pb={3}>
-      <Heading size="lg" color="rose.600">
-        {experience.position}
-      </Heading>
-    </Flex>
-    <Flex pb={3}>
-      <Heading size="md" color="white">
-        {experience.company}
-      </Heading>
-      <Spacer />
-      <Heading size="md" color="white">
-        {experience.date}
-      </Heading>
-    </Flex>
-    {experience.points}
-  </Box>
+  <ScrollVisible>
+    <Box
+      boxShadow="lg"
+      h="100%"
+      p={10}
+      style={{
+        background: "rgba(102.80, 102.80, 102.80, 0.32)",
+        borderRadius: 20,
+        overflow: "hidden",
+        backdropFilter: "blur(27px)",
+      }}
+    >
+      <Flex pb={3}>
+        <Heading size="lg" color="rose.600">
+          {experience.position}
+        </Heading>
+      </Flex>
+      <Flex pb={3}>
+        <Heading size="md" color="white">
+          {experience.company}
+        </Heading>
+        <Spacer />
+        <Heading size="md" color="white">
+          {experience.date}
+        </Heading>
+      </Flex>
+      {experience.points}
+    </Box>
+  </ScrollVisible>
 );
 
 export default ExperienceCard;
