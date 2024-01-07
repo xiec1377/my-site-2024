@@ -39,9 +39,10 @@ const NavBar: React.FC<{}> = () => {
       >
         <IconButton
           _hover={{
+            transform: "scale(1.1)",
             width: "219%",
             bg: "rose.100",
-            color: 'gray.800',
+            color: "gray.800",
             transition: "ease-in-out 0.5s",
             _after: {
               content: '"Home"',
@@ -53,7 +54,7 @@ const NavBar: React.FC<{}> = () => {
           isRound={true}
           variant="solid"
           bg="rose.600"
-          color='white'
+          color="white"
           size="lg"
           aria-label="Home"
           icon={<FaHome size={20} />}
@@ -61,9 +62,10 @@ const NavBar: React.FC<{}> = () => {
         <IconButton
           className="icon-button"
           _hover={{
+            transform: "scale(1.1)",
             width: "283%",
             bg: "rose.50",
-            color: 'gray.800',
+            color: "gray.800",
             transition: "ease-in-out 0.5s",
             _after: {
               position: "relative",
@@ -76,16 +78,17 @@ const NavBar: React.FC<{}> = () => {
           isRound={true}
           variant="solid"
           bg="rose.600"
-          color='white'
+          color="white"
           size="lg"
           aria-label="About Me"
           icon={<FaUser size={20} />}
         />
         <IconButton
           _hover={{
+            transform: "scale(1.1)",
             width: "313%",
             bg: "rose.100",
-            color: 'gray.800',
+            color: "gray.800",
             transition: "ease-in-out 0.5s",
             _after: {
               content: '"Experiences"',
@@ -97,16 +100,17 @@ const NavBar: React.FC<{}> = () => {
           isRound={true}
           variant="solid"
           bg="rose.600"
-          color='white'
+          color="white"
           size="lg"
           aria-label="Experiences"
           icon={<FaBriefcase size={20} />}
         />
         <IconButton
           _hover={{
+            transform: "scale(1.1)",
             width: "250%",
             bg: "rose.100",
-            color: 'gray.800',
+            color: "gray.800",
             transition: "ease-in-out 0.5s",
             _after: {
               content: '"Projects"',
@@ -118,7 +122,7 @@ const NavBar: React.FC<{}> = () => {
           isRound={true}
           variant="solid"
           bg="rose.600"
-          color='white'
+          color="white"
           size="lg"
           aria-label="Projects"
           icon={<FaLightbulb size={20} />}
