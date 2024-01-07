@@ -65,7 +65,7 @@ const overrides = extendTheme({
       '.point': {
         paddingBottom: '3',
       },
-      '.project-icon': {
+      '.icon': {
         width: '25px',
         height: 'auto',
 
@@ -75,6 +75,11 @@ const overrides = extendTheme({
         },
         '&:active': {
           color: 'rose.700',
+        },
+      },
+      '.icon-color': {
+        '&:hover': {
+          color: 'rose.600',
         },
       },
     }),

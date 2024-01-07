@@ -21,8 +21,8 @@ const Home: React.FC<{}> = () => {
           <Heading color="white" fontSize="title">
             Catherine Xie
           </Heading>
-          <Heading as="h2" fontSize="h2" color="rose.600">
-            (insert motto here)
+          <Heading as="h2" fontSize="h3" color="rose.600">
+            Developer in the daytime, designer at dusk
           </Heading>
           <Socials />
         </VStack>

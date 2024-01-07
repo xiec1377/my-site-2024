@@ -28,49 +28,16 @@ import { HiOutlineMail } from "react-icons/hi";
 
 export const Socials = () => {
   return (
-    <HStack>
-      <IconButton
-        as="a"
-        href="https://www.linkedin.com/in/catherine-xie-101377/"
-        isRound={true}
-        variant="solid"
-        bg="transparent"
-        size="lg"
-        aria-label="LinkedIn icon"
-        color='white'
-        _hover={{
-            color:"rose.700"
-        }}
-        icon={<FaLinkedinIn size={25}/>}
-      />
-      <IconButton
-        as="a"
-        href="https://github.com/xiec1377"
-        isRound={true}
-        variant="solid"
-        bg="transparent"
-        size="lg"
-        aria-label="Github icon"
-        color='white'
-        _hover={{
-            color:"rose.700"
-        }}
-        icon={<FaGithub size={25}/>}
-      />
-      <IconButton
-        as="a"
-        href={`mailto:'catherinexie2014@gmail.com`}
-        isRound={true}
-        variant="solid"
-        bg="transparent"
-        size="lg"
-        aria-label="Github icon"
-        color='white'
-        _hover={{
-            color:"rose.700"
-        }}
-        icon={<HiOutlineMail size={25}/>}
-      />
+    <HStack spacing='10' pt={3}>
+      <a href="https://www.linkedin.com/in/catherine-xie-101377/">
+        <FaLinkedinIn className="icon icon-color" aria-label="LinkedIn icon" />
+      </a>
+      <a href="https://github.com/xiec1377">
+        <FaGithub className="icon icon-color" aria-label="Github icon" />
+      </a>
+      <a href={`mailto:'catherinexie2014@gmail.com`}>
+        <HiOutlineMail className="icon icon-color" aria-label="Github icon" />{" "}
+      </a>
     </HStack>
   );
 };

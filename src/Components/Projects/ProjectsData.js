@@ -56,10 +56,10 @@ export const ProjectsData = [
     icon: (
       <HStack>
         <a href="https://github.com/WilliamUW/PitchPerfect">
-          <FaGithub className="project-icon" />
+          <FaGithub className="icon" />
         </a>
         <a href="https://devpost.com/software/pitcheasy">
-          <Icon icon="simple-icons:devpost" className="project-icon" />
+          <Icon icon="simple-icons:devpost" className="icon" />
         </a>
       </HStack>
     ),
@@ -88,10 +88,10 @@ export const ProjectsData = [
     icon: (
       <HStack>
         <a href="https://github.com/xiongjasmine/searchwithtech">
-          <FaGithub className="project-icon" />
+          <FaGithub className="icon" />
         </a>
         <a href="https://devpost.com/software/search-with-tech">
-          <Icon icon="simple-icons:devpost" className="project-icon" />
+          <Icon icon="simple-icons:devpost" className="icon" />
         </a>
       </HStack>
     ),
@@ -118,7 +118,7 @@ export const ProjectsData = [
     ),
     icon: (
       <a href="https://github.com/xiec1377/image-generator">
-        <FaGithub className="project-icon" />
+        <FaGithub className="icon" />
       </a>
     ),
   },
@@ -145,7 +145,7 @@ export const ProjectsData = [
     ),
     icon: (
       <a href="https://replit.com/@xiec1377/Chess-cs246">
-        <Icon icon="simple-icons:replit" className="project-icon" />
+        <Icon icon="simple-icons:replit" className="icon" />
       </a>
     ),
   },
@@ -172,10 +172,10 @@ export const ProjectsData = [
     icon: (
       <HStack>
         <a href="https://github.com/xiongjasmine/northarcadia/tree/main/HTN2020">
-          <FaGithub className="project-icon" />
+          <FaGithub className="icon" />
         </a>
         <a href="https://devpost.com/software/north-arcadia">
-          <Icon icon="simple-icons:devpost" className="project-icon" />
+          <Icon icon="simple-icons:devpost" className="icon" />
         </a>
       </HStack>
     ),
