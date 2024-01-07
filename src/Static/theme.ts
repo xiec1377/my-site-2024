@@ -67,8 +67,16 @@ const overrides = extendTheme({
       },
       '.project-icon': {
         width: '25px',
-        height: 'auto'
-      }
+        height: 'auto',
+
+        '&:hover': {
+          transform: 'scale(1.1)',
+          transition: 'ease-in-out 0.5s',
+        },
+        '&:active': {
+          color: 'rose.700',
+        },
+      },
     }),
   },
 })

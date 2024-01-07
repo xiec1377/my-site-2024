@@ -55,8 +55,12 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <FaGithub className="project-icon" />
-        <Icon icon="simple-icons:devpost" className="project-icon" />
+        <a href="https://github.com/WilliamUW/PitchPerfect">
+          <FaGithub className="project-icon" />
+        </a>
+        <a href="https://devpost.com/software/pitcheasy">
+          <Icon icon="simple-icons:devpost" className="project-icon" />
+        </a>
       </HStack>
     ),
   },
@@ -83,8 +87,12 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <FaGithub className="project-icon" />
-        <Icon icon="simple-icons:devpost" className="project-icon" />
+        <a href="https://github.com/xiongjasmine/searchwithtech">
+          <FaGithub className="project-icon" />
+        </a>
+        <a href="https://devpost.com/software/search-with-tech">
+          <Icon icon="simple-icons:devpost" className="project-icon" />
+        </a>
       </HStack>
     ),
   },
@@ -109,9 +117,9 @@ export const ProjectsData = [
       />
     ),
     icon: (
-      <HStack>
+      <a href="https://github.com/xiec1377/image-generator">
         <FaGithub className="project-icon" />
-      </HStack>
+      </a>
     ),
   },
   {
@@ -135,7 +143,11 @@ export const ProjectsData = [
         // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
       />
     ),
-    icon: <Icon icon="simple-icons:replit" className="project-icon" />,
+    icon: (
+      <a href="https://replit.com/@xiec1377/Chess-cs246">
+        <Icon icon="simple-icons:replit" className="project-icon" />
+      </a>
+    ),
   },
   {
     id: '5',
@@ -159,8 +171,12 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <FaGithub className="project-icon" />
-        <Icon icon="simple-icons:devpost" className="project-icon" />
+        <a href="https://github.com/xiongjasmine/northarcadia/tree/main/HTN2020">
+          <FaGithub className="project-icon" />
+        </a>
+        <a href="https://devpost.com/software/north-arcadia">
+          <Icon icon="simple-icons:devpost" className="project-icon" />
+        </a>
       </HStack>
     ),
   },
