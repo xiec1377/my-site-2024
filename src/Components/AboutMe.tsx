@@ -23,7 +23,7 @@ import Gallery from "./Gallery";
 import { AspectRatio } from "@chakra-ui/react";
 const AboutMe: React.FC<{}> = () => {
   return (
-    <Box id="about-me" zIndex={100}>
+    <Box id="about-me" zIndex={50}>
       <VStack  align="top" px="15%">
 
           <HStack spacing="24px">

@@ -32,8 +32,8 @@ import purpleGirl from '../../Assets/purpleGirl.png'
 
 const Projects: React.FC<{}> = () => {
   return (
-    <Box id="experiences">
-      <VStack px="15%" py={30}>
+    <Box id="projects">
+      <VStack px="15%" pb={150}>
         {/* <Card bg="transparent" > */}
           <Header title="Projects" />
             {/* <CardBody> */}

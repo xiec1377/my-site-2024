@@ -32,7 +32,7 @@ import { ScrollVisible } from "../../Static/ScrollVisible";
 const Experiences: React.FC<{}> = () => {
   return (
     <Box id="experiences">
-      <VStack px="15%" py={30}>
+      <VStack px="15%" pb={150}>
         {/* <Card bg="transparent" px="15%" py={30}> */}
         <Header title="Experiences" />
           {/* <CardBody> */}

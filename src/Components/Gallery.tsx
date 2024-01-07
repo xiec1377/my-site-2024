@@ -28,7 +28,7 @@ import { ScrollVisible } from "../Static/ScrollVisible";
 
 const Gallery: React.FC<{}> = () => {
   return (
-    <VStack zIndex={100}>
+    <VStack zIndex={50} pb={150}>
       <Heading as="h2" size="2xl" color="rose.600" pb={10}>
         Gallery
       </Heading>
