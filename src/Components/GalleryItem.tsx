@@ -35,7 +35,7 @@ export const GalleryItem = ({ src, alt }: Props) => {
           fallbackSrc="https://via.placeholder.com/150"
           alt={alt}
           transition="ease-in-out 0.5s"
-          _hover={{ transform: "scale(1.2)", filter: "grayscale(1)" }}
+          _hover={{ transform: "scale(1.1)", filter: "grayscale(1)" }}
         />
       </Box>
     </ScrollVisible>
