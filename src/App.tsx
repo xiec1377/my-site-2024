@@ -17,7 +17,7 @@ import NavBar from "./Components/NavBar";
 import AboutMe from "./Components/AboutMe";
 import Gallery from "./Components/Gallery";
 import Experiences from "./Components/Experiences/Experiences";
-import Projects from "./Components/Projects";
+import Projects from "./Components/Projects/Projects";
 import { ScrollVisible } from "./Static/ScrollVisible";
 import { BackgroundBlob } from "./Components/BackgroundBlob";
 import { Footer } from "./Components/Footer";
@@ -28,9 +28,9 @@ export const App = () => (
       <BackgroundBlob></BackgroundBlob>
       <NavBar />
       <VStack>
-        {/* <ScrollVisible> */}
+        <ScrollVisible>
         <Home />
-        {/* </ScrollVisible> */}
+        </ScrollVisible>
         <ScrollVisible>
           <AboutMe />
         </ScrollVisible>

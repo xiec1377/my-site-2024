@@ -19,7 +19,7 @@ import Me from "../Assets/me.jpg";
 import { ScrollVisible } from "../Static/ScrollVisible";
 import { Header } from "./Header";
 import Gallery from "./Gallery";
-import { Bold } from "./Experiences/Bold";
+import { Bold } from "./Bold";
 
 import { AspectRatio } from "@chakra-ui/react";
 const AboutMe: React.FC<{}> = () => {
