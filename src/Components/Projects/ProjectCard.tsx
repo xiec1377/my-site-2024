@@ -63,12 +63,11 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           transition="ease-in-out 0.5s"
           _hover={{ transform: "scale(1.2)", filter: "grayscale(1)" }}
         /> */}
-          <Flex direction="column" p={10}>
+          <Flex direction="column" p={10} w='50%'>
             <Flex>
-              <Heading size="lg" color="rose.600" pb={3}>
+              <Heading size="lg" color="rose.600" pb={3} w='100%'>
                 {project.name}
               </Heading>
-              <Spacer />
               {project.icon}
             </Flex>
             {/* <Text size="md" color="gray.300" pb={3}> */}

@@ -65,6 +65,10 @@ const overrides = extendTheme({
       '.point': {
         paddingBottom: '3',
       },
+      '.project-icon': {
+        width: '25px',
+        height: 'auto'
+      }
     }),
   },
 })

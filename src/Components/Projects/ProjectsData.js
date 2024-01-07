@@ -19,8 +19,9 @@ import {
   UnorderedList,
 } from '@chakra-ui/react'
 import { FaGithub } from 'react-icons/fa'
-import { SiReplit } from 'react-icons/si'
-import { SiDevpost } from 'react-icons/si'
+// import { SiReplit } from 'react-icons/si'
+// import { SiDevpost } from 'react-icons/si'
+import { Icon } from '@iconify/react'
 
 export const ProjectsData = [
   {
@@ -52,7 +53,12 @@ export const ProjectsData = [
         // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
       />
     ),
-    icon: <FaGithub size={25} />,
+    icon: (
+      <HStack>
+        <FaGithub className="project-icon" />
+        <Icon icon="simple-icons:devpost" className="project-icon" />
+      </HStack>
+    ),
   },
   {
     id: '2',
@@ -77,7 +83,8 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <FaGithub size={25} />
+        <FaGithub className="project-icon" />
+        <Icon icon="simple-icons:devpost" className="project-icon" />
       </HStack>
     ),
   },
@@ -93,7 +100,7 @@ export const ProjectsData = [
     img: (
       <Image
         src={require('../../Assets/image-generator-thumbnail.png')}
-        alt="Sales pitch generator"
+        alt="Image generator"
         fallbackSrc="https://via.placeholder.com/150"
         transition="ease-in-out 0.5s"
         w="50%"
@@ -103,7 +110,7 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <FaGithub size={25} />
+        <FaGithub className="project-icon" />
       </HStack>
     ),
   },
@@ -128,18 +135,14 @@ export const ProjectsData = [
         // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
       />
     ),
-    icon: (
-      <HStack>
-        <FaGithub size={25} />
-      </HStack>
-    ),
+    icon: <Icon icon="simple-icons:replit" className="project-icon" />,
   },
   {
     id: '5',
     name: 'North Arcadia',
     desc: (
       <Text className="point text" h="75%">
-        Arcade of mini games.
+        Arcade of mini games (Flappy Bird, Pong, Snake).
       </Text>
     ),
     languages: ['JavaScript', 'HTML/CSS', 'Bootstrap'],
@@ -156,7 +159,8 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <FaGithub size={25} />
+        <FaGithub className="project-icon" />
+        <Icon icon="simple-icons:devpost" className="project-icon" />
       </HStack>
     ),
   },
