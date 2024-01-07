@@ -36,7 +36,6 @@ const Projects: React.FC<{}> = () => {
       <VStack px="15%" py={30}>
         {/* <Card bg="transparent" > */}
           <Header title="Projects" />
-          <ScrollVisible>
             {/* <CardBody> */}
               <Stack
                 // divider={<StackDivider borderColor="gray.600" />}
@@ -47,7 +46,6 @@ const Projects: React.FC<{}> = () => {
                 ))}
               </Stack>
             {/* </CardBody> */}
-          </ScrollVisible>
         {/* </Card> */}
       </VStack>
     </Box>

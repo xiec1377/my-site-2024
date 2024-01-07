@@ -35,7 +35,6 @@ const Experiences: React.FC<{}> = () => {
       <VStack px="15%" py={30}>
         {/* <Card bg="transparent" px="15%" py={30}> */}
         <Header title="Experiences" />
-        <ScrollVisible>
           {/* <CardBody> */}
           <Stack spacing="5">
             {ExperienceData.map((experience) => (
@@ -43,7 +42,6 @@ const Experiences: React.FC<{}> = () => {
             ))}
           </Stack>
           {/* </CardBody> */}
-        </ScrollVisible>
         {/* </Card> */}
       </VStack>
     </Box>

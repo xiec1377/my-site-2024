@@ -32,6 +32,7 @@ interface Project {
   desc: JSX.Element;
   languages: string[];
   img: JSX.Element;
+  icon: JSX.Element;
 }
 const baseUrl = process.env.PUBLIC_URL;
 console.log("baseurl:", baseUrl);
@@ -63,9 +64,13 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           _hover={{ transform: "scale(1.2)", filter: "grayscale(1)" }}
         /> */}
           <Flex direction="column" p={10}>
-            <Heading size="lg" color="rose.600" pb={3}>
-              {project.name}
-            </Heading>
+            <Flex>
+              <Heading size="lg" color="rose.600" pb={3}>
+                {project.name}
+              </Heading>
+              <Spacer />
+              {project.icon}
+            </Flex>
             {/* <Text size="md" color="gray.300" pb={3}> */}
             {project.desc}
             {/* </Text> */}
