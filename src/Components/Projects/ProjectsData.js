@@ -67,7 +67,7 @@ export const ProjectsData = [
     img: (
       <HoverImage
         src1={require('../../Assets/sales_pitch_generator.jpg')}
-        src2={require('../../Assets/image-generator-demo.gif')}
+        src2={require('../../Assets/sales_pitch_generator.jpg')}
         alt="Sales pitch generator"
       />
     ),

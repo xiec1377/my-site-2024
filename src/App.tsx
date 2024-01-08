@@ -33,9 +33,6 @@ export const App = () => (
         </ScrollVisible>
         <AboutMe />
         {/* <ScrollVisible> */}
-        {/* <VStack py={100}> */}
-        {/* <Text className="text">Check out some of my passion projects </Text> */}
-        {/* </VStack> */}
         {/* </ScrollVisible> */}
         {/* <ScrollVisible> */}
         <Gallery />

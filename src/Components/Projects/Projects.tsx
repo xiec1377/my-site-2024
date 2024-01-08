@@ -28,25 +28,24 @@ import { ProjectsData } from "./ProjectsData";
 import ProjectCard from "./ProjectCard";
 import { Header } from "../Header";
 import { ScrollVisible } from "../../Static/ScrollVisible";
-import purpleGirl from '../../Assets/purpleGirl.png'
+import purpleGirl from "../../Assets/purpleGirl.png";
 
 const Projects: React.FC<{}> = () => {
   return (
     <Box id="projects">
-      <VStack px="15%" pb={150}>
-        {/* <Card bg="transparent" > */}
-          <Header title="Projects" />
-            {/* <CardBody> */}
-              <Stack
-                // divider={<StackDivider borderColor="gray.600" />}
-                spacing="10"
-              >
-                {ProjectsData.map((project) => (
-                  <ProjectCard key={project.id} project={project} />
-                ))}
-              </Stack>
-            {/* </CardBody> */}
-        {/* </Card> */}
+      <VStack px="15%" pb={150} align="start">
+        <Header title="Projects" />
+        <ScrollVisible>
+          <Text className="text" pb={5}>
+            {" "}
+            Hover over the screenshots to see a demo!{" "}
+          </Text>
+        </ScrollVisible>
+        <Stack spacing="10">
+          {ProjectsData.map((project) => (
+            <ProjectCard key={project.id} project={project} />
+          ))}
+        </Stack>
       </VStack>
     </Box>
   );
