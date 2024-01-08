@@ -39,7 +39,7 @@ const HoverImage = ({ src1, src2, alt }) => {
         src={isHovered ? src2 : src1}
         alt={alt}
         fallbackSrc="https://via.placeholder.com/150"
-        objectFit="cover"
+        h='100%'
         // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
       />
     </Box>
