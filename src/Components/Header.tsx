@@ -28,7 +28,6 @@ interface Props {
 
 export const Header = ({ title }: Props) => {
   return (
-    <ScrollVisible>
       <HStack width="100%" pb={5}>
         <Heading className="h1" fontSize="h1" whiteSpace="nowrap">
           {title}
@@ -38,6 +37,5 @@ export const Header = ({ title }: Props) => {
         </Heading>
         <Divider alignSelf="center" borderColor="gray.500" size="10" />
       </HStack>
-    </ScrollVisible>
   );
 };
