@@ -53,7 +53,7 @@ export const ProjectsData = [
       <Text className="point text" h="75%">
         Entrepreneurs, small business owners, sales representatives and
         job-seekers spend lots of time writing pitches to clients. This tool
-        utilizes Co:here's Natural Language Processing API to generate an email
+        utilizes Cohere's Natural Language Processing API to generate an email
         pitch.
       </Text>
     ),
@@ -134,6 +134,30 @@ export const ProjectsData = [
   },
   {
     id: '4',
+    name: 'Stock Trader',
+    desc: (
+      <Text className="point text" h="75%">
+        Simulates real-time stock trading including buying and selling
+        (displayed in transaction history) for CS50X's Introduction to Computer
+        Science course.
+      </Text>
+    ),
+    languages: ['Python', 'Flask', 'SQL', 'HTML/CSS'],
+    img: (
+      <HoverImage
+        src1={require('../../Assets/stock-trader-thumbnail.png')}
+        src2={require('../../Assets/stock-trader-demo.gif')}
+        alt="Stock trader"
+      />
+    ),
+    icon: (
+      <a href="https://github.com/xiec1377/CS50X/tree/main/finance">
+        <FaGithub className="icon" />
+      </a>
+    ),
+  },
+  {
+    id: '5',
     name: 'Chess',
     desc: (
       <Text className="point text" h="75%">
@@ -156,7 +180,7 @@ export const ProjectsData = [
     ),
   },
   {
-    id: '5',
+    id: '6',
     name: 'North Arcadia',
     desc: (
       <Text className="point text" h="75%">
@@ -164,11 +188,12 @@ export const ProjectsData = [
       </Text>
     ),
     languages: ['JavaScript', 'HTML/CSS', 'Bootstrap'],
-    img: (<HoverImage
-      src1={require('../../Assets/north_arcadia.jpg')}
-      src2={require('../../Assets/north-arcadia-demo.gif')}
-      alt="North Arcadia"
-    />
+    img: (
+      <HoverImage
+        src1={require('../../Assets/north_arcadia.jpg')}
+        src2={require('../../Assets/north-arcadia-demo.gif')}
+        alt="North Arcadia"
+      />
     ),
     icon: (
       <HStack>

@@ -53,13 +53,21 @@ export const ExperienceData = [
   {
     id: '2',
     position: 'Project Developer',
-    company: 'Focus On Nature',
+    company: 'UWBlueprint',
     date: 'May 2023 - August 2023',
     points: (
       <UnorderedList className="unorderedList">
-        <ListItem className="text point"> ITEM</ListItem>
-        <ListItem className="text point"> ITEM</ListItem>
-        <ListItem className="text point"> ITEM</ListItem>
+        <ListItem className="text point">
+          {' '}
+          Contributed to enhancing the functionality and experience for the
+          portals of Focus On Nature (non-profit aimed to cultivate deeper
+          connection between youth and nature)
+        </ListItem>
+        <ListItem className="text point">
+          {' '}
+          Utilized MERN tech stack to streamline and improve the registration
+          and refund experience for both camp participants and administrators
+        </ListItem>
       </UnorderedList>
     ),
   },
@@ -93,18 +101,14 @@ export const ExperienceData = [
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
           {' '}
-          Managed the continuous enhancement of the application product that
-          displays clients’ financial data using Angular.js
+          Spearheaded the continuous enhancement of the financial data display
+          feature with strategic use of Angular.js
         </ListItem>
         <ListItem className="text point">
-          {' '}
-          Integrated error messages and dialog boxes addressing console errors
-          encountered when displaying data with the API
+          Ensured robust codebase and integrity of the application by
+          implementing comprehensive automated test suites using Jasmine.js and
+          the Karma test runner and enhancing API error-handing
         </ListItem>
-        <ListIcon className="text point">
-          Conducted automated unit testing using Jasmine.js and the Karma test
-          runner, executing comprehensive test suites and specifications
-        </ListIcon>
       </UnorderedList>
     ),
   },
@@ -127,6 +131,28 @@ export const ExperienceData = [
           Demonstrated meticulous attention to product quality by conducting{' '}
           <strong>700+</strong> regression and functional tests throughout
           various iterations of the Software Development Life Cycle
+        </ListItem>
+      </UnorderedList>
+    ),
+  },
+  {
+    id: '6',
+    position: 'Web Developer and Administrator',
+    company: 'Absolute Indoor Air ',
+    date: 'August 2020 - September 2020',
+    points: (
+      <UnorderedList className="unorderedList">
+        <ListItem className="text point">
+          {' '}
+          Developed front-end web page using HTML, CSS, Velo API
+        </ListItem>
+        <ListItem className="text point">
+          Oversaw the environment design, performed maintenance tasks, and
+          ensured quality assurance of the web application
+        </ListItem>
+        <ListItem className="text point">
+          Elevated customer satisfaction by optimizing the effectiveness of the
+          UX/UI
         </ListItem>
       </UnorderedList>
     ),
