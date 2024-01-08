@@ -33,16 +33,12 @@ const Experiences: React.FC<{}> = () => {
   return (
     <Box id="experiences">
       <VStack px="15%" pb={150}>
-        {/* <Card bg="transparent" px="15%" py={30}> */}
-        <Header title="Experiences" />
-          {/* <CardBody> */}
+        <Header title="Experience" />
           <Stack spacing="5">
             {ExperienceData.map((experience) => (
               <ExperienceCard key={experience.id} experience={experience} />
             ))}
           </Stack>
-          {/* </CardBody> */}
-        {/* </Card> */}
       </VStack>
     </Box>
   );

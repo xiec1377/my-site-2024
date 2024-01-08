@@ -91,7 +91,7 @@ const NavBar: React.FC<{}> = () => {
             color: "gray.800",
             transition: "ease-in-out 0.5s",
             _after: {
-              content: '"Experiences"',
+              content: '"Experience"',
               pl: "10px",
             },
           }}
