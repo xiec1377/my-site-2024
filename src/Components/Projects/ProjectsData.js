@@ -19,7 +19,7 @@ import {
   OrderedList,
   UnorderedList,
 } from '@chakra-ui/react'
-import { FaGithub } from 'react-icons/fa'
+import { FaGithub, FaMediumM } from 'react-icons/fa'
 // import { SiReplit } from 'react-icons/si'
 // import { SiDevpost } from 'react-icons/si'
 import { Icon } from '@iconify/react'
@@ -39,7 +39,7 @@ const HoverImage = ({ src1, src2, alt }) => {
         src={isHovered ? src2 : src1}
         alt={alt}
         fallbackSrc="https://via.placeholder.com/150"
-        h='100%'
+        h="100%"
         // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
       />
     </Box>
@@ -202,6 +202,55 @@ export const ProjectsData = [
         </a>
         <a href="https://devpost.com/software/north-arcadia">
           <Icon icon="simple-icons:devpost" className="icon" />
+        </a>
+      </HStack>
+    ),
+  },
+  {
+    id: '7',
+    name: 'PlanIQ',
+    desc: (
+      <Text className="point text" h="75%">
+        Executed design process (Empathize, Define, Ideate, Deliver, Test) to
+        build a hifi prototype of gamified smart calendar mobile application.
+      </Text>
+    ),
+    languages: ['Figma'],
+    img: (
+      <HoverImage
+        src1={require('../../Assets/planiq.png')}
+        src2={require('../../Assets/planiq.png')}
+        alt="PlanIQ"
+      />
+    ),
+    icon: (
+      <HStack>
+        <a href="https://medium.com/@zhualex99/ai-powered-productivity-with-planiq-d783ce630f6a">
+          <FaMediumM className="icon" />
+        </a>
+      </HStack>
+    ),
+  },
+  {
+    id: '8',
+    name: 'Brewbot',
+    desc: (
+      <Text className="point text" h="75%">
+        Utilizing chatbots to help users combat menu anxiety at coffee shops.
+      </Text>
+    ),
+    languages: ['Figma'],
+    img: (
+      <HoverImage
+        src1={require('../../Assets/brewbot.png')}
+        src2={require('../../Assets/brewbot.png')}
+        alt="Brewbot"
+      />
+    ),
+    icon: (
+      <HStack>
+        <a href="https://medium.com/@zhualex99/ai-powered-productivity-with-planiq-d783ce630f6a">
+          <FaMediumM className="icon" />
         </a>
       </HStack>
     ),
