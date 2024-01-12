@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/my-site-2024/static/js/main.24090b64.js",
+    "main.js": "/my-site-2024/static/js/main.95c59f5a.js",
     "static/js/787.da21397a.chunk.js": "/my-site-2024/static/js/787.da21397a.chunk.js",
     "static/media/north-arcadia-demo.gif": "/my-site-2024/static/media/north-arcadia-demo.d89df936172380a73ff8.gif",
     "static/media/search-with-tech-demo.gif": "/my-site-2024/static/media/search-with-tech-demo.771cd04877a8ed7d0da1.gif",
@@ -21,16 +21,17 @@
     "static/media/image-generator-demo.gif": "/my-site-2024/static/media/image-generator-demo.ae8a8adcc84d0f0d2772.gif",
     "static/media/planiq.png": "/my-site-2024/static/media/planiq.fc824730a4a5491bc876.png",
     "static/media/image-generator-thumbnail.png": "/my-site-2024/static/media/image-generator-thumbnail.42ed7bc0cf5879323b32.png",
+    "static/media/sales-pitch-demo.png": "/my-site-2024/static/media/sales-pitch-demo.6e0a1dc59f2a10772744.png",
     "static/media/sales_pitch_generator.jpg": "/my-site-2024/static/media/sales_pitch_generator.e5ab9d1b59fb14898091.jpg",
     "static/media/chess-thumbnail.png": "/my-site-2024/static/media/chess-thumbnail.121675e5e65bc61e8a23.png",
     "static/media/stock-trader-thumbnail.png": "/my-site-2024/static/media/stock-trader-thumbnail.585b5fdee51dae2e40c4.png",
     "static/media/search_with_tech.jpg": "/my-site-2024/static/media/search_with_tech.b8538e37217b2ba5a650.jpg",
     "static/media/north_arcadia.jpg": "/my-site-2024/static/media/north_arcadia.ff3270a321f5afb2e7ae.jpg",
     "index.html": "/my-site-2024/index.html",
-    "main.24090b64.js.map": "/my-site-2024/static/js/main.24090b64.js.map",
+    "main.95c59f5a.js.map": "/my-site-2024/static/js/main.95c59f5a.js.map",
     "787.da21397a.chunk.js.map": "/my-site-2024/static/js/787.da21397a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.24090b64.js"
+    "static/js/main.95c59f5a.js"
   ]
 }
