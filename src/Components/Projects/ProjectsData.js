@@ -67,7 +67,7 @@ export const ProjectsData = [
     img: (
       <HoverImage
         src1={require('../../Assets/sales_pitch_generator.jpg')}
-        src2={require('../../Assets/sales_pitch_generator.jpg')}
+        src2={require('../../Assets/sales-pitch-demo.png')}
         alt="Sales pitch generator"
       />
     ),
@@ -249,9 +249,9 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <a href="https://medium.com/@zhualex99/ai-powered-productivity-with-planiq-d783ce630f6a">
+        {/* <a href="https://medium.com/@zhualex99/ai-powered-productivity-with-planiq-d783ce630f6a">
           <FaMediumM className="icon" />
-        </a>
+        </a> */}
       </HStack>
     ),
   },

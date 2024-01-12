@@ -60,13 +60,18 @@ export const ExperienceData = [
         <ListItem className="text point">
           {' '}
           Contributed to enhancing the functionality and experience for the
-          portals of Focus On Nature (non-profit aimed to cultivate deeper
-          connection between youth and nature)
+          portals of{' '}
+          <a href="https://focusonnature.ca/">
+            <strong>Focus On Nature</strong>
+          </a>
+          , a local non-profit aimed to cultivate deeper connection between
+          youth and nature
         </ListItem>
         <ListItem className="text point">
           {' '}
-          Utilized MERN tech stack to streamline and improve the registration
-          and refund experience for both camp participants and administrators
+          Utilized MERN tech stack and Docker to streamline and improve the
+          registration and refund experience for both camp participants and
+          administrators
         </ListItem>
       </UnorderedList>
     ),
@@ -85,9 +90,14 @@ export const ExperienceData = [
           for <strong>1,500+</strong> weekly users
         </ListItem>
         <ListItem className="text point">
+          Designed company assets, created customer journey maps, user personas,
+          low and high-fidelity wireframes for the Glossary feature
+        </ListItem>
+        <ListItem className="text point">
           {' '}
           Updated and maintained company portal, servicing a weekly user base of{' '}
-          <strong>4,000+</strong> individuals, utilizing React.js and Django
+          <strong>4,000+</strong> individuals, utilizing React, Django and
+          Docker
         </ListItem>
       </UnorderedList>
     ),
@@ -102,12 +112,12 @@ export const ExperienceData = [
         <ListItem className="text point">
           {' '}
           Spearheaded the continuous enhancement of the financial data display
-          feature with strategic use of Angular.js
+          feature with the strategic use of Angular
         </ListItem>
         <ListItem className="text point">
-          Ensured robust codebase and integrity of the application by
-          implementing comprehensive automated test suites using Jasmine.js and
-          the Karma test runner and enhancing API error-handing
+          Ensured the integrity of the application by implementing comprehensive
+          automated test suites using Jasmine and the Karma test runner and
+          enhancing API error-handing
         </ListItem>
       </UnorderedList>
     ),
@@ -138,13 +148,14 @@ export const ExperienceData = [
   {
     id: '6',
     position: 'Web Developer and Administrator',
-    company: 'Absolute Indoor Air ',
+    company: 'Absolute Indoor Air',
     date: 'August 2020 - September 2020',
     points: (
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
           {' '}
-          Developed front-end web page using HTML, CSS, Velo API
+          Developed front-end web page using HTML, CSS, Velo API (live{' '}
+          <a href="https://www.absoluteindoorair.com/"><strong>here</strong></a>)
         </ListItem>
         <ListItem className="text point">
           Oversaw the environment design, performed maintenance tasks, and
