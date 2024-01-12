@@ -53,7 +53,7 @@ export const ExperienceData = [
   {
     id: '2',
     position: 'Project Developer',
-    company: 'UWBlueprint',
+    company: 'UW Blueprint',
     date: 'May 2023 - August 2023',
     points: (
       <UnorderedList className="unorderedList">

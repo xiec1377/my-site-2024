@@ -24,6 +24,7 @@ import {
 } from "@chakra-ui/react";
 import { ScrollVisible } from "../Static/ScrollVisible";
 import { FaLinkedinIn, FaGithub, FaEnvelope, FaFileAlt } from "react-icons/fa";
+// import Resume from '../Assets/Cat'
 
 export const Socials = () => {
   return (
@@ -37,9 +38,9 @@ export const Socials = () => {
       <a href={`mailto:'catherinexie2014@gmail.com`}>
         <FaEnvelope className="icon icon-color" aria-label="Email icon" />{" "}
       </a>
-      <a href="">
+      {/* <a href={Resume} target="_blank">
         <FaFileAlt className="icon icon-color" aria-label="Resume icon" />{" "}
-      </a>
+      </a> */}
     </HStack>
   );
 };
