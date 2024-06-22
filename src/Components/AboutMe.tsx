@@ -49,7 +49,7 @@ const AboutMe: React.FC<{}> = () => {
                 <strong>full-stack and front-end development</strong>,
                 complemented by additional interests in{" "}
                 <strong>product management and user experience & design</strong>
-                , all cultivated through my experiences in the fintech sector.
+                , all cultivated through my work experiences in the fintech sector.
               </Text>
               <br />
               <Text className="text" fontSize="2xl" as="i" color="rose.300">

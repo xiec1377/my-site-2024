@@ -116,7 +116,7 @@ export const ProjectsData = [
     name: 'PlanIQ',
     desc: (
       <Text className="point text" h="75%">
-        Executed design process (Empathize, Define, Ideate, Deliver, Test) to
+        Executed design process to
         build a hifi prototype of gamified smart calendar mobile application.
       </Text>
     ),
