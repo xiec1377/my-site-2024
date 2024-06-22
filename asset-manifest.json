@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.9d9f6706.js",
+    "main.js": "/static/js/main.b291026b.js",
     "static/js/787.da21397a.chunk.js": "/static/js/787.da21397a.chunk.js",
     "static/media/north-arcadia-demo.gif": "/static/media/north-arcadia-demo.d89df936172380a73ff8.gif",
     "static/media/search-with-tech-demo.gif": "/static/media/search-with-tech-demo.771cd04877a8ed7d0da1.gif",
@@ -28,10 +28,10 @@
     "static/media/search_with_tech.jpg": "/static/media/search_with_tech.b8538e37217b2ba5a650.jpg",
     "static/media/north_arcadia.jpg": "/static/media/north_arcadia.ff3270a321f5afb2e7ae.jpg",
     "index.html": "/index.html",
-    "main.9d9f6706.js.map": "/static/js/main.9d9f6706.js.map",
+    "main.b291026b.js.map": "/static/js/main.b291026b.js.map",
     "787.da21397a.chunk.js.map": "/static/js/787.da21397a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.9d9f6706.js"
+    "static/js/main.b291026b.js"
   ]
 }
