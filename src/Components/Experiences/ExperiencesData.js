@@ -64,7 +64,7 @@ export const ExperienceData = [
           Built registration and refund flows of camper and admin users for
           local non-profit{' '}
           <a href="https://focusonnature.ca/">
-            <strong>Focus On Nature</strong>
+            <strong style={{ textDecoration: 'underline' }}>Focus On Nature</strong>
           </a>{' '}
           aimed to promote youth summer camps, handling registrations of{' '}
           <strong>7,000+</strong>
@@ -157,7 +157,7 @@ export const ExperienceData = [
           {' '}
           Developed front-end web page using HTML, CSS, Velo API (live{' '}
           <a href="https://www.absoluteindoorair.com/">
-            <strong>here</strong>
+            <strong style={{ textDecoration: 'underline' }}>here</strong>
           </a>
           )
         </ListItem>

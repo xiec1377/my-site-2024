@@ -1,5 +1,6 @@
 import {  extendTheme } from '@chakra-ui/react'
 import type { StyleFunctionProps } from '@chakra-ui/styled-system'
+import { access, accessSync } from 'fs'
 
 // Version 2: Using functions
 const overrides = extendTheme({

@@ -23,8 +23,6 @@ import {
 } from "@chakra-ui/react";
 import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 import { ScrollVisible } from "../../Static/ScrollVisible";
-import purpleGirl from "../../Assets/purpleGirl.png";
-import SalesPitch from "../../Assets/sales_pitch_generator.jpg";
 
 interface Project {
   id: string;
@@ -39,8 +37,6 @@ console.log("baseurl:", baseUrl);
 
 const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   console.log("project:", project);
-  //   const imgPath = require(`${project.img}`).default
-  //   console.log("imgpath:", imgPath)
   return (
     <ScrollVisible>
       <Box
