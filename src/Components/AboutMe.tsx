@@ -40,7 +40,13 @@ const AboutMe: React.FC<{}> = () => {
               <Header title="About me" />
               <Text className="text">
                 My name is Catherine and I’m a fourth-year Computer Science
-                student at the <strong>University of Waterloo</strong>.
+                student at the{" "}
+                <a href="https://uwaterloo.ca/">
+                  <strong style={{ textDecoration: "underline" }}>
+                    University of Waterloo
+                  </strong>
+                </a>
+                .
               </Text>
               <br />
               <Text className="text">
@@ -49,7 +55,8 @@ const AboutMe: React.FC<{}> = () => {
                 <strong>full-stack and front-end development</strong>,
                 complemented by additional interests in{" "}
                 <strong>product management and user experience & design</strong>
-                , all cultivated through my work experiences in the fintech sector.
+                , all cultivated through my work experiences in the fintech
+                sector.
               </Text>
               <br />
               <Text className="text" fontSize="2xl" as="i" color="rose.300">

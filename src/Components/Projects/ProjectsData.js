@@ -1,27 +1,12 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { Box, Text, Image, HStack, Tooltip } from '@chakra-ui/react'
 import {
-  Box,
-  Heading,
-  Flex,
-  Text,
-  Image,
-  VStack,
-  HStack,
-  Stack,
-  StackDivider,
-  Center,
-  Square,
-  Circle,
-  Spacer,
-  List,
-  ListItem,
-  ListIcon,
-  OrderedList,
-  UnorderedList,
-} from '@chakra-ui/react'
-import { FaFigma, FaGithub, FaMediumM, FaYoutube } from 'react-icons/fa'
-// import { SiReplit } from 'react-icons/si'
-// import { SiDevpost } from 'react-icons/si'
+  FaFigma,
+  FaGithub,
+  FaGitlab,
+  FaMediumM,
+  FaYoutube,
+} from 'react-icons/fa'
 import { Icon } from '@iconify/react'
 
 const HoverImage = ({ src1, src2, alt }) => {
@@ -77,12 +62,15 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <a href="https://github.com/WilliamUW/PitchPerfect">
-          <FaGithub className="icon" />
-        </a>
-        <a href="https://devpost.com/software/pitcheasy">
-          <Icon icon="simple-icons:devpost" className="icon" />
-        </a>
+        <Tooltip
+          label="Private repository"
+          aria-label="Private repository"
+          placement="top"
+        >
+          <a href="https://git.uwaterloo.ca/hy5chen/team-101">
+            <FaGitlab className="icon" />
+          </a>
+        </Tooltip>
       </HStack>
     ),
   },
