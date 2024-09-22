@@ -32,17 +32,9 @@ export const App = () => (
           <Home />
         </ScrollVisible>
         <AboutMe />
-        {/* <ScrollVisible> */}
-        {/* </ScrollVisible> */}
-        {/* <ScrollVisible> */}
-        <Gallery />
-        {/* </ScrollVisible> */}
-        {/* <ScrollVisible> */}
+        {/* <Gallery /> */}
         <Experiences />
-        {/* </ScrollVisible> */}
-        {/* <ScrollVisible> */}
         <Projects />
-        {/* </ScrollVisible> */}
         <Footer />
       </VStack>
     </Box>
