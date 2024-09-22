@@ -32,15 +32,17 @@ import { ScrollVisible } from "../../Static/ScrollVisible";
 const Experiences: React.FC<{}> = () => {
   return (
     <Box id="experiences">
-      <VStack px="15%" pb={150}>
+      <VStack pb={150}>
         <ScrollVisible>
           <Header title="Experience" />
         </ScrollVisible>
-        <Stack spacing="5">
-          {ExperienceData.map((experience) => (
-            <ExperienceCard key={experience.id} experience={experience} />
-          ))}
-        </Stack>
+        <ScrollVisible>
+          <Stack spacing="5">
+            {ExperienceData.map((experience) => (
+              <ExperienceCard key={experience.id} experience={experience} />
+            ))}
+          </Stack>
+        </ScrollVisible>
       </VStack>
     </Box>
   );

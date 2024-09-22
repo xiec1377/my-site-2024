@@ -33,7 +33,7 @@ import purpleGirl from "../../Assets/purpleGirl.png";
 const Projects: React.FC<{}> = () => {
   return (
     <Box id="projects">
-      <VStack px="15%" pb={150} align="start">
+      <VStack pb={150} align="start">
         <ScrollVisible>
           <Header title="Projects" />
         </ScrollVisible>

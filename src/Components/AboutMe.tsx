@@ -24,7 +24,7 @@ import { AspectRatio } from "@chakra-ui/react";
 const AboutMe: React.FC<{}> = () => {
   return (
     <Box id="about-me" zIndex={50}>
-      <VStack align="top" px="15%">
+      <VStack align="top">
         <ScrollVisible>
           <HStack spacing="24px">
             <Image

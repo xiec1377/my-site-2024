@@ -27,14 +27,16 @@ export const App = () => (
     <Box bg="gray.800" w="100%" overflow="hidden">
       <BackgroundBlob></BackgroundBlob>
       <NavBar />
-      <VStack>
-        <ScrollVisible>
-          <Home />
-        </ScrollVisible>
-        <AboutMe />
-        {/* <Gallery /> */}
-        <Experiences />
-        <Projects />
+      <VStack align="stretch">
+        <VStack px="15%">
+          <ScrollVisible>
+            <Home />
+          </ScrollVisible>
+          <AboutMe />
+          {/* <Gallery /> */}
+          <Experiences />
+          <Projects />
+        </VStack>
         <Footer />
       </VStack>
     </Box>
