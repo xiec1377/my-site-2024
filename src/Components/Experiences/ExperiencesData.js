@@ -22,10 +22,59 @@ import {
 
 export const ExperienceData = [
   {
-    id: '1',
-    position: 'End User Programmer',
+    id: 'marketingKitchen',
+    position: 'Software Developer',
+    company: 'Marketing Kitchen Inc.',
+    date: 'Sept 2024 - Dec 2024',
+    points: (
+      <UnorderedList className="unorderedList">
+        <ListItem className="text point">
+          Improved reliability of internal IoT scanner system, enhancing the
+          efficiency of tracking work hours by <strong>30%</strong>
+        </ListItem>
+        <ListItem className="text point">
+          Owned the job order app that centralized the manual order process for
+          internal project managers and external clients, utilizing React,
+          Node.js, Express.js, Python, AWS Cognito and SES for user
+          authentication
+        </ListItem>
+      </UnorderedList>
+    ),
+  },
+  {
+    id: 'justworks',
+    position: 'Software Engineer',
+    company: 'Justworks',
+    date: 'May 2024 - Aug 2024',
+    points: (
+      <UnorderedList className="unorderedList">
+        <ListItem className="text point">
+          {' '}
+          Engaged in the <strong>0 to 1</strong> product development of the
+          Employer of Record service expansion across <strong>20+</strong>{' '}
+          countries, streamlining payroll and administrative processes for SMBs
+          hiring internationally
+        </ListItem>
+        <ListItem className="text point">
+          Innovated R&D solution to display employee PII securely by creating a
+          data serializer pattern in Ruby on Rails to redact sensitive PII based
+          on OAuth scope permissions, safeguarding revenue by ensuring client
+          data privacy
+        </ListItem>
+        <ListItem className="text point">
+          Designed and applied database migration strategies to reduce database
+          query rate by <strong>7%</strong> in the employee invitation flow,
+          improving response speed for the user experience for{' '}
+          <strong>12,000+</strong> users
+        </ListItem>
+      </UnorderedList>
+    ),
+  },
+  {
+    id: 'ttc',
+    position: 'Software Programmer',
     company: 'Toronto Transit Commission',
-    date: 'May 2023 - August 2023',
+    date: 'May 2023 - Aug 2023',
     points: (
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
@@ -49,12 +98,11 @@ export const ExperienceData = [
       </UnorderedList>
     ),
   },
-
   {
-    id: '2',
+    id: 'blueprint',
     position: 'Project Developer',
     company: 'UW Blueprint',
-    date: 'May 2023 - August 2023',
+    date: 'May 2023 - Aug 2023',
     points: (
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
@@ -62,10 +110,12 @@ export const ExperienceData = [
           Contributed to enhancing the functionality and experience for the
           portals of{' '}
           <a href="https://focusonnature.ca/">
-            <strong>Focus On Nature</strong>
-          </a>
-          , a local non-profit aimed to cultivate deeper connection between
-          youth and nature
+            <strong style={{ textDecoration: 'underline' }}>
+              Focus On Nature
+            </strong>
+          </a>{' '}
+          aimed to promote youth summer camps, handling registrations of{' '}
+          <strong>7,000+</strong> children per year
         </ListItem>
         <ListItem className="text point">
           {' '}
@@ -77,10 +127,10 @@ export const ExperienceData = [
     ),
   },
   {
-    id: '3',
+    id: 'empireLifeInsurance',
     position: 'Full-Stack Developer',
     company: 'Empire Life Insurance',
-    date: 'September 2022 - December 2022',
+    date: 'Sept 2022 - Dec 2022',
     points: (
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
@@ -103,10 +153,10 @@ export const ExperienceData = [
     ),
   },
   {
-    id: '4',
+    id: 'bankOfAmerica',
     position: 'Application Developer',
     company: 'Bank of America Merrill Lynch',
-    date: 'January 2022 - April 2022',
+    date: 'Jan 2022 - Apr 2022',
     points: (
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
@@ -115,19 +165,23 @@ export const ExperienceData = [
           feature with the strategic use of Angular
         </ListItem>
         <ListItem className="text point">
-          Ensured the integrity of the application by implementing comprehensive
-          automated test suites using Jasmine and the Karma test runner and
-          enhancing API error-handing
+          Wrote <strong>30+</strong> unit tests using Jasmine to ensure BDD
+          compliance for the tax billing and collateral pricing pages
+        </ListItem>{' '}
+        <ListItem className="text point">
+          Handled and managed API request errors by implementing user-friendly
+          error notification dialogs to enhance the debugging process and
+          integrity of the transaction display
         </ListItem>
       </UnorderedList>
     ),
   },
   {
-    id: '5',
+    id: 'darwynn',
     position:
       'Software Tester and Business Analyst                                                                                                 ',
     company: 'Darwynn Ltd.',
-    date: 'May 2021 - August 2021',
+    date: 'May 2021 - Aug 2021',
     points: (
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
@@ -145,27 +199,30 @@ export const ExperienceData = [
       </UnorderedList>
     ),
   },
-  {
-    id: '6',
-    position: 'Web Developer and Administrator',
-    company: 'Absolute Indoor Air',
-    date: 'August 2020 - September 2020',
-    points: (
-      <UnorderedList className="unorderedList">
-        <ListItem className="text point">
-          {' '}
-          Developed front-end web page using HTML, CSS, Velo API (live{' '}
-          <a href="https://www.absoluteindoorair.com/"><strong>here</strong></a>)
-        </ListItem>
-        <ListItem className="text point">
-          Oversaw the environment design, performed maintenance tasks, and
-          ensured quality assurance of the web application
-        </ListItem>
-        <ListItem className="text point">
-          Elevated customer satisfaction by optimizing the effectiveness of the
-          UX/UI
-        </ListItem>
-      </UnorderedList>
-    ),
-  },
+  // {
+  //   id: 'absoluteIndoorAir',
+  //   position: 'Web Developer and Administrator',
+  //   company: 'Absolute Indoor Air',
+  //   date: 'Aug 2020 - Sept 2020',
+  //   points: (
+  //     <UnorderedList className="unorderedList">
+  //       <ListItem className="text point">
+  //         {' '}
+  //         Developed front-end web page using HTML, CSS, Velo API (live{' '}
+  //         <a href="https://www.absoluteindoorair.com/">
+  //           <strong style={{ textDecoration: 'underline' }}>here</strong>
+  //         </a>
+  //         )
+  //       </ListItem>
+  //       <ListItem className="text point">
+  //         Oversaw the environment design, performed maintenance tasks, and
+  //         ensured quality assurance of the web application
+  //       </ListItem>
+  //       <ListItem className="text point">
+  //         Elevated customer satisfaction by optimizing the effectiveness of the
+  //         UX/UI
+  //       </ListItem>
+  //     </UnorderedList>
+  //   ),
+  // },
 ]
