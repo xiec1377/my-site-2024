@@ -65,13 +65,13 @@ const AboutMe: React.FC<{}> = () => {
           </HStack>
         </ScrollVisible>
       </VStack>
-      <ScrollVisible>
+      {/* <ScrollVisible>
         <VStack p={150}>
           <Text className="text" textAlign="center">
             Check out some of my passion projects{" "}
           </Text>
         </VStack>
-      </ScrollVisible>
+      </ScrollVisible> */}
     </Box>
   );
 };
