@@ -1,24 +1,4 @@
-import {
-  Box,
-  Heading,
-  Flex,
-  Text,
-  Image,
-  VStack,
-  HStack,
-  Stack,
-  StackDivider,
-  Center,
-  Square,
-  Circle,
-  Spacer,
-  List,
-  ListItem,
-  ListIcon,
-  OrderedList,
-  UnorderedList,
-} from '@chakra-ui/react'
-// import SalesPitch from './sales_pitch_generator.jpg'
+import { ListItem, UnorderedList } from '@chakra-ui/react'
 
 export const ExperienceData = [
   {
@@ -79,10 +59,9 @@ export const ExperienceData = [
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
           {' '}
-          Individually implemented, and tested a PowerShell script, leveraging
-          the WSUS API library, to optimize Windows OS updates efficiency by{' '}
-          <strong>∼15%</strong>, to be rolled out to <strong>5,000+</strong>{' '}
-          company machines
+          Reduced downtime by <strong>20%</strong> through creating a PowerShell
+          script to automate the installation of Windows OS and security
+          updates, rolled out to <strong>5,000+</strong> production machines
         </ListItem>
         <ListItem className="text point">
           {' '}
@@ -106,9 +85,8 @@ export const ExperienceData = [
     points: (
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
-          {' '}
-          Contributed to enhancing the functionality and experience for the
-          portals of{' '}
+          Built registration and refund flows of camper and admin users for
+          local non-profit{' '}
           <a href="https://focusonnature.ca/">
             <strong style={{ textDecoration: 'underline' }}>
               Focus On Nature
@@ -118,10 +96,9 @@ export const ExperienceData = [
           <strong>7,000+</strong> children per year
         </ListItem>
         <ListItem className="text point">
-          {' '}
-          Utilized MERN tech stack and Docker to streamline and improve the
-          registration and refund experience for both camp participants and
-          administrators
+          Built robust code to gracefully handle invalid refund requests,
+          coupons, and discounts in the refund flow using MERN tech stack and
+          Stripe API to ensure seamless payment processing for customers
         </ListItem>
       </UnorderedList>
     ),
@@ -134,20 +111,15 @@ export const ExperienceData = [
     points: (
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
-          {' '}
-          Led a cross-functional team in the successful design, delivery and
-          deployment of the Glossary feature, enhancing the learning experience
-          for <strong>1,500+</strong> weekly users
+          Led a cross-functional team in the design and development of a new
+          Glossary feature in both English and French in the customer portal to
+          explain complex insurance terminology for <strong>1,500+</strong>{' '}
+          weekly customers
         </ListItem>
         <ListItem className="text point">
-          Designed company assets, created customer journey maps, user personas,
-          low and high-fidelity wireframes for the Glossary feature
-        </ListItem>
-        <ListItem className="text point">
-          {' '}
-          Updated and maintained company portal, servicing a weekly user base of{' '}
-          <strong>4,000+</strong> individuals, utilizing React, Django and
-          Docker
+          Created Registered Retirement Savings Plan page with Django and React
+          used by <strong>2,500+</strong> weekly advisors to manage retirement
+          savings
         </ListItem>
       </UnorderedList>
     ),
@@ -160,9 +132,9 @@ export const ExperienceData = [
     points: (
       <UnorderedList className="unorderedList">
         <ListItem className="text point">
-          {' '}
-          Spearheaded the continuous enhancement of the financial data display
-          feature with the strategic use of Angular
+          Developed the tax billing and collateral pricing sections of the
+          transaction dashboard used by financial advisors for client trade
+          management and monitoring, using Node.js and Angular
         </ListItem>
         <ListItem className="text point">
           Wrote <strong>30+</strong> unit tests using Jasmine to ensure BDD

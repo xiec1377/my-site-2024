@@ -1,27 +1,12 @@
-import React, { useState } from 'react'
+import { useState } from 'react'
+import { Box, Text, Image, HStack, Tooltip } from '@chakra-ui/react'
 import {
-  Box,
-  Heading,
-  Flex,
-  Text,
-  Image,
-  VStack,
-  HStack,
-  Stack,
-  StackDivider,
-  Center,
-  Square,
-  Circle,
-  Spacer,
-  List,
-  ListItem,
-  ListIcon,
-  OrderedList,
-  UnorderedList,
-} from '@chakra-ui/react'
-import { FaGithub, FaMediumM } from 'react-icons/fa'
-// import { SiReplit } from 'react-icons/si'
-// import { SiDevpost } from 'react-icons/si'
+  FaFigma,
+  FaGithub,
+  FaGitlab,
+  FaMediumM,
+  FaYoutube,
+} from 'react-icons/fa'
 import { Icon } from '@iconify/react'
 
 const HoverImage = ({ src1, src2, alt }) => {
@@ -36,11 +21,16 @@ const HoverImage = ({ src1, src2, alt }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       <Image
-        src={isHovered ? src2 : src1}
+        src={isHovered ? (src2 ? src2 : src1) : src1}
         alt={alt}
         fallbackSrc="https://via.placeholder.com/150"
-        h="100%"
-        // _hover={{ transform: 'scale(1.2)', filter: 'grayscale(1)' }}
+        position={alt === 'PhotoSpotter' ? 'absolute' : ''}
+        // top="0"
+        // left="0"
+        width="100%"
+        height="100%"
+        objectFit={alt === 'PhotoSpotter' ? 'contain' : ''}
+        // objectFit="cover"
       />
     </Box>
   )
@@ -48,6 +38,44 @@ const HoverImage = ({ src1, src2, alt }) => {
 export const ProjectsData = [
   {
     id: '1',
+    name: 'PhotoSpotter',
+    desc: (
+      <Text className="point text" h="75%">
+        Created a community photography-sharing Android app, enabling users to
+        discover and share photography locations with others by uploading photos
+        and placing pins on the map.
+      </Text>
+    ),
+    languages: [
+      'Kotlin',
+      'PostgreSQL',
+      'Google Maps API',
+      'Firebase',
+      'Google Cloud Platform',
+    ],
+    img: (
+      <HoverImage
+        src1={require('../../Assets/photo-spotter-thumbnail.png')}
+        src2={require('../../Assets/photo-spotter-demo.gif')}
+        alt="PhotoSpotter"
+      />
+    ),
+    icon: (
+      <HStack>
+        <Tooltip
+          label="Private repository"
+          aria-label="Private repository"
+          placement="top"
+        >
+          <a href="https://git.uwaterloo.ca/hy5chen/team-101">
+            <FaGitlab className="icon" />
+          </a>
+        </Tooltip>
+      </HStack>
+    ),
+  },
+  {
+    id: '2',
     name: 'Pitch Perfect',
     desc: (
       <Text className="point text" h="75%">
@@ -83,7 +111,7 @@ export const ProjectsData = [
     ),
   },
   {
-    id: '2',
+    id: '3',
     name: 'Search with Tech',
     desc: (
       <Text className="point text" h="75%">
@@ -112,56 +140,7 @@ export const ProjectsData = [
   },
 
   {
-    id: '3',
-    name: 'PlanIQ',
-    desc: (
-      <Text className="point text" h="75%">
-        Executed design process (Empathize, Define, Ideate, Deliver, Test) to
-        build a hifi prototype of gamified smart calendar mobile application.
-      </Text>
-    ),
-    languages: ['Figma'],
-    img: (
-      <HoverImage
-        src1={require('../../Assets/planiq.png')}
-        src2={require('../../Assets/planiq.png')}
-        alt="PlanIQ"
-      />
-    ),
-    icon: (
-      <HStack>
-        <a href="https://medium.com/@zhualex99/ai-powered-productivity-with-planiq-d783ce630f6a">
-          <FaMediumM className="icon" />
-        </a>
-      </HStack>
-    ),
-  },
-  {
-    id: '4',
-    name: 'Brewbot',
-    desc: (
-      <Text className="point text" h="75%">
-        Utilizing chatbots to help users combat menu anxiety at coffee shops.
-      </Text>
-    ),
-    languages: ['Figma'],
-    img: (
-      <HoverImage
-        src1={require('../../Assets/brewbot.png')}
-        src2={require('../../Assets/brewbot.png')}
-        alt="Brewbot"
-      />
-    ),
-    icon: (
-      <HStack>
-        {/* <a href="https://medium.com/@zhualex99/ai-powered-productivity-with-planiq-d783ce630f6a">
-          <FaMediumM className="icon" />
-        </a> */}
-      </HStack>
-    ),
-  },
-  {
-    id: '5',
+    id: '6',
     name: 'Image Generator',
     desc: (
       <Text className="point text" h="75%">
@@ -252,6 +231,70 @@ export const ProjectsData = [
         </a>
         <a href="https://devpost.com/software/north-arcadia">
           <Icon icon="simple-icons:devpost" className="icon" />
+        </a>
+      </HStack>
+    ),
+  },
+  {
+    id: '4',
+    name: 'PlanIQ',
+    desc: (
+      <Text className="point text" h="75%">
+        Executed design process to build a hifi prototype of gamified smart
+        calendar mobile application. View our case study{' '}
+        <a href="https://youtu.be/lYtSLOtQ_pQ?zhualex99=0jkhH_eXYHubHzLr">
+          <strong style={{ textDecoration: 'underline' }}>here</strong>
+        </a>
+        .
+      </Text>
+    ),
+    languages: ['Figma'],
+    img: (
+      <HoverImage
+        src1={require('../../Assets/planiq.png')}
+        src2={require('../../Assets/planiq.png')}
+        alt="PlanIQ"
+      />
+    ),
+    icon: (
+      <HStack>
+        <a href="https://medium.com/@zhualex99/ai-powered-productivity-with-planiq-d783ce630f6a">
+          <FaMediumM className="icon" />
+        </a>
+        <a href="https://www.figma.com/proto/zI0HNpH7LausOZf52f3aPT/Broke-%26-Hungry-High-Fidelity-Prototype?node-id=702-2488&t=EDzpAioupOhPkQVt-1&scaling=scale-down&content-scaling=fixed&page-id=157%3A622&starting-point-node-id=702%3A2488&show-proto-sidebar=1">
+          <FaFigma className="icon" />
+        </a>
+      </HStack>
+    ),
+  },
+  {
+    id: '5',
+    name: 'Brewbot',
+    desc: (
+      <Text className="point text" h="75%">
+        Hifi prototype of utilizing chatbots to help users combat menu anxiety
+        at coffee shops. Watch our case study{' '}
+        <a href="https://youtu.be/lYtSLOtQ_pQ?si=0jkhH_eXYHubHzLr">
+          <strong style={{ textDecoration: 'underline' }}>here</strong>
+        </a>
+        .
+      </Text>
+    ),
+    languages: ['Figma'],
+    img: (
+      <HoverImage
+        src1={require('../../Assets/brewbot.png')}
+        src2={require('../../Assets/brewbot.png')}
+        alt="Brewbot"
+      />
+    ),
+    icon: (
+      <HStack>
+        <a href="https://youtu.be/lYtSLOtQ_pQ?si=0jkhH_eXYHubHzLr">
+          <FaYoutube className="icon" />
+        </a>
+        <a href="https://www.figma.com/proto/dpSacAlqBoQ9TiE7MmvcAS/Final-Prototype?node-id=870-1532&t=O8gNH9Sw0ajoWT4r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=933%3A2807">
+          <FaFigma className="icon" />
         </a>
       </HStack>
     ),
