@@ -59,9 +59,9 @@ const AboutMe: React.FC<{}> = () => {
                 sector.
               </Text>
               <br />
-              <Text className="text" fontSize="2xl" as="i" color="rose.300">
+              <Text className="text" as="i" color="rose.300">
                 My goal is to build beautiful and accessible applications that
-                serve a meaningful purpose (or provides silly entertainment).
+              serve a meaningful purpose (or provides silly entertainment).
               </Text>
               <br />
               <Text className="text">

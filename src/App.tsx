@@ -33,7 +33,7 @@ export const App = () => (
             <Home />
           </ScrollVisible>
           <AboutMe />
-          {/* <Gallery /> */}
+          <Gallery />
           <Experiences />
           <Projects />
         </VStack>
