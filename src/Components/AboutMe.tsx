@@ -54,17 +54,13 @@ const AboutMe: React.FC<{}> = () => {
                 </Text>
                 <br />
                 <Text className="text">
-                  I enjoy exploring different disciplines in order to become a
-                  more well-rounded individual. I have expertise in{" "}
-                  <strong>full-stack and front-end development</strong>,
-                  complemented by additional interests in{" "}
-                  <strong>user experience & design</strong>, all cultivated
-                  through my work experiences in the fintech sector.
+                  I've cultivated my expertise in <strong>full-stack and front-end development</strong> through my internship experiences in <strong>fintech</strong>. 
+                  However, I love exploring different disciplines such as <strong>UX/UI design</strong> and <strong>database optimization</strong> in order to become a more well-rounded engineer.
                 </Text>
                 <br />
                 <Text className="text" color="rose.300">
-                  My goal is to build beautiful and accessible applications that
-                  serve a meaningful purpose (or provides silly entertainment).
+                  I strive to build beautiful and accessible applications that
+                  serve a meaningful purpose (or provide silly entertainment).
                 </Text>
                 <br />
                 <Text className="text">

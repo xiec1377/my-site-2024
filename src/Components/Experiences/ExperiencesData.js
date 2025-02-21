@@ -3,7 +3,7 @@ import { ListItem, UnorderedList } from '@chakra-ui/react'
 export const ExperienceData = [
   {
     id: 'marketingKitchen',
-    position: 'Software Developer',
+    position: 'Software Engineer Intern',
     company: 'Marketing Kitchen Inc.',
     date: 'Sept 2024 - Dec 2024',
     points: (
@@ -23,7 +23,7 @@ export const ExperienceData = [
   },
   {
     id: 'justworks',
-    position: 'Software Engineer',
+    position: 'Software Engineer Intern',
     company: 'Justworks',
     date: 'May 2024 - Aug 2024',
     points: (
@@ -52,7 +52,7 @@ export const ExperienceData = [
   },
   {
     id: 'ttc',
-    position: 'Software Programmer',
+    position: 'Software Engineer Intern',
     company: 'Toronto Transit Commission',
     date: 'May 2023 - Aug 2023',
     points: (
@@ -105,7 +105,7 @@ export const ExperienceData = [
   },
   {
     id: 'empireLifeInsurance',
-    position: 'Full-Stack Developer',
+    position: 'Full-Stack Engineer Intern',
     company: 'Empire Life Insurance',
     date: 'Sept 2022 - Dec 2022',
     points: (
@@ -126,7 +126,7 @@ export const ExperienceData = [
   },
   {
     id: 'bankOfAmerica',
-    position: 'Application Developer',
+    position: 'Application Developer Intern',
     company: 'Bank of America Merrill Lynch',
     date: 'Jan 2022 - Apr 2022',
     points: (
@@ -151,7 +151,7 @@ export const ExperienceData = [
   {
     id: 'darwynn',
     position:
-      'Software Tester and Business Analyst                                                                                                 ',
+      'Software Tester Intern                                                                                               ',
     company: 'Darwynn Ltd.',
     date: 'May 2021 - Aug 2021',
     points: (
