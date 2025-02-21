@@ -4,6 +4,8 @@ import {
   Heading,
   Flex,
   VStack,
+  HStack,
+  Icon,
   Link,
   IconButton,
   Button,
@@ -11,6 +13,7 @@ import {
   Square,
   Circle,
   transition,
+  Text,
 } from "@chakra-ui/react";
 
 import { FaBriefcase, FaHome, FaLightbulb, FaUser } from "react-icons/fa";
@@ -30,103 +33,39 @@ const NavBar: React.FC<{}> = () => {
       pl={5}
       style={{ zIndex: 100 }}
     >
-      <VStack
-        alignItems="left"
-        role="group"
-        width="50px"
-        position="absolute"
-        spacing={5}
-      >
-        <IconButton
-          _hover={{
-            transform: "scale(1.1)",
-            width: "219%",
-            bg: "rose.100",
-            color: "gray.800",
-            transition: "ease-in-out 0.5s",
-            _after: {
-              content: '"Home"',
-              pl: "10px",
-            },
-          }}
-          as="a"
-          href="#home"
-          isRound={true}
-          variant="solid"
-          bg="rose.600"
-          color="white"
-          size="lg"
-          aria-label="Home"
-          icon={<FaHome size={20} />}
-        />
-        <IconButton
-          className="icon-button"
-          _hover={{
-            transform: "scale(1.1)",
-            width: "283%",
-            bg: "rose.50",
-            color: "gray.800",
-            transition: "ease-in-out 0.5s",
-            _after: {
-              position: "relative",
-              content: '"About me"',
-              pl: "10px",
-            },
-          }}
-          as="a"
-          href="#about-me"
-          isRound={true}
-          variant="solid"
-          bg="rose.600"
-          color="white"
-          size="lg"
-          aria-label="About Me"
-          icon={<FaUser size={20} />}
-        />
-        <IconButton
-          _hover={{
-            transform: "scale(1.1)",
-            width: "313%",
-            bg: "rose.100",
-            color: "gray.800",
-            transition: "ease-in-out 0.5s",
-            _after: {
-              content: '"Experience"',
-              pl: "10px",
-            },
-          }}
-          as="a"
-          href="#experiences"
-          isRound={true}
-          variant="solid"
-          bg="rose.600"
-          color="white"
-          size="lg"
-          aria-label="Experiences"
-          icon={<FaBriefcase size={20} />}
-        />
-        <IconButton
-          _hover={{
-            transform: "scale(1.1)",
-            width: "250%",
-            bg: "rose.100",
-            color: "gray.800",
-            transition: "ease-in-out 0.5s",
-            _after: {
-              content: '"Projects"',
-              pl: "10px",
-            },
-          }}
-          as="a"
-          href="#projects"
-          isRound={true}
-          variant="solid"
-          bg="rose.600"
-          color="white"
-          size="lg"
-          aria-label="Projects"
-          icon={<FaLightbulb size={20} />}
-        />
+      <VStack alignItems="left" width="50px" position="absolute" spacing={2}>
+        {[
+          { link: "home", display: "Home", icon: FaHome },
+          { link: "about-me", display: "About me", icon: FaUser },
+          { link: "experiences", display: "Experiences", icon: FaBriefcase },
+          { link: "projects", display: "Projects", icon: FaLightbulb },
+        ].map((item) => (
+          <Link href={`#${item.link}`} _hover={{ textDecoration: "none" }}>
+            <HStack
+              as="span"
+              role="group"
+              spacing={2}
+              align="center"
+              color="white"
+              borderRadius="full"
+              p={3}
+              _hover={{
+                transition: "ease-in-out 0.1s",
+              }}
+              aria-label={item.display}
+            >
+              <Icon as={item.icon} w={5} h={5} />
+              <Text
+                opacity={0}
+                transition="opacity 0.3s ease-in-out"
+                _groupHover={{ opacity: 1 }}
+                whiteSpace="nowrap"
+              >
+                {item.display}
+              </Text>
+            </HStack>
+          </Link>
+        ))}
       </VStack>
     </Flex>
   );
