@@ -21,9 +21,9 @@ import {
   Tag,
   TagLabel,
 } from "@chakra-ui/react";
-import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
+import { CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 import { ScrollVisible } from "../../Static/ScrollVisible";
-
+import { Card } from "../Card";
 interface Project {
   id: string;
   name: string;
@@ -39,16 +39,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
   console.log("project:", project);
   return (
     <ScrollVisible>
-      <Box
-        boxShadow="lg"
-        h="100%"
-        style={{
-          background: "rgba(102.80, 102.80, 102.80, 0.32)",
-          borderRadius: 20,
-          overflow: "hidden",
-          backdropFilter: "blur(27px)",
-        }}
-      >
+      <Card>
         <Flex>
           {project.img}
 
@@ -59,9 +50,9 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
           transition="ease-in-out 0.5s"
           _hover={{ transform: "scale(1.2)", filter: "grayscale(1)" }}
         /> */}
-          <Flex direction="column" p={10} w='50%'>
+          <Flex direction="column" p={10} w="50%">
             <Flex>
-              <Heading size="lg" color="rose.600" pb={3} w='100%'>
+              <Heading size="lg" color="rose.600" pb={3} w="100%">
                 {project.name}
               </Heading>
               {project.icon}
@@ -85,7 +76,7 @@ const ProjectCard: React.FC<{ project: Project }> = ({ project }) => {
             </HStack>
           </Flex>
         </Flex>
-      </Box>
+      </Card>
     </ScrollVisible>
   );
 };

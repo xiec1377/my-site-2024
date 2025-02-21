@@ -19,8 +19,9 @@ import {
   OrderedList,
   UnorderedList,
 } from "@chakra-ui/react";
-import { Card, CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
+import { CardHeader, CardBody, CardFooter } from "@chakra-ui/react";
 import { ScrollVisible } from "../../Static/ScrollVisible";
+import { Card } from "../Card";
 
 interface Experience {
   id: string;
@@ -34,17 +35,7 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
   experience,
 }) => (
   <ScrollVisible>
-    <Box
-      boxShadow="lg"
-      h="100%"
-      p={10}
-      style={{
-        background: "rgba(102.80, 102.80, 102.80, 0.32)",
-        borderRadius: 20,
-        overflow: "hidden",
-        backdropFilter: "blur(27px)",
-      }}
-    >
+    <Card p={10}>
       <Flex pb={3}>
         <Heading size="lg" color="rose.600">
           {experience.position}
@@ -60,7 +51,7 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
         </Heading>
       </Flex>
       {experience.points}
-    </Box>
+    </Card>
   </ScrollVisible>
 );
 
