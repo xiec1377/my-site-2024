@@ -33,39 +33,42 @@ const NavBar: React.FC<{}> = () => {
       pl={5}
       style={{ zIndex: 100 }}
     >
-      <VStack alignItems="left" width="50px" position="absolute" spacing={2}>
-        {[
-          { link: "home", display: "Home", icon: FaHome },
-          { link: "about-me", display: "About me", icon: FaUser },
-          { link: "experiences", display: "Experiences", icon: FaBriefcase },
-          { link: "projects", display: "Projects", icon: FaLightbulb },
-        ].map((item) => (
-          <Link href={`#${item.link}`} _hover={{ textDecoration: "none" }}>
-            <HStack
-              as="span"
-              role="group"
-              spacing={2}
-              align="center"
-              color="white"
-              borderRadius="full"
-              p={3}
-              _hover={{
-                transition: "ease-in-out 0.1s",
-              }}
-              aria-label={item.display}
-            >
-              <Icon as={item.icon} w={5} h={5} />
-              <Text
-                opacity={0}
-                transition="opacity 0.3s ease-in-out"
-                _groupHover={{ opacity: 1 }}
-                whiteSpace="nowrap"
+      <VStack justifyContent="center" width="50px" spacing={5} height="100%">
+        <Box width="1px" height="100%" bg="white" mt={5}/>
+        <VStack alignItems="left" width="50px" spacing={5}>
+          {[
+            { link: "home", display: "Home", icon: FaHome },
+            { link: "about-me", display: "About me", icon: FaUser },
+            { link: "experiences", display: "Experiences", icon: FaBriefcase },
+            { link: "projects", display: "Projects", icon: FaLightbulb },
+          ].map((item) => (
+            <Link href={`#${item.link}`} _hover={{ textDecoration: "none" }}>
+              <HStack
+                as="span"
+                role="group"
+                color="white"
+                borderRadius="full"
+                pl={4}
+                pr={4}
+                _hover={{
+                  transition: "ease-in-out 0.1s",
+                }}
+                aria-label={item.display}
               >
-                {item.display}
-              </Text>
-            </HStack>
-          </Link>
-        ))}
+                <Icon as={item.icon} w={5} h={5} />
+                <Text
+                  opacity={0}
+                  transition="opacity 0.3s ease-in-out"
+                  _groupHover={{ opacity: 1 }}
+                  whiteSpace="nowrap"
+                >
+                  {item.display}
+                </Text>
+              </HStack>
+            </Link>
+          ))}
+        </VStack>
+        <Box width="1px" height="100%"  bg="white" mb={5}/>
       </VStack>
     </Flex>
   );
