@@ -35,7 +35,7 @@ const Projects: React.FC<{}> = () => {
     <Box id="projects">
       <VStack pb={150} align="start">
         <ScrollVisible>
-          <Header title="Projects" />
+          <Header title="projects" />
         </ScrollVisible>
         <ScrollVisible>
           <Text className="text" pb={5}>

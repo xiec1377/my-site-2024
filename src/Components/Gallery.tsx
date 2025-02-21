@@ -32,7 +32,7 @@ const Gallery: React.FC<{}> = () => {
       <ScrollVisible>
         <Center>
           <Heading as="h2" size="2xl" color="rose.600" pb={10}>
-            Gallery
+            gallery
           </Heading>
         </Center>
       </ScrollVisible>

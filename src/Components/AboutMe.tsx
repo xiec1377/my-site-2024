@@ -26,59 +26,63 @@ const AboutMe: React.FC<{}> = () => {
     <Box id="about-me" zIndex={50}>
       <VStack align="top">
         <ScrollVisible>
-          <HStack spacing="24px">
-            <Image
-              src={Me}
-              minW={300}
-              maxW={500}
-              clipPath="circle(40%)"
-              // clipPath="rect(10%, 30%, 30%, 10%)"
-              fallbackSrc="https://via.placeholder.com/150"
-              alt="Me"
-            />
-            <VStack align="start">
-              <Header title="About me" />
-              <Text className="text">
-                My name is Catherine and I’m a fourth-year Computer Science
-                student at the{" "}
-                <a href="https://uwaterloo.ca/">
-                  <strong style={{ textDecoration: "underline" }}>
-                    University of Waterloo
-                  </strong>
-                </a>
-                .
-              </Text>
-              <br />
-              <Text className="text">
-                I enjoy exploring different disciplines in order to become a
-                more well-rounded individual. I have expertise in{" "}
-                <strong>full-stack and front-end development</strong>,
-                complemented by additional interests in{" "}
-                <strong>product management and user experience & design</strong>
-                , all cultivated through my work experiences in the fintech
-                sector.
-              </Text>
-              <br />
-              <Text className="text" as="i" color="rose.300">
-                My goal is to build beautiful and accessible applications that
-              serve a meaningful purpose (or provides silly entertainment).
-              </Text>
-              <br />
-              <Text className="text">
-                On my days off, I’m an aspiring weightlifter, competitive dancer
-                and a versatile artist.
-              </Text>
-            </VStack>
-          </HStack>
+          <VStack align="start" flex="3">
+            <Header title="about me" />
+            <HStack spacing="24px">
+              <Image
+                src={Me}
+                minW={300}
+                maxW={500}
+                // clipPath="circle(40%)"
+                // clipPath="rect(10%, 30%, 30%, 10%)"
+                borderRadius={10}
+                fallbackSrc="https://via.placeholder.com/150"
+                alt="Me"
+                flex="1"
+                //transform='scale(2.1)'
+              />
+              <VStack align="start" flex="3">
+                <Text className="text">
+                  Hi! I'm Catherine and I’m a fourth-year Computer Science
+                  student at the{" "}
+                  <a href="https://uwaterloo.ca/">
+                    <strong style={{ textDecoration: "underline" }}>
+                      University of Waterloo
+                    </strong>
+                  </a>
+                  .
+                </Text>
+                <br />
+                <Text className="text">
+                  I enjoy exploring different disciplines in order to become a
+                  more well-rounded individual. I have expertise in{" "}
+                  <strong>full-stack and front-end development</strong>,
+                  complemented by additional interests in{" "}
+                  <strong>user experience & design</strong>, all cultivated
+                  through my work experiences in the fintech sector.
+                </Text>
+                <br />
+                <Text className="text" color="rose.300">
+                  My goal is to build beautiful and accessible applications that
+                  serve a meaningful purpose (or provides silly entertainment).
+                </Text>
+                <br />
+                <Text className="text">
+                  On my days off, I’m an aspiring weightlifter, competitive
+                  dancer and a versatile artist.
+                </Text>{" "}
+              </VStack>
+            </HStack>
+          </VStack>
         </ScrollVisible>
       </VStack>
-      {/* <ScrollVisible>
+      <ScrollVisible>
         <VStack p={150}>
           <Text className="text" textAlign="center">
-            Check out some of my passion projects{" "}
+            Check out some of my art projects{" "}
           </Text>
         </VStack>
-      </ScrollVisible> */}
+      </ScrollVisible>
     </Box>
   );
 };

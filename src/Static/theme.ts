@@ -79,11 +79,11 @@ const overrides = extendTheme({
           color: 'rose.700',
         },
       },
-      '.icon-color': {
-        '&:hover': {
-          color: 'rose.600',
-        },
-      },
+      // '.icon-color': {
+      //   '&:hover': {
+      //     color: 'rose.600',
+      //   },
+      // },
     }),
   },
 })

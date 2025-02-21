@@ -36,7 +36,8 @@ export const BackgroundBlob = () => {
           position: "fixed",
           left: "-10%",
           top: "-20%",
-          opacity: '0.8'
+          opacity: '0.8',
+          // zIndex: '-1'
         
         }}
       />
@@ -58,6 +59,7 @@ export const BackgroundBlob = () => {
           left: "60%",
           bottom: "-50%",
           opacity: '0.7',
+          // zIndex: '-1'
         }}
       />
     </>

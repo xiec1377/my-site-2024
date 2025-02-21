@@ -21,7 +21,7 @@ const Home: React.FC<{}> = () => {
           Catherine Xie
         </Heading>
         <Heading as="h2" fontSize="h3" color="rose.600" zIndex='100' fontWeight='10px'>
-          Developer in the daytime, designer at dusk
+          developer in the daytime, designer at dusk.
         </Heading>
         <Socials />
       </VStack>

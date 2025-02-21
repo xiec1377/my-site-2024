@@ -34,7 +34,7 @@ const Experiences: React.FC<{}> = () => {
     <Box id="experiences">
       <VStack pb={150}>
         <ScrollVisible>
-          <Header title="Experience" />
+          <Header title="experience" />
         </ScrollVisible>
         <ScrollVisible>
           <Stack spacing="5">
