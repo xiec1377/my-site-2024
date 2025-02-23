@@ -1,4 +1,4 @@
-import {  extendTheme } from '@chakra-ui/react'
+import { extendTheme } from '@chakra-ui/react'
 import type { StyleFunctionProps } from '@chakra-ui/styled-system'
 import { access, accessSync } from 'fs'
 
@@ -48,6 +48,16 @@ const overrides = extendTheme({
       },
       backgroundColor: {
         color: 'gray.800',
+      },
+      '::-webkit-scrollbar': {
+        width: '15px',
+      },
+      '::-webkit-scrollbar-thumb': {
+        background: 'gray.600', 
+        borderRadius: '10px',
+      },
+      '::-webkit-scrollbar-track': {
+        background: 'gray.800', 
       },
       '.h1': {
         color: 'white',
