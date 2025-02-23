@@ -18,15 +18,22 @@ import {
   ListIcon,
   OrderedList,
   UnorderedList,
+  Divider,
 } from "@chakra-ui/react";
 import { ScrollVisible } from "../Static/ScrollVisible";
+import { Socials } from "./Socials";
 
 export const Footer = () => {
   return (
-    <Flex pt={20} pb={5} zIndex={100}>
-      <Center h={100} w="100vw" bg="gray.900">
-        <Text>© Catherine Xie 2024</Text>
-      </Center>
-    </Flex>
+    <VStack px="15%" zIndex={10}>
+      <Divider alignSelf="center" borderColor="gray.500" size="10" />
+      <VStack p="2.5rem" spacing="2.5rem">
+        <VStack justifyContent="center" spacing={0}>
+          <Text>Let's connect!</Text>
+          <Socials />
+        </VStack>
+        <Text color="gray.500">© Catherine Xie 2024</Text>
+      </VStack>
+    </VStack>
   );
 };
