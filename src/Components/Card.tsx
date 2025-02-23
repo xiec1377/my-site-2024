@@ -16,7 +16,7 @@ export const Card = ({ children, ...props }: CardProps) => {
         borderRadius: 10,
         overflow: "hidden",
         backdropFilter: "blur(27px)",
-        border: "1px solid rgb(96, 96, 96)",
+        border: "1px solid rgba(102.80, 102.80, 102.80, 0.4)",
       }}
       {...props}
     >
