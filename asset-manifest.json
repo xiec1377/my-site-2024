@@ -1,18 +1,18 @@
 {
   "files": {
-    "main.js": "/static/js/main.8a168eef.js",
+    "main.js": "/static/js/main.4ad41915.js",
     "static/js/787.da21397a.chunk.js": "/static/js/787.da21397a.chunk.js",
     "static/media/north-arcadia-demo.gif": "/static/media/north-arcadia-demo.d89df936172380a73ff8.gif",
     "static/media/search-with-tech-demo.gif": "/static/media/search-with-tech-demo.771cd04877a8ed7d0da1.gif",
     "static/media/knight.png": "/static/media/knight.11b6bdb84b40dee94784.png",
     "static/media/eye.png": "/static/media/eye.e663c32a2372d9bdb1f6.png",
     "static/media/drinking.png": "/static/media/drinking.3b93a1ecc3e24a6211d4.png",
+    "static/media/Catherine_LinkedIn_Headshot.png": "/static/media/Catherine_LinkedIn_Headshot.0f6ab43d2eb7ae017995.png",
     "static/media/man.png": "/static/media/man.2ae0b2d9ef07618a04d3.png",
     "static/media/girlFront.png": "/static/media/girlFront.6f65e3d63bce21ad741f.png",
     "static/media/girlSide.png": "/static/media/girlSide.fc9478c247b99cfc02e7.png",
     "static/media/purpleGirl.png": "/static/media/purpleGirl.a41c945a1e1c6dac06b6.png",
     "static/media/stock-trader-demo.gif": "/static/media/stock-trader-demo.80dd4489c2c5fe4ff474.gif",
-    "static/media/me.jpg": "/static/media/me.9972e2720906bae0bdaf.jpg",
     "static/media/gray.png": "/static/media/gray.2ee01af0d3732187488b.png",
     "static/media/face.gif": "/static/media/face.8b02d580b5a8258ec815.gif",
     "static/media/brewbot.png": "/static/media/brewbot.6ebbdd9f27366ca8b8a3.png",
@@ -26,14 +26,17 @@
     "static/media/sales-pitch-demo.png": "/static/media/sales-pitch-demo.184dbe0546ae6e0989e6.png",
     "static/media/sales_pitch_generator.jpg": "/static/media/sales_pitch_generator.e5ab9d1b59fb14898091.jpg",
     "static/media/chess-thumbnail.png": "/static/media/chess-thumbnail.121675e5e65bc61e8a23.png",
+    "static/media/bofa_logo.png": "/static/media/bofa_logo.d45b7c0a3e0fbe84f5ad.png",
     "static/media/stock-trader-thumbnail.png": "/static/media/stock-trader-thumbnail.585b5fdee51dae2e40c4.png",
     "static/media/search_with_tech.jpg": "/static/media/search_with_tech.b8538e37217b2ba5a650.jpg",
+    "static/media/empirelife-logo.png": "/static/media/empirelife-logo.726d8340501fdf6f2ec4.png",
     "static/media/north_arcadia.jpg": "/static/media/north_arcadia.ff3270a321f5afb2e7ae.jpg",
+    "static/media/justworks-logo.webp": "/static/media/justworks-logo.70dec9215bb8bd3922f6.webp",
     "index.html": "/index.html",
-    "main.8a168eef.js.map": "/static/js/main.8a168eef.js.map",
+    "main.4ad41915.js.map": "/static/js/main.4ad41915.js.map",
     "787.da21397a.chunk.js.map": "/static/js/787.da21397a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.8a168eef.js"
+    "static/js/main.4ad41915.js"
   ]
 }
