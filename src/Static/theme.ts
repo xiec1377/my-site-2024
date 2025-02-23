@@ -32,7 +32,7 @@ const overrides = extendTheme({
     white: '#FAFAFA',
   },
   fontSizes: {
-    body: '16px',
+    body: '14px',
     h3: '32px',
     h2: '42px',
     h1: '64px',
@@ -41,7 +41,7 @@ const overrides = extendTheme({
   styles: {
     global: (props: StyleFunctionProps) => ({
       body: {
-        fontFamily: 'body',
+        fontFamily: "Inter, sans-serif",
         color: 'rose.100',
         bg: 'gray.800',
         lineHeight: 'base',
@@ -79,7 +79,6 @@ const overrides = extendTheme({
       '.icon': {
         width: '25px',
         height: 'auto',
-
         '&:hover': {
           transform: 'scale(1.1)',
           transition: 'ease-in-out 0.5s',

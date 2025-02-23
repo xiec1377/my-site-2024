@@ -1,9 +1,10 @@
-import { ListItem, UnorderedList, Image, Text } from '@chakra-ui/react'
+import { ListItem, UnorderedList, Image, Text, Link } from '@chakra-ui/react'
 export const ExperienceData = [
   {
     id: 'marketingKitchen',
     position: 'Software Engineer Intern',
     company: 'Marketing Kitchen Inc.',
+    link: 'https://www.marketingkitchen.ca/',
     date: 'Sept 2024 - Dec 2024',
     points: (
       <Text className="text">
@@ -27,6 +28,7 @@ export const ExperienceData = [
     id: 'justworks',
     position: 'Software Engineer Intern',
     company: 'Justworks',
+    link: 'https://www.justworks.com/',
     date: 'May 2024 - Aug 2024',
     points: (
       <Text className="text">
@@ -50,6 +52,7 @@ export const ExperienceData = [
     id: 'ttc',
     position: 'Software Engineer Intern',
     company: 'Toronto Transit Commission',
+    link: 'https://www.ttc.ca/',
     date: 'May 2023 - Aug 2023',
     points: (
       <Text className="text">
@@ -73,11 +76,15 @@ export const ExperienceData = [
     id: 'blueprint',
     position: 'Project Developer',
     company: 'UW Blueprint',
+    link: 'https://uwblueprint.org/',
     date: 'May 2023 - Aug 2023',
     points: (
       <Text className="text">
         Built registration and refund flows for camper and admin users for local
-        non-profit youth summer camps
+        non-profit youth summer camps portal{' '}
+        <Link href="https://focusonnature.ca/" isExternal>
+          Focus on Nature
+        </Link>
       </Text>
     ),
     icon: (
@@ -96,6 +103,7 @@ export const ExperienceData = [
     id: 'empireLifeInsurance',
     position: 'Full-Stack Engineer Intern',
     company: 'Empire Life Insurance',
+    link: 'https://www.empire.ca/',
     date: 'Sept 2022 - Dec 2022',
     points: (
       <Text className="text">
@@ -118,6 +126,7 @@ export const ExperienceData = [
     id: 'bankOfAmerica',
     position: 'Application Developer Intern',
     company: 'Bank of America Securities Inc.',
+    link: 'https://business.bofa.com/content/boaml/en_us/home.html',
     date: 'Jan 2022 - Apr 2022',
     points: (
       <Text className="text">
@@ -149,6 +158,7 @@ export const ExperienceData = [
     position:
       'Software Tester Intern                                                                                               ',
     company: 'Darwynn Ltd.',
+    link: 'https://www.darwynnfulfillment.com/',
     date: 'May 2021 - Aug 2021',
     points: (
       <Text className="text ">

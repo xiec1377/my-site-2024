@@ -35,7 +35,7 @@ const NavBar: React.FC<{}> = () => {
     >
       <VStack justifyContent="center" width="50px" spacing={5} height="100%">
         {/* <Box width="1px" height="100%" bg="white" mt={5}/> */}
-        <VStack alignItems="left" width="50px" spacing={8}>
+        <VStack alignItems="left" width="50px" spacing={10}>
           {[
             { link: "home", display: "home", icon: FaHome },
             { link: "about-me", display: "about me", icon: FaUser },

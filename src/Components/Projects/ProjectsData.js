@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import { Box, Text, Image, HStack, Tooltip } from '@chakra-ui/react'
+import { Box, Text, Image, HStack, Tooltip, Link } from '@chakra-ui/react'
 import {
   FaFigma,
   FaGithub,
@@ -41,9 +41,9 @@ export const ProjectsData = [
     name: 'PhotoSpotter',
     desc: (
       <Text className="point text" h="75%">
-        Community photography-sharing Android app, enabling users to
-        discover and share photography locations with others by uploading photos
-        and placing pins on the map.
+        Community photography-sharing Android app, enabling users to discover
+        and share photography locations with others by uploading photos and
+        placing pins on the map.
       </Text>
     ),
     languages: [
@@ -67,9 +67,9 @@ export const ProjectsData = [
           aria-label="Private repository"
           placement="top"
         >
-          <a href="https://git.uwaterloo.ca/hy5chen/team-101">
+          <Link href="https://git.uwaterloo.ca/hy5chen/team-101" isExternal>
             <FaGitlab className="icon" />
-          </a>
+          </Link>
         </Tooltip>
       </HStack>
     ),
@@ -101,12 +101,12 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <a href="https://github.com/WilliamUW/PitchPerfect">
+        <Link href="https://github.com/WilliamUW/PitchPerfect" isExternal>
           <FaGithub className="icon" />
-        </a>
-        <a href="https://devpost.com/software/pitcheasy">
+        </Link>
+        <Link href="https://devpost.com/software/pitcheasy" isExternal>
           <Icon icon="simple-icons:devpost" className="icon" />
-        </a>
+        </Link>
       </HStack>
     ),
   },
@@ -129,12 +129,12 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <a href="https://github.com/xiongjasmine/searchwithtech">
+        <Link href="https://github.com/xiongjasmine/searchwithtech" isExternal>
           <FaGithub className="icon" />
-        </a>
-        <a href="https://devpost.com/software/search-with-tech">
+        </Link>
+        <Link href="https://devpost.com/software/search-with-tech" isExternal>
           <Icon icon="simple-icons:devpost" className="icon" />
-        </a>
+        </Link>
       </HStack>
     ),
   },
@@ -156,9 +156,9 @@ export const ProjectsData = [
       />
     ),
     icon: (
-      <a href="https://github.com/xiec1377/image-generator">
+      <Link href="https://github.com/xiec1377/image-generator" isExternal>
         <FaGithub className="icon" />
-      </a>
+      </Link>
     ),
   },
   {
@@ -180,9 +180,12 @@ export const ProjectsData = [
       />
     ),
     icon: (
-      <a href="https://github.com/xiec1377/CS50X/tree/main/finance">
+      <Link
+        href="https://github.com/xiec1377/CS50X/tree/main/finance"
+        isExternal
+      >
         <FaGithub className="icon" />
-      </a>
+      </Link>
     ),
   },
   {
@@ -203,9 +206,9 @@ export const ProjectsData = [
       />
     ),
     icon: (
-      <a href="https://replit.com/@xiec1377/Chess-cs246">
+      <Link href="https://replit.com/@xiec1377/Chess-cs246" isExternal>
         <Icon icon="simple-icons:replit" className="icon" />
-      </a>
+      </Link>
     ),
   },
   {
@@ -226,12 +229,15 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <a href="https://github.com/xiongjasmine/northarcadia/tree/main/HTN2020">
+        <Link
+          href="https://github.com/xiongjasmine/northarcadia/tree/main/HTN2020"
+          isExternal
+        >
           <FaGithub className="icon" />
-        </a>
-        <a href="https://devpost.com/software/north-arcadia">
+        </Link>
+        <Link href="https://devpost.com/software/north-arcadia" isExternal>
           <Icon icon="simple-icons:devpost" className="icon" />
-        </a>
+        </Link>
       </HStack>
     ),
   },
@@ -242,9 +248,12 @@ export const ProjectsData = [
       <Text className="point text" h="75%">
         Executed design process to build a hifi prototype of gamified smart
         calendar mobile application. View our case study{' '}
-        <a href="https://youtu.be/lYtSLOtQ_pQ?zhualex99=0jkhH_eXYHubHzLr">
+        <Link
+          href="https://youtu.be/lYtSLOtQ_pQ?zhualex99=0jkhH_eXYHubHzLr"
+          isExternal
+        >
           <strong style={{ textDecoration: 'underline' }}>here</strong>
-        </a>
+        </Link>
         .
       </Text>
     ),
@@ -258,12 +267,18 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <a href="https://medium.com/@zhualex99/ai-powered-productivity-with-planiq-d783ce630f6a">
+        <Link
+          href="https://medium.com/@zhualex99/ai-powered-productivity-with-planiq-d783ce630f6a"
+          isExternal
+        >
           <FaMediumM className="icon" />
-        </a>
-        <a href="https://www.figma.com/proto/zI0HNpH7LausOZf52f3aPT/Broke-%26-Hungry-High-Fidelity-Prototype?node-id=702-2488&t=EDzpAioupOhPkQVt-1&scaling=scale-down&content-scaling=fixed&page-id=157%3A622&starting-point-node-id=702%3A2488&show-proto-sidebar=1">
+        </Link>
+        <Link
+          href="https://www.figma.com/proto/zI0HNpH7LausOZf52f3aPT/Broke-%26-Hungry-High-Fidelity-Prototype?node-id=702-2488&t=EDzpAioupOhPkQVt-1&scaling=scale-down&content-scaling=fixed&page-id=157%3A622&starting-point-node-id=702%3A2488&show-proto-sidebar=1"
+          isExternal
+        >
           <FaFigma className="icon" />
-        </a>
+        </Link>
       </HStack>
     ),
   },
@@ -274,9 +289,12 @@ export const ProjectsData = [
       <Text className="point text" h="75%">
         Hifi prototype of utilizing chatbots to help users combat menu anxiety
         at coffee shops. Watch our case study{' '}
-        <a href="https://youtu.be/lYtSLOtQ_pQ?si=0jkhH_eXYHubHzLr">
+        <Link
+          href="https://youtu.be/lYtSLOtQ_pQ?si=0jkhH_eXYHubHzLr"
+          isExternal
+        >
           <strong style={{ textDecoration: 'underline' }}>here</strong>
-        </a>
+        </Link>
         .
       </Text>
     ),
@@ -290,12 +308,18 @@ export const ProjectsData = [
     ),
     icon: (
       <HStack>
-        <a href="https://youtu.be/lYtSLOtQ_pQ?si=0jkhH_eXYHubHzLr">
+        <Link
+          href="https://youtu.be/lYtSLOtQ_pQ?si=0jkhH_eXYHubHzLr"
+          isExternal
+        >
           <FaYoutube className="icon" />
-        </a>
-        <a href="https://www.figma.com/proto/dpSacAlqBoQ9TiE7MmvcAS/Final-Prototype?node-id=870-1532&t=O8gNH9Sw0ajoWT4r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=933%3A2807">
+        </Link>
+        <Link
+          href="https://www.figma.com/proto/dpSacAlqBoQ9TiE7MmvcAS/Final-Prototype?node-id=870-1532&t=O8gNH9Sw0ajoWT4r-1&scaling=scale-down&content-scaling=fixed&page-id=0%3A1&starting-point-node-id=933%3A2807"
+          isExternal
+        >
           <FaFigma className="icon" />
-        </a>
+        </Link>
       </HStack>
     ),
   },

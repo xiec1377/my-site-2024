@@ -14,6 +14,7 @@ import {
   Spacer,
   Grid,
   Divider,
+  Link,
 } from "@chakra-ui/react";
 import Me from "../Assets/Catherine_LinkedIn_Headshot.png";
 import { ScrollVisible } from "../Static/ScrollVisible";
@@ -32,7 +33,8 @@ const AboutMe: React.FC<{}> = () => {
                 display="flex"
                 flexDirection="column"
                 alignItems="center"
-                padding={10}
+                pt={10}
+                pr={10}
               >
                 <Image
                   src={Me}
@@ -42,9 +44,9 @@ const AboutMe: React.FC<{}> = () => {
                   alt="Me"
                   flexShrink={0}
                   objectFit="cover"
-                  objectPosition="top" 
-                  width="300px" 
-                  height="300px" 
+                  objectPosition="top"
+                  width="300px"
+                  height="300px"
                 />
                 {/* <Box
                   position="absolute"
@@ -70,11 +72,11 @@ const AboutMe: React.FC<{}> = () => {
                 <Text className="text">
                   Hi! I'm Catherine and I’m a fourth-year Computer Science
                   student at the{" "}
-                  <a href="https://uwaterloo.ca/">
+                  <Link href="https://uwaterloo.ca/" isExternal>
                     <strong style={{ textDecoration: "underline" }}>
                       University of Waterloo
                     </strong>
-                  </a>
+                  </Link>
                   .
                 </Text>
                 <br />
