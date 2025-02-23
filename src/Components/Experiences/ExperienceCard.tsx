@@ -25,6 +25,7 @@ import { Card } from "../Card";
 
 interface Experience {
   id: string;
+  icon?: JSX.Element;
   position: string;
   date: string;
   company: string;
@@ -36,21 +37,27 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
 }) => (
   <ScrollVisible>
     <Card p={10}>
-      <Flex pb={3}>
-        <Heading size="lg" color="rose.600">
-          {experience.position}
-        </Heading>
-      </Flex>
-      <Flex pb={3}>
-        <Heading size="md" color="white">
-          {experience.company}
-        </Heading>
-        <Spacer />
-        <Heading size="md" color="white">
-          {experience.date}
-        </Heading>
-      </Flex>
-      {experience.points}
+     
+    <HStack alignItems="start" spacing={4}>
+     {experience.icon}
+      <VStack align="start" spacing={3} flex="1">
+        <Flex pb={3}>
+          <Heading size="lg" color="rose.600">
+            {experience.position}
+          </Heading>
+        </Flex>
+        <Flex pb={3} width="100%">
+          <Heading size="md" color="white">
+            {experience.company}
+          </Heading>
+          <Spacer />
+          <Heading size="md" color="white">
+            {experience.date}
+          </Heading>
+        </Flex>
+        {experience.points}
+      </VStack>
+    </HStack>
     </Card>
   </ScrollVisible>
 );

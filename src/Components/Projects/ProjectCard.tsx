@@ -29,8 +29,8 @@ interface Project {
   name: string;
   desc: JSX.Element;
   languages: string[];
-  img: JSX.Element;
-  icon: JSX.Element;
+  img?: JSX.Element;
+  icon?: JSX.Element;
 }
 const baseUrl = process.env.PUBLIC_URL;
 console.log("baseurl:", baseUrl);

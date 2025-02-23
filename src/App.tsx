@@ -28,7 +28,7 @@ export const App = () => (
       <BackgroundBlob></BackgroundBlob>
       <NavBar />
       <VStack align="stretch">
-        <VStack px="15%" zIndex={100}>
+        <VStack px="15%" zIndex={1}>
           <ScrollVisible>
             <Home />
           </ScrollVisible>

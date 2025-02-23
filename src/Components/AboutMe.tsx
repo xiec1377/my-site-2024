@@ -20,6 +20,7 @@ import { ScrollVisible } from "../Static/ScrollVisible";
 import { Header } from "./Header";
 import Gallery from "./Gallery";
 
+
 import { AspectRatio } from "@chakra-ui/react";
 const AboutMe: React.FC<{}> = () => {
   return (
@@ -28,12 +29,12 @@ const AboutMe: React.FC<{}> = () => {
         <ScrollVisible>
           <VStack align="start" flex="3">
             <Header title="about me" />
-            <HStack spacing="24px">
+            <HStack spacing="24px" justifyContent="start">
               <Image
                 src={Me}
                 minW={300}
                 maxW={500}
-                // clipPath="circle(40%)"
+                clipPath="circle(40%)"
                 // clipPath="rect(10%, 30%, 30%, 10%)"
                 borderRadius={10}
                 fallbackSrc="https://via.placeholder.com/150"

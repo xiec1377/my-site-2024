@@ -1,5 +1,5 @@
-import { ListItem, UnorderedList } from '@chakra-ui/react'
-
+import { ListItem, UnorderedList, Image } from '@chakra-ui/react'
+import fee from '../../Assets/bnwgirl.png'
 export const ExperienceData = [
   {
     id: 'marketingKitchen',
@@ -20,6 +20,13 @@ export const ExperienceData = [
         </ListItem>
       </UnorderedList>
     ),
+    icon: ( 
+      <Image
+          src={require(`../../Assets/marketing-kitchen-icon.png`)}
+          alt="Sales pitch generator"
+          fallbackSrc="https://via.placeholder.com/150"
+          w={50}
+        />)
   },
   {
     id: 'justworks',
