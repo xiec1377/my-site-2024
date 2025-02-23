@@ -37,27 +37,23 @@ const ExperienceCard: React.FC<{ experience: Experience }> = ({
 }) => (
   <ScrollVisible>
     <Card p={10}>
-     
-    <HStack alignItems="start" spacing={4}>
-     {experience.icon}
-      <VStack align="start" spacing={3} flex="1">
-        <Flex pb={3}>
-          <Heading size="lg" color="rose.600">
-            {experience.position}
-          </Heading>
-        </Flex>
-        <Flex pb={3} width="100%">
-          <Heading size="md" color="white">
-            {experience.company}
-          </Heading>
-          <Spacer />
-          <Heading size="md" color="white">
-            {experience.date}
-          </Heading>
-        </Flex>
-        {experience.points}
-      </VStack>
-    </HStack>
+      <HStack alignItems="start" spacing={4}>
+        {experience.icon}
+        <VStack align="start" spacing={1} flex="1">
+          {/* spacing={4}  */}
+          <Flex>
+            <Heading size="lg" color="rose.600">
+              {experience.position}
+            </Heading>
+          </Flex>
+          <Flex pb={3} width="100%">
+            <Text color="rose.300">{experience.company}</Text>
+            <Spacer />
+            <Text color="rose.300">{experience.date}</Text>
+          </Flex>
+          {experience.points}
+        </VStack>
+      </HStack>
     </Card>
   </ScrollVisible>
 );

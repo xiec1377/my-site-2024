@@ -41,7 +41,7 @@ export const ProjectsData = [
     name: 'PhotoSpotter',
     desc: (
       <Text className="point text" h="75%">
-        Created a community photography-sharing Android app, enabling users to
+        Community photography-sharing Android app, enabling users to
         discover and share photography locations with others by uploading photos
         and placing pins on the map.
       </Text>

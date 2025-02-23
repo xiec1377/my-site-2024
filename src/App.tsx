@@ -24,7 +24,7 @@ import { Footer } from "./Components/Footer";
 
 export const App = () => (
   <ChakraProvider theme={theme}>
-    <Box bg="gray.800" w="100%" overflow="hidden">
+    <Box bg="gray.900" w="100%" overflow="hidden">
       <BackgroundBlob></BackgroundBlob>
       <NavBar />
       <VStack align="stretch">

@@ -15,11 +15,10 @@ import {
   Grid,
   Divider,
 } from "@chakra-ui/react";
-import Me from "../Assets/me.jpg";
+import Me from "../Assets/Catherine_LinkedIn_Headshot.png";
 import { ScrollVisible } from "../Static/ScrollVisible";
 import { Header } from "./Header";
 import Gallery from "./Gallery";
-
 
 import { AspectRatio } from "@chakra-ui/react";
 const AboutMe: React.FC<{}> = () => {
@@ -27,22 +26,47 @@ const AboutMe: React.FC<{}> = () => {
     <Box id="about-me" zIndex={50}>
       <VStack align="top">
         <ScrollVisible>
-          <VStack align="start" flex="3">
-            <Header title="about me" />
-            <HStack spacing="24px" justifyContent="start">
-              <Image
-                src={Me}
-                minW={300}
-                maxW={500}
-                clipPath="circle(40%)"
-                // clipPath="rect(10%, 30%, 30%, 10%)"
-                borderRadius={10}
-                fallbackSrc="https://via.placeholder.com/150"
-                alt="Me"
-                flex="1"
-                //transform='scale(2.1)'
-              />
+          <HStack align="start" flex="3">
+            <HStack spacing="24px" align="start">
+              <Box
+                display="flex"
+                flexDirection="column"
+                alignItems="center"
+                padding={10}
+              >
+                <Image
+                  src={Me}
+                  maxW="300px"
+                  borderRadius="full"
+                  fallbackSrc="https://via.placeholder.com/150"
+                  alt="Me"
+                  flexShrink={0}
+                  objectFit="cover"
+                  objectPosition="top" 
+                  width="300px" 
+                  height="300px" 
+                />
+                {/* <Box
+                  position="absolute"
+                  transform="translate(-90%, 240%)"
+                  width="100px"
+                  height="100px"
+                  borderRadius="full"
+                  background="rose.600" 
+                  zIndex={100}
+                />
+                <Box
+                  position="absolute"
+                  transform="translate(50%, 700%)"
+                  width="50px"
+                  height="50px"
+                  borderRadius="full"
+                  background="rose.300" 
+                /> */}
+              </Box>
+
               <VStack align="start" flex="3">
+                <Header title="about me" />
                 <Text className="text">
                   Hi! I'm Catherine and I’m a fourth-year Computer Science
                   student at the{" "}
@@ -55,8 +79,13 @@ const AboutMe: React.FC<{}> = () => {
                 </Text>
                 <br />
                 <Text className="text">
-                  I've cultivated my expertise in <strong>full-stack and front-end development</strong> through my internship experiences in <strong>fintech</strong>. 
-                  However, I love exploring different disciplines such as <strong>UX/UI design</strong> and <strong>database optimization</strong> in order to become a more well-rounded engineer.
+                  I've cultivated my expertise in{" "}
+                  <strong>full-stack and front-end development</strong> through
+                  my internship experiences in <strong>fintech</strong>.
+                  However, I love exploring different disciplines such as{" "}
+                  <strong>UX/UI design</strong> and{" "}
+                  <strong>database optimization</strong> in order to become a
+                  more well-rounded engineer.
                 </Text>
                 <br />
                 <Text className="text" color="rose.300">
@@ -70,7 +99,7 @@ const AboutMe: React.FC<{}> = () => {
                 </Text>{" "}
               </VStack>
             </HStack>
-          </VStack>
+          </HStack>
         </ScrollVisible>
       </VStack>
       <ScrollVisible>

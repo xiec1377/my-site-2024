@@ -10,12 +10,11 @@ const overrides = extendTheme({
       200: '#E5E5E5',
       300: '#D4D4D4',
       400: '#A3A3A3',
-      500: '#737373',
+      500: 'rgb(96, 96, 96)', // '#737373',
       600: '#525252',
       700: '#404040',
       800: '#262626',
-      900: '#171717',
-      950: "#0A0A0A"
+      900: '#121212',
     },
     purple: {
       500: '#6343ED',
@@ -61,11 +60,11 @@ const overrides = extendTheme({
         color: 'rose.600',
       },
       '.unorderedList': {
-        paddingLeft: '6',
+        paddingLeft: '1',
         paddingBottom: '3',
       },
       '.point': {
-        paddingBottom: '3',
+        paddingBottom: '2',
       },
       '.icon': {
         width: '25px',
