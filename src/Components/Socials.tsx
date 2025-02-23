@@ -31,7 +31,11 @@ export const Socials = () => {
   return (
     <HStack spacing="10" pt={3} zIndex="100">
       <Tooltip label="LinkedIn" aria-label="LinkedIn tooltip" hasArrow>
-        <a href="https://www.linkedin.com/in/catherine-xie-101377/">
+        <a
+          href="https://www.linkedin.com/in/catherine-xie-101377/"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaLinkedinIn
             className="icon"
             aria-label="LinkedIn icon"
@@ -40,18 +44,36 @@ export const Socials = () => {
         </a>
       </Tooltip>
       <Tooltip label="Github" aria-label="Github tooltip" hasArrow>
-        <a href="https://github.com/xiec1377">
+        <a
+          href="https://github.com/xiec1377"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaGithub className="icon" aria-label="Github icon" color="white" />
         </a>
       </Tooltip>
       <Tooltip label="Email" aria-label="Email tooltip" hasArrow>
-        <a href={`mailto:'catherinexie2014@gmail.com`}>
+        <a
+          href={`mailto:'catherinexie2014@gmail.com`}
+          target="_blank"
+          rel="noopener noreferrer"
+        >
           <FaEnvelope className="icon" aria-label="Email icon" color="white" />{" "}
         </a>
       </Tooltip>
-      {/* <a href={Resume} target="_blank">
-        <FaFileAlt className="icon icon-color" aria-label="Resume icon" />{" "}
-      </a> */}
+      <Tooltip label="Resume" aria-label="Resume tooltip" hasArrow>
+        <a
+          href="/Catherine Xie Resume.pdf"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          <FaFileAlt
+            className="icon icon-color"
+            aria-label="Resume icon"
+            color="white"
+          />{" "}
+        </a>
+      </Tooltip>
     </HStack>
   );
 };
