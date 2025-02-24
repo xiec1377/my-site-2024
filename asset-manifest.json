@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.js": "/static/js/main.4ad41915.js",
+    "main.js": "/static/js/main.d0032a57.js",
     "static/js/787.da21397a.chunk.js": "/static/js/787.da21397a.chunk.js",
     "static/media/north-arcadia-demo.gif": "/static/media/north-arcadia-demo.d89df936172380a73ff8.gif",
     "static/media/search-with-tech-demo.gif": "/static/media/search-with-tech-demo.771cd04877a8ed7d0da1.gif",
@@ -23,6 +23,7 @@
     "static/media/photo-spotter-thumbnail.png": "/static/media/photo-spotter-thumbnail.b74cea47e572f0b7f871.png",
     "static/media/planiq.png": "/static/media/planiq.fc824730a4a5491bc876.png",
     "static/media/image-generator-thumbnail.png": "/static/media/image-generator-thumbnail.42ed7bc0cf5879323b32.png",
+    "static/media/catherine_logo.png": "/static/media/catherine_logo.05d740a2003aab677e78.png",
     "static/media/sales-pitch-demo.png": "/static/media/sales-pitch-demo.184dbe0546ae6e0989e6.png",
     "static/media/sales_pitch_generator.jpg": "/static/media/sales_pitch_generator.e5ab9d1b59fb14898091.jpg",
     "static/media/chess-thumbnail.png": "/static/media/chess-thumbnail.121675e5e65bc61e8a23.png",
@@ -33,10 +34,10 @@
     "static/media/north_arcadia.jpg": "/static/media/north_arcadia.ff3270a321f5afb2e7ae.jpg",
     "static/media/justworks-logo.webp": "/static/media/justworks-logo.70dec9215bb8bd3922f6.webp",
     "index.html": "/index.html",
-    "main.4ad41915.js.map": "/static/js/main.4ad41915.js.map",
+    "main.d0032a57.js.map": "/static/js/main.d0032a57.js.map",
     "787.da21397a.chunk.js.map": "/static/js/787.da21397a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.4ad41915.js"
+    "static/js/main.d0032a57.js"
   ]
 }
