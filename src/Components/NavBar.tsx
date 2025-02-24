@@ -18,7 +18,15 @@ import {
 
 import { FaBriefcase, FaHome, FaLightbulb, FaUser } from "react-icons/fa";
 
-import { Fade, ScaleFade, Slide, SlideFade, Collapse } from "@chakra-ui/react";
+import {
+  Fade,
+  ScaleFade,
+  Slide,
+  SlideFade,
+  Collapse,
+  Image,
+} from "@chakra-ui/react";
+import MyLogo from "../Assets/catherine_logo.png";
 
 import { useDisclosure } from "@chakra-ui/react";
 const NavBar: React.FC<{}> = () => {
@@ -30,12 +38,32 @@ const NavBar: React.FC<{}> = () => {
       position="fixed"
       height="100vh"
       alignItems="center"
-      pl={5}
+      p={5}
       style={{ zIndex: 100 }}
     >
-      <VStack justifyContent="center" width="50px" spacing={5} height="100%">
+      <VStack
+        justifyContent="space-between"
+        width="50px"
+        spacing={5}
+        height="100%"
+      >
+        <Link href="#home">
+          <Image
+            src={MyLogo}
+            fallbackSrc="https://via.placeholder.com/150"
+            alt="Me"
+            w="35px"
+            filter="invert(100%)"
+          />
+        </Link>
         {/* <Box width="1px" height="100%" bg="white" mt={5}/> */}
-        <VStack alignItems="left" width="50px" spacing={10}>
+        <VStack
+          alignItems="left"
+          justifyContent="center"
+          width="50px"
+          spacing={10}
+          flexGrow={1}
+        >
           {[
             { link: "home", display: "home", icon: FaHome },
             { link: "about-me", display: "about me", icon: FaUser },
