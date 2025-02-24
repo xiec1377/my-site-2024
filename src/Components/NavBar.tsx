@@ -15,7 +15,6 @@ import {
   transition,
   Text,
 } from "@chakra-ui/react";
-
 import { FaBriefcase, FaHome, FaLightbulb, FaUser } from "react-icons/fa";
 
 import {

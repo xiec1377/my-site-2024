@@ -29,7 +29,7 @@ export const Footer = () => {
       <Divider alignSelf="center" borderColor="gray.500" size="10" />
       <VStack p="2.5rem" spacing="2.5rem">
         <VStack justifyContent="center" spacing={0}>
-          <Text>Let's connect!</Text>
+          <Text color="gray.500">Let's connect!</Text>
           <Socials />
         </VStack>
         <Text color="gray.500">© Catherine Xie 2024</Text>

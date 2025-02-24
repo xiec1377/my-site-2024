@@ -22,12 +22,19 @@ import {
   Button,
   Icon,
   Tooltip,
+  useTheme,
 } from "@chakra-ui/react";
 import { ScrollVisible } from "../Static/ScrollVisible";
 import { FaLinkedinIn, FaGithub, FaEnvelope, FaFileAlt } from "react-icons/fa";
 // import { Tooltip } from "@/components/ui/tooltip"
 
-export const Socials = () => {
+interface SocialProps {
+  color?: string;
+}
+
+export const Socials = ({ color }: SocialProps) => {
+  const theme = useTheme();
+  const defaultColor = color || theme.colors.gray[500];
   return (
     <HStack spacing="10" pt={3} zIndex="100">
       <Tooltip label="LinkedIn" aria-label="LinkedIn tooltip" hasArrow>
@@ -39,7 +46,7 @@ export const Socials = () => {
           <FaLinkedinIn
             className="icon"
             aria-label="LinkedIn icon"
-            color="white"
+            color={defaultColor}
           />
         </a>
       </Tooltip>
@@ -49,7 +56,11 @@ export const Socials = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaGithub className="icon" aria-label="Github icon" color="white" />
+          <FaGithub
+            className="icon"
+            aria-label="Github icon"
+            color={defaultColor}
+          />
         </a>
       </Tooltip>
       <Tooltip label="Email" aria-label="Email tooltip" hasArrow>
@@ -58,7 +69,11 @@ export const Socials = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <FaEnvelope className="icon" aria-label="Email icon" color="white" />{" "}
+          <FaEnvelope
+            className="icon"
+            aria-label="Email icon"
+            color={defaultColor}
+          />{" "}
         </a>
       </Tooltip>
       <Tooltip label="Resume" aria-label="Resume tooltip" hasArrow>
@@ -70,7 +85,7 @@ export const Socials = () => {
           <FaFileAlt
             className="icon icon-color"
             aria-label="Resume icon"
-            color="white"
+            color={defaultColor}
           />{" "}
         </a>
       </Tooltip>
