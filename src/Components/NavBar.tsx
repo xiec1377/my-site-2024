@@ -25,7 +25,7 @@ import {
   Collapse,
   Image,
 } from "@chakra-ui/react";
-import MyLogo from "../Assets/catherine_logo.png";
+// import MyLogo from "../Assets/catherine_logo.png";
 
 import { useDisclosure } from "@chakra-ui/react";
 const NavBar: React.FC<{}> = () => {
@@ -48,9 +48,9 @@ const NavBar: React.FC<{}> = () => {
       >
         <Link href="#home">
           <Image
-            src={MyLogo}
+            src="/catherine_logo.png"
             fallbackSrc="https://via.placeholder.com/150"
-            alt="Me"
+            alt="Catherine logo"
             w="35px"
             filter="invert(100%)"
           />
