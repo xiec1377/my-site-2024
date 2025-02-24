@@ -107,7 +107,7 @@ const AboutMe: React.FC<{}> = () => {
       <ScrollVisible>
         <VStack p={150}>
           <Text className="text" textAlign="center">
-            Check out some of my art projects{" "}
+            I dabble in digital art and 3D modeling. Check out some of my art projects.{" "}
           </Text>
         </VStack>
       </ScrollVisible>
