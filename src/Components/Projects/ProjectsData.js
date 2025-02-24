@@ -19,6 +19,7 @@ const HoverImage = ({ src1, src2, alt }) => {
       transition="ease-in-out 0.5s"
       onMouseEnter={() => setIsHovered(true)}
       onMouseLeave={() => setIsHovered(false)}
+      minH={alt === 'PhotoSpotter' ? "350px" : ''}
     >
       <Image
         src={isHovered ? (src2 ? src2 : src1) : src1}
@@ -188,59 +189,59 @@ export const ProjectsData = [
       </Link>
     ),
   },
-  {
-    id: '7',
-    name: 'Chess',
-    desc: (
-      <Text className="point text" h="75%">
-        Classic chess game that allows users to play human-vs-human or
-        human-vs-computer with easy, medium and hard difficulties.
-      </Text>
-    ),
-    languages: ['C++'],
-    img: (
-      <HoverImage
-        src1={require('../../Assets/chess-thumbnail.png')}
-        src2={require('../../Assets/chess-demo.gif')}
-        alt="Chess"
-      />
-    ),
-    icon: (
-      <Link href="https://replit.com/@xiec1377/Chess-cs246" isExternal>
-        <Icon icon="simple-icons:replit" className="icon" />
-      </Link>
-    ),
-  },
-  {
-    id: '8',
-    name: 'North Arcadia',
-    desc: (
-      <Text className="point text" h="75%">
-        Arcade of mini games (Flappy Bird, Pong, Snake).
-      </Text>
-    ),
-    languages: ['JavaScript', 'HTML/CSS', 'Bootstrap'],
-    img: (
-      <HoverImage
-        src1={require('../../Assets/north_arcadia.jpg')}
-        src2={require('../../Assets/north-arcadia-demo.gif')}
-        alt="North Arcadia"
-      />
-    ),
-    icon: (
-      <HStack>
-        <Link
-          href="https://github.com/xiongjasmine/northarcadia/tree/main/HTN2020"
-          isExternal
-        >
-          <FaGithub className="icon" />
-        </Link>
-        <Link href="https://devpost.com/software/north-arcadia" isExternal>
-          <Icon icon="simple-icons:devpost" className="icon" />
-        </Link>
-      </HStack>
-    ),
-  },
+  // {
+  //   id: '7',
+  //   name: 'Chess',
+  //   desc: (
+  //     <Text className="point text" h="75%">
+  //       Classic chess game that allows users to play human-vs-human or
+  //       human-vs-computer with easy, medium and hard difficulties.
+  //     </Text>
+  //   ),
+  //   languages: ['C++'],
+  //   img: (
+  //     <HoverImage
+  //       src1={require('../../Assets/chess-thumbnail.png')}
+  //       src2={require('../../Assets/chess-demo.gif')}
+  //       alt="Chess"
+  //     />
+  //   ),
+  //   icon: (
+  //     <Link href="https://replit.com/@xiec1377/Chess-cs246" isExternal>
+  //       <Icon icon="simple-icons:replit" className="icon" />
+  //     </Link>
+  //   ),
+  // },
+  // {
+  //   id: '8',
+  //   name: 'North Arcadia',
+  //   desc: (
+  //     <Text className="point text" h="75%">
+  //       Arcade of mini games (Flappy Bird, Pong, Snake).
+  //     </Text>
+  //   ),
+  //   languages: ['JavaScript', 'HTML/CSS', 'Bootstrap'],
+  //   img: (
+  //     <HoverImage
+  //       src1={require('../../Assets/north_arcadia.jpg')}
+  //       src2={require('../../Assets/north-arcadia-demo.gif')}
+  //       alt="North Arcadia"
+  //     />
+  //   ),
+  //   icon: (
+  //     <HStack>
+  //       <Link
+  //         href="https://github.com/xiongjasmine/northarcadia/tree/main/HTN2020"
+  //         isExternal
+  //       >
+  //         <FaGithub className="icon" />
+  //       </Link>
+  //       <Link href="https://devpost.com/software/north-arcadia" isExternal>
+  //         <Icon icon="simple-icons:devpost" className="icon" />
+  //       </Link>
+  //     </HStack>
+  //   ),
+  // },
   {
     id: '4',
     name: 'PlanIQ',
