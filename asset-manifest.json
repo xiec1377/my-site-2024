@@ -1,24 +1,11 @@
 {
   "files": {
-    "main.js": "/static/js/main.3839d7c9.js",
+    "main.js": "/static/js/main.de8d0153.js",
     "static/js/787.da21397a.chunk.js": "/static/js/787.da21397a.chunk.js",
     "static/media/search-with-tech-demo.gif": "/static/media/search-with-tech-demo.771cd04877a8ed7d0da1.gif",
-    "static/media/guy.png": "/static/media/guy.61793756bfa9c43e1581.png",
-    "static/media/knight.png": "/static/media/knight.11b6bdb84b40dee94784.png",
-    "static/media/eye.png": "/static/media/eye.e663c32a2372d9bdb1f6.png",
-    "static/media/drinking.png": "/static/media/drinking.3b93a1ecc3e24a6211d4.png",
     "static/media/Catherine_LinkedIn_Headshot.png": "/static/media/Catherine_LinkedIn_Headshot.0f6ab43d2eb7ae017995.png",
-    "static/media/girlinscarf.png": "/static/media/girlinscarf.1001964da48ee0d7e8eb.png",
-    "static/media/man.png": "/static/media/man.2ae0b2d9ef07618a04d3.png",
-    "static/media/girlFront.png": "/static/media/girlFront.6f65e3d63bce21ad741f.png",
-    "static/media/girlSide.png": "/static/media/girlSide.fc9478c247b99cfc02e7.png",
     "static/media/stock-trader-demo.gif": "/static/media/stock-trader-demo.80dd4489c2c5fe4ff474.gif",
-    "static/media/square.png": "/static/media/square.05cee09cac1a2e96380d.png",
-    "static/media/gray.png": "/static/media/gray.2ee01af0d3732187488b.png",
-    "static/media/face.gif": "/static/media/face.8b02d580b5a8258ec815.gif",
-    "static/media/mecartoon.png": "/static/media/mecartoon.fbf9ef4522eeaa40a137.png",
     "static/media/brewbot.png": "/static/media/brewbot.6ebbdd9f27366ca8b8a3.png",
-    "static/media/bnwgirl.png": "/static/media/bnwgirl.a6dfdcd0bb914cacd16d.png",
     "static/media/photo-spotter-demo.gif": "/static/media/photo-spotter-demo.6eb705b13d7d6f36258a.gif",
     "static/media/image-generator-demo.gif": "/static/media/image-generator-demo.ae8a8adcc84d0f0d2772.gif",
     "static/media/photo-spotter-thumbnail.png": "/static/media/photo-spotter-thumbnail.b74cea47e572f0b7f871.png",
@@ -32,10 +19,10 @@
     "static/media/empirelife-logo.png": "/static/media/empirelife-logo.726d8340501fdf6f2ec4.png",
     "static/media/justworks-logo.webp": "/static/media/justworks-logo.70dec9215bb8bd3922f6.webp",
     "index.html": "/index.html",
-    "main.3839d7c9.js.map": "/static/js/main.3839d7c9.js.map",
+    "main.de8d0153.js.map": "/static/js/main.de8d0153.js.map",
     "787.da21397a.chunk.js.map": "/static/js/787.da21397a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.3839d7c9.js"
+    "static/js/main.de8d0153.js"
   ]
 }
