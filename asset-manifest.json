@@ -1,11 +1,13 @@
 {
   "files": {
-    "main.js": "/static/js/main.0826af96.js",
+    "main.js": "/static/js/main.7eb41d5f.js",
     "static/js/787.da21397a.chunk.js": "/static/js/787.da21397a.chunk.js",
+    "static/media/endless-runner-demo.gif": "/static/media/endless-runner-demo.82fef27cacdd37bec010.gif",
     "static/media/search-with-tech-demo.gif": "/static/media/search-with-tech-demo.771cd04877a8ed7d0da1.gif",
     "static/media/Catherine_LinkedIn_Headshot.png": "/static/media/Catherine_LinkedIn_Headshot.0f6ab43d2eb7ae017995.png",
     "static/media/stock-trader-demo.gif": "/static/media/stock-trader-demo.80dd4489c2c5fe4ff474.gif",
     "static/media/brewbot.png": "/static/media/brewbot.6ebbdd9f27366ca8b8a3.png",
+    "static/media/endless-runner-thumbnail.png": "/static/media/endless-runner-thumbnail.873f4bf426fc402e960f.png",
     "static/media/photo-spotter-demo.gif": "/static/media/photo-spotter-demo.6eb705b13d7d6f36258a.gif",
     "static/media/image-generator-demo.gif": "/static/media/image-generator-demo.ae8a8adcc84d0f0d2772.gif",
     "static/media/photo-spotter-thumbnail.png": "/static/media/photo-spotter-thumbnail.b74cea47e572f0b7f871.png",
@@ -19,10 +21,10 @@
     "static/media/empirelife-logo.png": "/static/media/empirelife-logo.726d8340501fdf6f2ec4.png",
     "static/media/justworks-logo.webp": "/static/media/justworks-logo.70dec9215bb8bd3922f6.webp",
     "index.html": "/index.html",
-    "main.0826af96.js.map": "/static/js/main.0826af96.js.map",
+    "main.7eb41d5f.js.map": "/static/js/main.7eb41d5f.js.map",
     "787.da21397a.chunk.js.map": "/static/js/787.da21397a.chunk.js.map"
   },
   "entrypoints": [
-    "static/js/main.0826af96.js"
+    "static/js/main.7eb41d5f.js"
   ]
 }
