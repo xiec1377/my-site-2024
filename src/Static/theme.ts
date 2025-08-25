@@ -31,17 +31,28 @@ const overrides = extendTheme({
     },
     white: '#FAFAFA',
   },
+  // breakpoints: {
+  //   sm: '480px',
+  //   md: '768px',
+  //   lg: '992px',
+  //   xl: '1280px',
+  // },
   fontSizes: {
     body: '14px',
     h3: '32px',
     h2: '42px',
     h1: '64px',
-    title: '110px',
+    // title: {
+    //   base: '64px', // Default font size
+    //   sm: '80px',   // Font size for small screens
+    //   md: '90px',   // Font size for medium screens
+    //   lg: '110px',  // Font size for large screens
+    // },
   },
   styles: {
     global: (props: StyleFunctionProps) => ({
       body: {
-        fontFamily: "Inter, sans-serif",
+        fontFamily: 'Inter, sans-serif',
         color: 'rose.100',
         bg: 'gray.800',
         lineHeight: 'base',
@@ -49,15 +60,23 @@ const overrides = extendTheme({
       backgroundColor: {
         color: 'gray.800',
       },
-      '::-webkit-scrollbar': {
-        width: '15px',
+      '@media (min-width: 1024px)': {
+        // lg breakpoint (1024px)
+        '::-webkit-scrollbar': {
+          width: '15px',
+        },
+        '::-webkit-scrollbar-thumb': {
+          background: 'gray.600',
+          borderRadius: '10px',
+        },
+        '::-webkit-scrollbar-track': {
+          background: 'gray.800',
+        },
       },
-      '::-webkit-scrollbar-thumb': {
-        background: 'gray.600', 
-        borderRadius: '10px',
-      },
-      '::-webkit-scrollbar-track': {
-        background: 'gray.800', 
+      '@media (max-width: 1023px)': {
+        '::-webkit-scrollbar': {
+          width: '0px',
+        },
       },
       '.h1': {
         color: 'white',

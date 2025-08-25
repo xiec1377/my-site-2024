@@ -15,7 +15,14 @@ import {
   transition,
   Text,
 } from "@chakra-ui/react";
-import { FaBriefcase, FaHome, FaLightbulb, FaUser } from "react-icons/fa";
+import {
+  FaBriefcase,
+  FaHome,
+  FaLightbulb,
+  FaUser,
+  FaBars,
+  FaTimes,
+} from "react-icons/fa";
 
 import {
   Fade,
@@ -29,22 +36,26 @@ import {
 
 import { useDisclosure } from "@chakra-ui/react";
 const NavBar: React.FC<{}> = () => {
-  const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
+  // const { isOpen, onOpen, onClose, onToggle } = useDisclosure();
   // const [isLabel, setIsLabel] = useState(false);
   // console.log("label:", isLabel)
+  const [isOpen, setIsOpen] = useState(false);
   return (
-    <Flex
-      position="fixed"
-      height="100vh"
-      alignItems="center"
-      p={5}
-      style={{ zIndex: 100 }}
-    >
-      <VStack
+    <>
+      {/* mobile view */}
+      <HStack
+        position="fixed"
+        width="100vw"
+        alignItems="center"
         justifyContent="space-between"
-        width="50px"
-        spacing={5}
-        height="100%"
+        p={5}
+        style={{
+          zIndex: 100,
+          background: "rgba(102.80, 102.80, 102.80, 0.4)",
+          backdropFilter: "blur(27px)",
+          borderBottom: "1px solid rgba(102.80, 102.80, 102.80, 0.4)",
+        }}
+        display={{ base: "flex", sm: "flex", lg: "none" }}
       >
         <Link href="#home">
           <Image
@@ -53,51 +64,137 @@ const NavBar: React.FC<{}> = () => {
             alt="Catherine logo"
             w="35px"
             filter="invert(100%)"
+            position="fixed"
+            top="20px"
+            left="20px"
           />
         </Link>
-        {/* <Box width="1px" height="100%" bg="white" mt={5}/> */}
+        <Icon as={FaBars} w={4} h={4} onClick={() => setIsOpen(true)} />{" "}
+        {isOpen && (
+          <Box
+            position="fixed"
+            top="0"
+            left="0"
+            width="100vw"
+            height="100vh"
+            bg="rgba(0, 0, 0, 0.9)"
+            zIndex="110"
+            display="flex"
+            alignItems="center"
+            justifyContent="center"
+          >
+            <Icon
+              as={FaTimes}
+              w={4}
+              h={4}
+              position="absolute"
+              top="20px"
+              right="20px"
+              cursor="pointer"
+              color="white"
+              onClick={() => setIsOpen(false)}
+            />
+
+            <VStack alignItems="left" justifyContent="center" spacing={10}>
+              {[
+                { link: "home", display: "home", icon: FaHome },
+                { link: "about-me", display: "about me", icon: FaUser },
+                {
+                  link: "experiences",
+                  display: "experience",
+                  icon: FaBriefcase,
+                },
+                { link: "projects", display: "projects", icon: FaLightbulb },
+              ].map((item) => (
+                <Link href={`#${item.link}`} onClick={() => setIsOpen(false)}>
+                  <HStack
+                    as="span"
+                    role="group"
+                    color="white"
+                    borderRadius="full"
+                    pl={4}
+                    pr={4}
+                    aria-label={item.display}
+                  >
+                    <Icon as={item.icon} w={4} h={4} />
+                    <Text whiteSpace="nowrap">{item.display}</Text>
+                  </HStack>
+                </Link>
+              ))}
+            </VStack>
+          </Box>
+        )}
+      </HStack>
+      {/* desktop view */}
+      <Flex
+        position="fixed"
+        height="100vh"
+        alignItems="center"
+        p={5}
+        style={{ zIndex: 100 }}
+        display={{ base: "none", lg: "flex" }}
+      >
         <VStack
-          alignItems="left"
-          justifyContent="center"
+          justifyContent="space-between"
           width="50px"
-          spacing={10}
-          flexGrow={1}
+          spacing={5}
+          height="100%"
         >
-          {[
-            { link: "home", display: "home", icon: FaHome },
-            { link: "about-me", display: "about me", icon: FaUser },
-            { link: "experiences", display: "experience", icon: FaBriefcase },
-            { link: "projects", display: "projects", icon: FaLightbulb },
-          ].map((item) => (
-            <Link href={`#${item.link}`} _hover={{ textDecoration: "none" }}>
-              <HStack
-                as="span"
-                role="group"
-                color="white"
-                borderRadius="full"
-                pl={4}
-                pr={4}
-                _hover={{
-                  transition: "ease-in-out 0.5s",
-                }}
-                aria-label={item.display}
-              >
-                <Icon as={item.icon} w={4} h={4} />
-                <Text
-                  opacity={0}
-                  transition="opacity 0.5s ease-in-out"
-                  _groupHover={{ opacity: 1 }}
-                  whiteSpace="nowrap"
+          <Link href="#home">
+            <Image
+              src="/catherine_logo.png"
+              fallbackSrc="https://via.placeholder.com/150"
+              alt="Catherine logo"
+              w="35px"
+              filter="invert(100%)"
+              position="fixed"
+              top="20px"
+              left="20px"
+            />
+          </Link>
+          <VStack
+            alignItems="left"
+            justifyContent="center"
+            width="50px"
+            spacing={10}
+            flexGrow={1}
+          >
+            {[
+              { link: "home", display: "home", icon: FaHome },
+              { link: "about-me", display: "about me", icon: FaUser },
+              { link: "experiences", display: "experience", icon: FaBriefcase },
+              { link: "projects", display: "projects", icon: FaLightbulb },
+            ].map((item) => (
+              <Link href={`#${item.link}`} _hover={{ textDecoration: "none" }}>
+                <HStack
+                  as="span"
+                  role="group"
+                  color="white"
+                  borderRadius="full"
+                  pl={4}
+                  pr={4}
+                  _hover={{
+                    transition: "ease-in-out 0.5s",
+                  }}
+                  aria-label={item.display}
                 >
-                  {item.display}
-                </Text>
-              </HStack>
-            </Link>
-          ))}
+                  <Icon as={item.icon} w={4} h={4} />
+                  <Text
+                    opacity={0}
+                    transition="opacity 0.5s ease-in-out"
+                    _groupHover={{ opacity: 1 }}
+                    whiteSpace="nowrap"
+                  >
+                    {item.display}
+                  </Text>
+                </HStack>
+              </Link>
+            ))}
+          </VStack>
+          {/* <Box width="1px" height="100%"  bg="white" mb={5}/> */}
         </VStack>
-        {/* <Box width="1px" height="100%"  bg="white" mb={5}/> */}
-      </VStack>
-    </Flex>
+      </Flex>
+    </>
   );
 };
 export default NavBar;

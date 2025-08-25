@@ -30,11 +30,11 @@ const AboutMe: React.FC<{}> = () => {
           <HStack align="start" flex="3">
             <HStack spacing="24px" align="start">
               <Box
-                display="flex"
                 flexDirection="column"
                 alignItems="center"
                 pt={10}
                 pr={10}
+                display={{ base: "none", lg: "flex" }}
               >
                 <Image
                   src={Me}
@@ -69,9 +69,29 @@ const AboutMe: React.FC<{}> = () => {
 
               <VStack align="start" flex="3">
                 <Header title="about me" />
+                <Box
+                  flexDirection="column"
+                  alignItems="center"
+                  w="100%"
+                  p={10}
+                  display={{ base: "flex", lg: "none" }}
+                >
+                  <Image
+                    src={Me}
+                    maxW="300px"
+                    borderRadius="full"
+                    fallbackSrc="https://via.placeholder.com/150"
+                    alt="Me"
+                    flexShrink={0}
+                    objectFit="cover"
+                    objectPosition="top"
+                    width="300px"
+                    height="300px"
+                  />
+                </Box>
                 <Text className="text">
-                  Hi! I'm Catherine and I’m a fourth-year Computer Science
-                  student at the{" "}
+                  Hi! I'm Catherine and I recently completed my Bachelors of Computer Science
+                  at the{" "}
                   <Link href="https://uwaterloo.ca/" isExternal>
                     <strong style={{ textDecoration: "underline" }}>
                       University of Waterloo
@@ -81,12 +101,12 @@ const AboutMe: React.FC<{}> = () => {
                 </Text>
                 <br />
                 <Text className="text">
-                  I've cultivated my expertise in{" "}
+                  I've honed my skills in{" "}
                   <strong>full-stack and front-end development</strong> through
-                  my internship experiences in <strong>fintech</strong>.
+                  my internship experiences in <strong>fintech</strong> and <strong>startups</strong>.
                   However, I love exploring different disciplines such as{" "}
                   <strong>UX/UI design</strong> and{" "}
-                  <strong>database optimization</strong> in order to become a
+                  <strong>database design</strong> in order to become a
                   more well-rounded engineer.
                 </Text>
                 <br />
@@ -104,13 +124,14 @@ const AboutMe: React.FC<{}> = () => {
           </HStack>
         </ScrollVisible>
       </VStack>
-      <ScrollVisible>
-        <VStack p={150}>
+      {/* <ScrollVisible>
+        <VStack py={150}>
           <Text className="text" textAlign="center">
-            I dabble in digital art and 3D modeling. Check out some of my art projects.{" "}
+            I dabble in digital art and 3D modeling. Check out some of my art
+            projects.{" "}
           </Text>
         </VStack>
-      </ScrollVisible>
+      </ScrollVisible> */}
     </Box>
   );
 };

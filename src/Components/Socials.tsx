@@ -78,7 +78,7 @@ export const Socials = ({ color }: SocialProps) => {
       </Tooltip>
       <Tooltip label="Resume" aria-label="Resume tooltip" hasArrow>
         <a
-          href="/Catherine Xie Resume.pdf"
+          href="/Catherine_Xie_Resume.pdf"
           target="_blank"
           rel="noopener noreferrer"
         >

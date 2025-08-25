@@ -19,12 +19,18 @@ const Home: React.FC<{}> = () => {
   return (
     <Box w="100%" id="home" py="40vh">
       <VStack>
-        <Heading color="white" fontSize="title" zIndex="100">
+        <Heading
+          color="white"
+          fontSize={["50px", "50px", "90px", "110px"]}
+          zIndex="100"
+          whiteSpace="nowrap"
+        >
           Catherine Xie
         </Heading>
         <Heading
           as="h2"
-          fontSize="h3"
+          // fontSize="h3"
+          fontSize={["20px", "20px", "24px", "32px"]}
           color="rose.600"
           zIndex="100"
           fontWeight="10px"

@@ -189,6 +189,34 @@ export const ProjectsData = [
       </Link>
     ),
   },
+  {
+    id: '7',
+    name: '3D Endless Runner Game (In Progress)',
+    desc: (
+      <Text className="point text" h="75%">
+        Learning Unity and 3D game development with an endless runner game.
+      </Text>
+    ),
+    languages: [
+      'C#',
+      'Unity Assets',
+    ],
+    img: (
+      <HoverImage
+        src1={require('../../Assets/endless-runner-thumbnail.png')}
+        src2={require('../../Assets/endless-runner-demo.gif')}
+        alt="Endless runner"
+      />
+    ),
+    icon: (
+      <Link
+        href="https://github.com/xiec1377/endless-runner-game"
+        isExternal
+      >
+        <FaGithub className="icon" />
+      </Link>
+    ),
+  },
   // {
   //   id: '7',
   //   name: 'Chess',
