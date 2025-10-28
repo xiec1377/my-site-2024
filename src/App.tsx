@@ -36,6 +36,7 @@ export const App = () => (
           {/* <Gallery /> */}
           <Experiences />
           <Projects />
+          <Gallery />
         </VStack>
         <Footer />
       </VStack>

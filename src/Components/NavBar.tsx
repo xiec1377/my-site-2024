@@ -22,6 +22,7 @@ import {
   FaUser,
   FaBars,
   FaTimes,
+  FaPaintBrush
 } from "react-icons/fa";
 
 import {
@@ -164,6 +165,7 @@ const NavBar: React.FC<{}> = () => {
               { link: "about-me", display: "about me", icon: FaUser },
               { link: "experiences", display: "experience", icon: FaBriefcase },
               { link: "projects", display: "projects", icon: FaLightbulb },
+              { link: "art", display: "art", icon: FaPaintBrush }
             ].map((item) => (
               <Link href={`#${item.link}`} _hover={{ textDecoration: "none" }}>
                 <HStack

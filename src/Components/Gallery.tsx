@@ -12,6 +12,7 @@ import {
   Grid,
   GridItem,
   Circle,
+  Stack,
 } from "@chakra-ui/react";
 import Eye from "../Assets/eye.png";
 import Face from "../Assets/face.gif";
@@ -29,40 +30,80 @@ import GirlInScarf from "../Assets/girlinscarf.png";
 import GirlSquare from "../Assets/square.png";
 import { GalleryItem } from "./GalleryItem";
 import { ScrollVisible } from "../Static/ScrollVisible";
+import { Header } from "./Header";
 
 const Gallery: React.FC<{}> = () => {
   return (
-    <VStack zIndex={50} pb={150}>
-      <ScrollVisible>
-        <Center>
-          <Heading as="h2" size="2xl" color="rose.600" pb={10}>
-            gallery
-          </Heading>
-        </Center>
-      </ScrollVisible>
-      <HStack align="base">
-        <VStack>
-          <GalleryItem src={MeCartoon} alt="man.png" />
-          <GalleryItem src={Man} alt="man.png" />
-          <GalleryItem src={GrayGirl} alt="bnwgirl.png" />
-          <GalleryItem src={Drinking} alt="drinking.png" />
-        </VStack>
-        <VStack>
-          <GalleryItem src={Face} alt="face.gif" />
+    <Box id="art">
+      <VStack pb={150} align="start">
+        <ScrollVisible>
+          <Header title="art" />
+        </ScrollVisible>
+        <ScrollVisible>
+          <Text className="text" pb={5}>
+            {" "}
+            I've been dabbling in digital art and 3D rendering lately. Check out
+            some of my projects!{" "}
+          </Text>
+        </ScrollVisible>
+        <Stack spacing="10">
+          <HStack align="base">
+            <VStack>
+              <GalleryItem src={MeCartoon} alt="man.png" />
+              <GalleryItem src={Man} alt="man.png" />
+              <GalleryItem src={GrayGirl} alt="bnwgirl.png" />
+              <GalleryItem src={Drinking} alt="drinking.png" />
+            </VStack>
+            <VStack>
+              <GalleryItem src={Face} alt="face.gif" />
 
-          <GalleryItem src={GirlSquare} alt="bnwgirl.png" />
-          <GalleryItem src={GirlFront} alt="girlFront.png" />
-          <GalleryItem src={GirlInScarf} alt="purpleGirl.png" />
-          <GalleryItem src={Eye} alt="eye.png" />
-        </VStack>
-        <VStack>
-          <GalleryItem src={Guy} alt="drinking.png" />
-          <GalleryItem src={GirlSide} alt="girlSide.png" />
-          <GalleryItem src={Knight} alt="knight.png" />
-          <GalleryItem src={Gray} alt="gray.png" />
-        </VStack>
-      </HStack>
-    </VStack>
+              <GalleryItem src={GirlSquare} alt="bnwgirl.png" />
+              <GalleryItem src={GirlFront} alt="girlFront.png" />
+              <GalleryItem src={GirlInScarf} alt="purpleGirl.png" />
+              <GalleryItem src={Eye} alt="eye.png" />
+            </VStack>
+            <VStack>
+              <GalleryItem src={Guy} alt="drinking.png" />
+              <GalleryItem src={GirlSide} alt="girlSide.png" />
+              <GalleryItem src={Knight} alt="knight.png" />
+              <GalleryItem src={Gray} alt="gray.png" />
+            </VStack>
+          </HStack>
+        </Stack>
+      </VStack>
+    </Box>
+
+    // <VStack zIndex={50} pb={150}>
+    //   <ScrollVisible>
+    //     <Center>
+    //       <Heading as="h2" size="2xl" color="rose.600" pb={10}>
+    //         gallery
+    //       </Heading>
+    //     </Center>
+    //   </ScrollVisible>
+    //   <HStack align="base">
+    //     <VStack>
+    //       <GalleryItem src={MeCartoon} alt="man.png" />
+    //       <GalleryItem src={Man} alt="man.png" />
+    //       <GalleryItem src={GrayGirl} alt="bnwgirl.png" />
+    //       <GalleryItem src={Drinking} alt="drinking.png" />
+    //     </VStack>
+    //     <VStack>
+    //       <GalleryItem src={Face} alt="face.gif" />
+
+    //       <GalleryItem src={GirlSquare} alt="bnwgirl.png" />
+    //       <GalleryItem src={GirlFront} alt="girlFront.png" />
+    //       <GalleryItem src={GirlInScarf} alt="purpleGirl.png" />
+    //       <GalleryItem src={Eye} alt="eye.png" />
+    //     </VStack>
+    //     <VStack>
+    //       <GalleryItem src={Guy} alt="drinking.png" />
+    //       <GalleryItem src={GirlSide} alt="girlSide.png" />
+    //       <GalleryItem src={Knight} alt="knight.png" />
+    //       <GalleryItem src={Gray} alt="gray.png" />
+    //     </VStack>
+    //   </HStack>
+    // </VStack>
   );
 };
 export default Gallery;
