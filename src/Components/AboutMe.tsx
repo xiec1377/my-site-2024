@@ -90,8 +90,8 @@ const AboutMe: React.FC<{}> = () => {
                   />
                 </Box>
                 <Text className="text">
-                  Hi! I'm Catherine and I recently completed my Bachelors of Computer Science
-                  at the{" "}
+                  Hi! I'm Catherine and I recently completed my Bachelors of
+                  Computer Science at the{" "}
                   <Link href="https://uwaterloo.ca/" isExternal>
                     <strong style={{ textDecoration: "underline" }}>
                       University of Waterloo
@@ -103,16 +103,17 @@ const AboutMe: React.FC<{}> = () => {
                 <Text className="text">
                   I've honed my skills in{" "}
                   <strong>full-stack and front-end development</strong> through
-                  my internship experiences in <strong>fintech</strong> and <strong>startups</strong>.
-                  However, I love exploring different disciplines such as{" "}
-                  <strong>UX/UI design</strong> and{" "}
-                  <strong>database design</strong> in order to become a
-                  more well-rounded engineer.
+                  my internship experiences in <strong>fintech</strong> and{" "}
+                  <strong> fast-paced startups</strong>. I also enjoy exploring
+                  UX/UI design and database architecture to grow as a
+                  well-rounded engineer who can bridge technical depth with user
+                  empathy.
                 </Text>
                 <br />
                 <Text className="text" color="rose.300">
-                  I strive to build beautiful and accessible applications that
-                  serve a meaningful purpose (or provide silly entertainment).
+                  My mission is to build intentional, impactful applications
+                  that not only work beautifully but also make meaningful
+                  differences (or provide silly entertainment).
                 </Text>
                 <br />
                 <Text className="text">
